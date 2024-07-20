@@ -1,0 +1,12 @@
+
+.container {
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional: Add some padding */
+  }
+  
+  section {
+    margin-bottom: 20px; /* Adjust the spacing between sections as needed */
+    padding: 10px; /* Optional: Add some padding inside each section */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+  }
