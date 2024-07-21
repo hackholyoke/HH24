@@ -1,5 +1,7 @@
-import './globals.css'
+import '../styles/globals.css'
 import Head from 'next/head';
+
+
 
 export const metadata = {
   icons: {
@@ -20,6 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href={metadata.icons.icon[0].url} sizes={metadata.icons.icon[0].sizes} type={metadata.icons.icon[0].type} />
       </Head>
       <body style={{ backgroundColor: '#FFB6C1' }}>{children}</body>
+      
     </html>
   );
 }

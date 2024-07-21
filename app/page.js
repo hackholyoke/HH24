@@ -1,42 +1,41 @@
 import React from 'react';
-import './pages.css'; 
-import './horizontalScroll.css';
+import '../styles/pages.css'; 
+import '../styles/horizontalScroll.css';
 
 
 const HomePage = () => {
   return (
     <div>
      <div className='container'>
-        <h1>Home Screen </h1>
-     </div>
-
-
-     <div className='container'>
-        <h1>About Us </h1>
+        <h1 className='heading'>Home Screen </h1>
      </div>
 
      <div className='container'>
-        <h1>Fast Facts</h1>
+        <h1 className='heading'>About Us </h1>
      </div>
 
      <div className='container'>
-        <h1>Meet the team </h1>
+        <h1 className='heading'>Fast Facts</h1>
      </div>
 
      <div className='container'>
-        <h1>Challenges </h1>
+        <h1 className='heading'>Meet the team </h1>
      </div>
 
      <div className='container'>
-        <h1>Speakers</h1>
+        <h1 className='heading'>Challenges </h1>
      </div>
 
      <div className='container'>
-        <h1>Workshops </h1>
+        <h1 className='heading'>Speakers</h1>
      </div>
 
      <div className='container'>
-        <h1>FAQs </h1>
+        <h1 className='heading'>Workshops </h1>
+     </div>
+
+     <div className='container'>
+        <h1 className='heading'>FAQs </h1>
         <section> 
           Question 1
         </section>
@@ -49,7 +48,7 @@ const HomePage = () => {
      </div>
 
      <div className='container'>
-        <h1>Contact Us</h1>
+        <h1 className='heading'>Contact Us</h1>
      </div>
 
 
