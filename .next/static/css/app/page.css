@@ -40,3 +40,22 @@ section {
     margin-right: 20px; /* Adjust the spacing between sections as needed */
   }
   
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/menuBar.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.menuBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+
+.item{
+    padding: 3%;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 

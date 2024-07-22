@@ -1,11 +1,16 @@
 import React from 'react';
 import '../styles/pages.css'; 
 import '../styles/horizontalScroll.css';
+import MenuBar from '../components/menuBar';
 
 
 const HomePage = () => {
   return (
     <div>
+      <div> 
+         <MenuBar/>
+      </div>
+      
      <div className='container'>
         <h1 className='heading'>Home Screen </h1>
      </div>
