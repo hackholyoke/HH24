@@ -41,15 +41,7 @@ const HomePage = () => {
 
      <div className='container'>
         <h1 className='heading'>FAQs </h1>
-        <section> 
-          Question 1
-        </section>
-        <section> 
-          Question 2
-        </section>
-        <section> 
-          Question 3
-        </section>
+        
      </div>
 
      <div className='container'>
@@ -62,3 +54,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

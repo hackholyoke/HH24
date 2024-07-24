@@ -5,7 +5,7 @@ import '../styles/menuBar.css';
 const MenuBar = () => {
   return (
     <div className="menuBar">
-      <Link  href="/home" className="item"> Home</Link>
+      <Link  href="/team_page" className="item"> Home</Link>
       <Link  href="/about-us" className="item"> About Us</Link>
       <Link  href="/register" className="item"> Register</Link>
       <Link  href="/challenges" className="item"> Challenges</Link>
@@ -18,3 +18,5 @@ const MenuBar = () => {
 };
 
 export default MenuBar;
+
+
