@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 
 
-export const metadata = {
+export const metadata  = {
   icons: {
     icon: [
       {

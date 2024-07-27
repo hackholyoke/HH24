@@ -1,0 +1,23 @@
+.menuBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    padding: 10px ;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(61, 195, 193);
+    padding-bottom: 15px;
+    padding-top: 30px;
+    backdrop-filter: blur(50px);
+  }
+
+.item{
+    padding: 3%;
+    color: aliceblue;
+    text-decoration: none; 
+    color:rgb(61, 195, 193);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+

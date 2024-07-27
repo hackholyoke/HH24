@@ -9,7 +9,11 @@
 .container {
     height: 100vh; /* Adjust the height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
-    padding: 20px; /* Optional: Add some padding */
+    padding: 70px; /* Optional: Add some padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
     /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
   }
 
@@ -25,6 +29,7 @@ section {
     padding: 10px; /* Optional: Add some padding inside each section */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
   }
+
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/horizontalScroll.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -40,3 +45,31 @@ section {
     margin-right: 20px; /* Adjust the spacing between sections as needed */
   }
   
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/menuBar.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.menuBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    padding: 10px ;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(61, 195, 193);
+    padding-bottom: 15px;
+    padding-top: 30px;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+  }
+
+.item{
+    padding: 3%;
+    color: aliceblue;
+    text-decoration: none; 
+    color:rgb(61, 195, 193);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+
+

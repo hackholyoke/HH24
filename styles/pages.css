@@ -6,7 +6,11 @@
 .container {
     height: 100vh; /* Adjust the height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
-    padding: 20px; /* Optional: Add some padding */
+    padding: 70px; /* Optional: Add some padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
     /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
   }
 
