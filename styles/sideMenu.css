@@ -1,0 +1,16 @@
+.sideMenu{
+    position: fixed;
+    top: 25%; /* Adjust this based on the height of the horizontal menu */
+    left: 5px;
+   /*height: ; /* Adjust this based on the height of the horizontal menu */
+    width: 50px;
+    padding-top: 20px;
+    /*border-right: 2px solid aliceblue;*/
+}
+.item{
+    /*padding: 3%;*/
+    color: aliceblue;
+    text-decoration: none; 
+    /*color:rgb(61, 195, 193);*/
+    font-family: 'PixelifySans-Regular', serif;
+}

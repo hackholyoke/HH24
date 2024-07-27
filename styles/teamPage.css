@@ -1,0 +1,21 @@
+.heading {
+    font-family: 'PixelifySans-Regular', serif; /*Will be changing the font depending on design*/
+    color:aliceblue
+  }
+  
+.container {
+    height: 100vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 70px; /* Optional: Add some padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
+}
+
+.section {
+    margin-bottom: 20px; /* Adjust the spacing between sections as needed */
+    padding: 10px; /* Optional: Add some padding inside each section */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+  }
