@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/pages.css'; 
 import '../styles/horizontalScroll.css';
-import MenuBar from '../components/menuBar';
+import MenuBar from './components/menuBar';
 
 
 const HomePage = () => {
