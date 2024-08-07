@@ -1,0 +1,18 @@
+  .textContainer {
+    flex: 1;
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    font-family: 'PixelifySans-Regular', serif;
+  }
+  
+  .headerContainer {
+    flex: 1;
+    padding: 1rem;
+    color: rgb(15, 217, 228);
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  
