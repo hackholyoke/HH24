@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/pages.css'; 
-import '../styles/horizontalScroll.css';
+import '../styles/compStyles/horizontalScroll.css';
 import MenuBar from './components/menuBar';
-import AboutUS from './about_us';
-
+import HomeScreen from './screens_components/home.js'
+import AboutUS from './screens_components/about_us.js';
+import StatsScreen from './screens_components/stats.js';
 
 const HomePage = () => {
   return (
@@ -12,20 +13,16 @@ const HomePage = () => {
          <MenuBar/>
       </div>
       
-     <div id = "home" className='container'>
-        <h1 className='heading'>Home Screen </h1>
+     <div className='container' id='home'>
+         <HomeScreen/>
      </div>
 
-     <div id="about" className='container'>
+     <div className='container' id='stats'>
+            <StatsScreen/> 
+     </div>
+
+     <div className='container' id='aboutUs'>
         <AboutUS/>
-     </div>
-
-     <div  className='container'>
-        <h1 className='heading'>Fast Facts</h1>
-     </div>
-
-     <div className='container'>
-        <h1 className='heading'>Meet the team </h1>
      </div>
 
      <div id = "challenges" className='container'>

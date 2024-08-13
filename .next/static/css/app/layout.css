@@ -4,7 +4,19 @@
 @font-face {
   font-family: 'PixelifySans-Regular';
   src: url(/public/fonts/PixelifySans-Regular.ttf);
-
+}
+@font-face {
+  font-family: 'Verdana-Bold';
+  src: url(/public/fonts/Verdana-Bold.ttf);
+}
+@font-face {
+  font-family: 'Orbitron-Regular';
+  src: url(/public/fonts/Orbitron-Regular.ttf);
+}
+@font-face {
+  font-family: 'Audiowide-Regular';
+  src: url(/public/fonts/Audiowide-Regular.ttf);
+  
 }
 
 body {
@@ -14,7 +26,7 @@ body {
     background-size: cover;
     background-position: center; */
     /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
-    background-image: linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    background-image: linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black) ;
 
   }
 

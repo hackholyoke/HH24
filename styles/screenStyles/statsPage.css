@@ -1,0 +1,186 @@
+/* Section */
+/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap'); */
+
+#stats{
+    position: relative;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* all numbers styles */
+#stats .stats_num{
+
+}
+
+/* all words styles */
+#stats .stats_words{
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: aliceblue;
+    /* font-size: 80%; */
+
+}
+
+/* heading: HackHolyoke 2022 */
+/* #stats .heading_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; 
+} */
+
+#stats .line {
+    height: 2px; /* Line thickness */
+    background-color: #00FFF7; /* Cyan color */
+}
+#stats .line-left {
+    position: absolute;
+    height: 2px;
+    background-color: #00FFF7;
+    width: 20%;
+    top: 50%;
+    left: 5%;
+
+}
+
+#stats .line-right {
+    position: absolute;
+    height: 2px;
+    background-color: #00FFF7;
+    top:50%;
+    width: 20%;
+    right: 5%;
+
+}
+#stats .stats_heading{
+    font-family: "Audiowide", sans-serif;
+    font-size: 120%;
+    color: transparent;
+    -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
+    -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
+}
+
+/* heading: in numbers */
+#stats .stats_heading_2{
+    position: absolute;
+    font-family: "Orbitron";
+    font-size: 40%;
+    top: 55%;
+    left: 45%;
+    color: #00FFF7;
+}
+
+
+/* Number CSS Styles (locations) */
+
+#stats .participants_num{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 20%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .colleges_num{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    right: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .majors_num{
+    position: absolute;
+    bottom: 18%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .years_num{
+    position: absolute;
+    bottom: 18%;             /* Align to the top */
+    right: 20%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+/* Words CSS Styles (locations and orientation) */
+
+#stats .participants{
+    position: absolute;
+    top: 30%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .colleges{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    right: 9%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+    writing-mode: vertical-rl;
+}
+
+#stats .participating{
+    position: absolute;
+    top: 30%;             /* Align to the top */
+    right: 10%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .majors{
+    position: absolute;
+    bottom: 15%;             /* Align to the top */
+    left: 35%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#stats .th{
+    position: absolute;
+    bottom: 13%;             /* Align to the top */
+    right: 7%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .year{
+    position: absolute;
+    bottom: 7%;             /* Align to the top */
+    right: 2%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size:70%;
+    width: 30%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
