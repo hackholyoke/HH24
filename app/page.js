@@ -69,24 +69,23 @@ const HomePage = () => {
         <h1 className='heading'>About Us </h1>
      </div>
 
-     <div className='container'>
+     <div id = "challenges" className='container'>
         <h1 className='heading'>Challenges </h1>
      </div>
 
-     <div className='container'>
+     <div id = "speakers" className='container'>
         <h1 className='heading'>Speakers</h1>
      </div>
 
-     <div className='container'>
+     <div id = "workshop" className='container'>
         <h1 className='heading'>Workshops </h1>
      </div>
 
      <div className='container'>
-        <h1 className='heading'>FAQs </h1>
-        
+        <h1 className='heading'>FAQs </h1>  
      </div>
 
-     <div className='container'>
+     <div id= "sponsors" className='container'>
         <h1 className='heading'>Contact Us</h1>
      </div>
 
