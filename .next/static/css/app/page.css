@@ -4,16 +4,15 @@
 .homeButtons {
     border-radius: 40px;
     height: 40px;
-    min-width: 100px; /* Minimum width of 100px */
-    max-width: -moz-fit-content;
-    max-width: fit-content; /* Maximum width based on content */
+    /*min-width: 100px; /* Minimum width of 100px */
+    min-width: -moz-fit-content;
+    min-width: fit-content; /* Maximum width based on content */
     width: auto; /* Allows the button to resize based on content and min-width */
     padding: 10px 20px; /* Padding for the button */
     background:#2c3c94;
     color: #00fff7;
     border-width: 0;
     font-family: 'PixelifySans-Regular', serif;
-    /*box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.2); /* 3D shadow effect */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* Outer shadow for 3D effect */
     transition: transform 1s, box-shadow 1s; /* Smooth transition for the click effect */
     line-height: 40px;
@@ -59,8 +58,60 @@ section {
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
   }
 
+/* #home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    text-align: center; 
+    padding: 10px;
+}  */
 
   
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/horizontalScroll.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.Horizontalcontainer {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  Horizontalsection {
+    flex: 0 0 auto; /* Prevent sections from shrinking */
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the spacing between sections as needed */
+  }
+  
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/menuBar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.menuBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    padding: 10px ;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(61, 195, 193);
+    padding-bottom: 15px;
+    padding-top: 30px;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+  }
+
+.item{
+    padding: 3%;
+    color: aliceblue;
+    text-decoration: none; 
+    color:rgb(61, 195, 193);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+
 
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/homeScreen.css ***!
@@ -79,8 +130,8 @@ section {
     display: flex;
     flex-direction: row;
     gap: 20px; /* Add space between buttons */
-    margin-top: 16%;
-    margin-right:18%;
+    margin-top: 60%;
+    margin-right:10%;
   }
   
   #home .heading{
@@ -165,20 +216,26 @@ section {
     left: 150px;
     top: 300px;
   }
-/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/horizontalScroll.css ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************/
-.Horizontalcontainer {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/about_us.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+  .textContainer {
+    flex: 1 1;
+    padding: 1rem;
+    color: white;
+    font-size: large;
+    font-family: 'PixelifySans-Regular', serif;
   }
   
-  Horizontalsection {
-    flex: 0 0 auto; /* Prevent sections from shrinking */
-    width: 300px; /* Adjust the width as needed */
-    margin-right: 20px; /* Adjust the spacing between sections as needed */
+  .headerContainer {
+    flex: 1 1;
+    padding: 1rem;
+    color: rgb(15, 217, 228);
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
   }
+  
+
   
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/statsPage.css ***!
@@ -220,18 +277,22 @@ section {
     background-color: #00FFF7; /* Cyan color */
 }
 #stats .line-left {
+    position: absolute;
     height: 2px;
     background-color: #00FFF7;
     width: 20%;
-    margin-right: 5%;
+    top: 50%;
+    left: 5%;
 
 }
 
 #stats .line-right {
+    position: absolute;
     height: 2px;
     background-color: #00FFF7;
+    top:50%;
     width: 20%;
-    margin-left: 5%;
+    right: 5%;
 
 }
 #stats .stats_heading{
@@ -248,6 +309,7 @@ section {
     font-family: "Orbitron";
     font-size: 40%;
     top: 55%;
+    left: 45%;
     color: #00FFF7;
 }
 
@@ -364,52 +426,3 @@ section {
     width: 30%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
 }
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/menuBar.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
-.menuBar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
-    padding: 10px ;
-    text-align: center;
-    z-index: 1000;
-    border-bottom: 2px solid rgb(61, 195, 193);
-    padding-bottom: 15px;
-    padding-top: 30px;
-    -webkit-backdrop-filter: blur(50px);
-            backdrop-filter: blur(50px);
-  }
-
-.item{
-    padding: 3%;
-    color: aliceblue;
-    text-decoration: none; 
-    color:rgb(61, 195, 193);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
- 
-
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/about_us.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
-  .textContainer {
-    flex: 1 1;
-    padding: 1rem;
-    color: white;
-    font-size: large;
-    font-family: 'PixelifySans-Regular', serif;
-  }
-  
-  .headerContainer {
-    flex: 1 1;
-    padding: 1rem;
-    color: rgb(15, 217, 228);
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-
-  

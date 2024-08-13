@@ -35,18 +35,22 @@
     background-color: #00FFF7; /* Cyan color */
 }
 #stats .line-left {
+    position: absolute;
     height: 2px;
     background-color: #00FFF7;
     width: 20%;
-    margin-right: 5%;
+    top: 50%;
+    left: 5%;
 
 }
 
 #stats .line-right {
+    position: absolute;
     height: 2px;
     background-color: #00FFF7;
+    top:50%;
     width: 20%;
-    margin-left: 5%;
+    right: 5%;
 
 }
 #stats .stats_heading{
@@ -63,6 +67,7 @@
     font-family: "Orbitron";
     font-size: 40%;
     top: 55%;
+    left: 45%;
     color: #00FFF7;
 }
 

@@ -1,15 +1,14 @@
 .homeButtons {
     border-radius: 40px;
     height: 40px;
-    min-width: 100px; /* Minimum width of 100px */
-    max-width: fit-content; /* Maximum width based on content */
+    /*min-width: 100px; /* Minimum width of 100px */
+    min-width: fit-content; /* Maximum width based on content */
     width: auto; /* Allows the button to resize based on content and min-width */
     padding: 10px 20px; /* Padding for the button */
     background:#2c3c94;
     color: #00fff7;
     border-width: 0;
     font-family: 'PixelifySans-Regular', serif;
-    /*box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.2); /* 3D shadow effect */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* Outer shadow for 3D effect */
     transition: transform 1s, box-shadow 1s; /* Smooth transition for the click effect */
     line-height: 40px;

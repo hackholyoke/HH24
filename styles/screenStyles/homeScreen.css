@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: row;
     gap: 20px; /* Add space between buttons */
-    margin-top: 16%;
-    margin-right:18%;
+    margin-top: 60%;
+    margin-right:10%;
   }
   
   #home .heading{
