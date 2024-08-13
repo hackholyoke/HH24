@@ -1,0 +1,100 @@
+#home {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    /*align-items: center; /* Center items horizontally */
+    /*justify-content: center; /* Center items vertically if the container has height */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    text-align: center; /* Center text inside the container */
+    padding: 10px; /* Add padding around the container */
+  }
+  
+  #home .buttonLayout{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Add space between buttons */
+    margin-top: 16%;
+    margin-right:18%;
+  }
+  
+  #home .heading{
+    /* HACK HOLYOKE 2024! */
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 108px;
+    left: 400px;
+    top: 250px;
+  
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 119px;
+  
+    color: #00FFF7;
+  
+  }
+  #home .heading_shadow{
+    /* HACK HOLYOKE 2024! */
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 108px;
+    left: 410px;
+    top: 250px;
+  
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 119px;
+  
+    background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  #home .welcome{
+    /* Welcome to */
+  
+    position: absolute;
+    width: 304px;
+    height: 67px;
+    left: 380px;
+    top: 240px;
+  
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  
+    color: #FFFFFF;
+  
+  
+  }
+  
+  #home .desc{
+    /* November 14-15 | Chapin Auditorium, South Hadley, MA */
+  
+    position: absolute;
+    width: 781px;
+    height: 46px;
+    left: 335px;
+    top: 350px;
+    padding-top: 50px;
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+  
+    color: #9CFFFC;
+  
+  }
+  
+  #home .image{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+  }

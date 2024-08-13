@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import '/styles/menuBar.css';
+import '/styles/compStyles/menuBar.css';
 
 const MenuBar = () => {
   return (

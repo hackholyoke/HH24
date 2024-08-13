@@ -1,3 +1,32 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/buttons.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.homeButtons {
+    border-radius: 40px;
+    height: 40px;
+    min-width: 100px; /* Minimum width of 100px */
+    max-width: -moz-fit-content;
+    max-width: fit-content; /* Maximum width based on content */
+    width: auto; /* Allows the button to resize based on content and min-width */
+    padding: 10px 20px; /* Padding for the button */
+    background:#2c3c94;
+    color: #00fff7;
+    border-width: 0;
+    font-family: 'PixelifySans-Regular', serif;
+    /*box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.2); /* 3D shadow effect */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* Outer shadow for 3D effect */
+    transition: transform 1s, box-shadow 1s; /* Smooth transition for the click effect */
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homeButtons:active {
+    transform: translateY(10px); /* Moves the button down to give a pressed effect */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); /* Adjust shadow for pressed effect */
+  }
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/pages.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
@@ -30,11 +59,115 @@ section {
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
   }
 
+
   
 
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/horizontalScroll.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/homeScreen.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+#home {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    /*align-items: center; /* Center items horizontally */
+    /*justify-content: center; /* Center items vertically if the container has height */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    text-align: center; /* Center text inside the container */
+    padding: 10px; /* Add padding around the container */
+  }
+  
+  #home .buttonLayout{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Add space between buttons */
+    margin-top: 16%;
+    margin-right:18%;
+  }
+  
+  #home .heading{
+    /* HACK HOLYOKE 2024! */
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 108px;
+    left: 400px;
+    top: 250px;
+  
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 119px;
+  
+    color: #00FFF7;
+  
+  }
+  #home .heading_shadow{
+    /* HACK HOLYOKE 2024! */
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    height: 108px;
+    left: 410px;
+    top: 250px;
+  
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 119px;
+  
+    background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  #home .welcome{
+    /* Welcome to */
+  
+    position: absolute;
+    width: 304px;
+    height: 67px;
+    left: 380px;
+    top: 240px;
+  
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  
+    color: #FFFFFF;
+  
+  
+  }
+  
+  #home .desc{
+    /* November 14-15 | Chapin Auditorium, South Hadley, MA */
+  
+    position: absolute;
+    width: 781px;
+    height: 46px;
+    left: 335px;
+    top: 350px;
+    padding-top: 50px;
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+  
+    color: #9CFFFC;
+  
+  }
+  
+  #home .image{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+  }
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/horizontalScroll.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
 .Horizontalcontainer {
     display: flex;
     overflow-x: auto;
@@ -47,9 +180,193 @@ section {
     margin-right: 20px; /* Adjust the spacing between sections as needed */
   }
   
-/*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/menuBar.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/statsPage.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+/* Section */
+/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap'); */
+
+#stats{
+    position: relative;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* all numbers styles */
+#stats .stats_num{
+
+}
+
+/* all words styles */
+#stats .stats_words{
+    font-family: "Orbitron";
+    font-weight: 400;
+    color: aliceblue;
+    /* font-size: 80%; */
+
+}
+
+/* heading: HackHolyoke 2022 */
+/* #stats .heading_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; 
+} */
+
+#stats .line {
+    height: 2px; /* Line thickness */
+    background-color: #00FFF7; /* Cyan color */
+}
+#stats .line-left {
+    height: 2px;
+    background-color: #00FFF7;
+    width: 20%;
+    margin-right: 5%;
+
+}
+
+#stats .line-right {
+    height: 2px;
+    background-color: #00FFF7;
+    width: 20%;
+    margin-left: 5%;
+
+}
+#stats .stats_heading{
+    font-family: "Audiowide", sans-serif;
+    font-size: 120%;
+    color: transparent;
+    -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
+    -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
+}
+
+/* heading: in numbers */
+#stats .stats_heading_2{
+    position: absolute;
+    font-family: "Orbitron";
+    font-size: 40%;
+    top: 55%;
+    color: #00FFF7;
+}
+
+
+/* Number CSS Styles (locations) */
+
+#stats .participants_num{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 20%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .colleges_num{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    right: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .majors_num{
+    position: absolute;
+    bottom: 18%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .years_num{
+    position: absolute;
+    bottom: 18%;             /* Align to the top */
+    right: 20%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+/* Words CSS Styles (locations and orientation) */
+
+#stats .participants{
+    position: absolute;
+    top: 30%;             /* Align to the top */
+    left: 15%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .colleges{
+    position: absolute;
+    top: 20%;             /* Align to the top */
+    right: 9%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+    writing-mode: vertical-rl;
+}
+
+#stats .participating{
+    position: absolute;
+    top: 30%;             /* Align to the top */
+    right: 10%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .majors{
+    position: absolute;
+    bottom: 15%;             /* Align to the top */
+    left: 35%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 22%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+#stats .th{
+    position: absolute;
+    bottom: 13%;             /* Align to the top */
+    right: 7%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size: 70%;
+    width: 13%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+
+#stats .year{
+    position: absolute;
+    bottom: 7%;             /* Align to the top */
+    right: 2%;            /* Align to the left */
+    margin: 10;          /* Ensure no extra margin */
+    padding: 20;         /* Ensure no extra padding */
+    font-size:70%;
+    width: 30%;        /* Adjust as necessary for image size */
+    height: auto;       /* Adjust as necessary for image size */
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/menuBar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 .menuBar {
     position: fixed;
     top: 0;
