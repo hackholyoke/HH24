@@ -1,0 +1,24 @@
+.homeButtons {
+    border-radius: 40px;
+    height: 40px;
+    /*min-width: 100px; /* Minimum width of 100px */
+    min-width: fit-content; /* Maximum width based on content */
+    width: auto; /* Allows the button to resize based on content and min-width */
+    padding: 10px 20px; /* Padding for the button */
+    background:#2c3c94;
+    color: #00fff7;
+    border-width: 0;
+    font-family: 'PixelifySans-Regular', serif;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* Outer shadow for 3D effect */
+    transition: transform 1s, box-shadow 1s; /* Smooth transition for the click effect */
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homeButtons:active {
+    transform: translateY(10px); /* Moves the button down to give a pressed effect */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); /* Adjust shadow for pressed effect */
+  }
