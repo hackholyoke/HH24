@@ -26,6 +26,38 @@
     transform: translateY(10px); /* Moves the button down to give a pressed effect */
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); /* Adjust shadow for pressed effect */
   }
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/faq.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+  .title {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: aqua;
+    text-align: center;
+  }
+
+  .question {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: -30%;
+  }
+  
+  .answer {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of text size */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional background for better visibility */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+
+
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/pages.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
@@ -219,20 +251,30 @@ section {
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/about_us.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: 'About Us Font';
+  src: url(/_next/static/media/PixelifySans-Bold.02bf6b35.ttf) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+  
   .textContainer {
     flex: 1 1;
     padding: 1rem;
     color: white;
     font-size: large;
-    font-family: 'PixelifySans-Regular', serif;
+    font-family: "Orbitron";
+    font-weight: 400;
+    line-height: 200%;
   }
   
   .headerContainer {
     flex: 1 1;
     padding: 1rem;
-    color: rgb(15, 217, 228);
+    color: rgb(231, 238, 238);
     font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'About Us Font';
+    text-align: center;
   }
   
 

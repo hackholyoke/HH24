@@ -1,47 +1,75 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 import '/styles/faq.css';
+import Image from 'next/image';
+import What_is_HH_fold from '../assets/FAQ/What_is_HH_fold.png';
+import What_is_HH_unfold from '../assets/FAQ/What_is_HH_unfold.png';
+import Where_fold from '../assets/FAQ/Where_fold.png';
+import Where_unfold from '../assets/FAQ/Where_unfold.png';
+import Who_fold from '../assets/FAQ/Who_fold.png';
+import Who_unfold from '../assets/FAQ/Who_unfold.png';
 
+const FAQ = () => {
+  const [isHHUnfolded, setIsHHUnfolded] = useState(false);
+  const [isWhereUnfolded, setIsWhereUnfolded] = useState(false);
+  const [isWhoUnfolded, setIsWhoUnfolded] = useState(false);
 
-const FAQ = () =>{
-    return(
-        <div>
-        <div className='title' >
-            <h1> FAQs</h1>
-        </div>
-        
+  const handleHHImageClick = () => {
+    setIsHHUnfolded((prev) => !prev);
+  };
 
-        <div className='faq'> 
-            <div className='question'>
-                <h3> What is HackHolyoke?</h3>
+  const handleWhereImageClick = () => {
+    setIsWhereUnfolded((prev) => !prev);
+  };
 
-                <svg width= "15" height= "10" viewBox=" 0 0 42 25">
-                    <path d ="M3 3L21 21L39 3" stroke = " white" strokeWidth= "7" strokeLinecap="round" />
-                </svg>
-            </div>
+  const handleWhoImageClick = () => {
+    setIsWhoUnfolded((prev) => !prev);
+  };
 
-            <div className='answer'> 
-                <p> HackHolyoke is Mount Holyoke's hackathon</p>
-            </div>
+  return (
+    <div>
+      <div className="title">
+        <h1>FAQs</h1>
+      </div>
+      <div >
+        <Image 
+          src={isHHUnfolded ? What_is_HH_unfold : What_is_HH_fold} 
+          width={isHHUnfolded ?  850 : 650 } 
+          height={isHHUnfolded ?  300 : 85 } 
+          onClick={handleHHImageClick} 
+          alt="What is HH" 
+          className='question'
+        />
 
-            <div className='question'>
-                <h3> What day is hackholyoke happening?</h3>
-
-                <svg width= "15" height= "10" viewBox=" 0 0 42 25">
-                    <path d ="M3 3L21 21L39 3" stroke = " white" strokeWidth= "7" strokeLinecap="round" />
-                </svg>
-            </div>
-
-            <div className='answer'> 
-                <p>On the 9th - 10th November</p>
-            </div>
-        </div>
-
-        </div>
-    )
-}
-
+        {isHHUnfolded && (
+          <div className='answer'>
+            <p>HackHolyoke is a hackathon where creative thinkers, programmers, and innovators come together to build amazing projects over 24 hours.</p>
+          </div>
+        )}
+      </div>
+      <div>
+        <Image 
+          src={isWhereUnfolded ? Where_unfold : Where_fold} 
+          width={ isWhereUnfolded ? 850 : 650} 
+          height={ isWhereUnfolded ? 300 : 85} 
+          onClick={handleWhereImageClick} 
+          alt="Where" 
+          className='question'
+        />
+      </div>
+      <div>
+        <Image 
+          src={isWhoUnfolded ? Who_unfold : Who_fold} 
+          width={ isWhoUnfolded ? 850 : 650} 
+          height={ isWhoUnfolded ? 300 : 85} 
+          onClick={handleWhoImageClick} 
+          alt="Who" 
+          className='question'
+        />
+      </div>
+    </div>
+  );
+};
 
 export default FAQ;
-
-
-
