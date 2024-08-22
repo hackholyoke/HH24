@@ -48,7 +48,9 @@ const FAQ = () => {
           </div>
         )}
       </div>
-      <div>
+
+
+      {/* <div>
         <Image 
           src={isWhereUnfolded ? Where_unfold : Where_fold} 
           width={ isWhereUnfolded ? 850 : 650} 
@@ -57,7 +59,29 @@ const FAQ = () => {
           alt="Where" 
           className='question'
         />
-      </div>
+      </div> */}
+
+        <div className="question-container" onClick={handleWhereImageClick}>
+            <div  className={`image-container ${isWhereUnfolded ? 'unfold' : 'fold'}`}>
+            <Image
+                src={Where_fold}
+                width={650}
+                height={85}
+                className={`folded-image ${isWhereUnfolded ? 'hide' : ''}`} 
+            />
+            </div>
+            <div className={`unfolded-container ${isWhereUnfolded ? 'visible' : 'hidden'}`}>
+                <Image
+                src={Where_unfold}
+                width={850}
+                height={300}
+                className="unfolded-image"
+                />
+            </div>
+            
+        </div>
+
+
       <div>
         <Image 
           src={isWhoUnfolded ? Who_unfold : Who_fold} 
@@ -68,6 +92,7 @@ const FAQ = () => {
           className='question'
         />
       </div>
+
     </div>
   );
 };
