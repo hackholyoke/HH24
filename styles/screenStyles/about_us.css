@@ -11,18 +11,4 @@
     color: white;
     font-size: large;
     font-family: "Orbitron";
-    font-weight: 400;
-    line-height: 200%;
-  }
-  
-  .headerContainer {
-    flex: 1;
-    padding: 1rem;
-    color: rgb(231, 238, 238);
-    font-size: 60px;
-    font-family: 'About Us Font';
-    text-align: center;
-  }
-  
-
-  
+    font-weight: 400
