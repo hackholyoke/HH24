@@ -67,4 +67,66 @@ const FAQ = () => {
         />
 
         {isHHUnfolded && (
-          <div className='a
+          <div className='answer'>
+            <p>HackHolyoke is a hackathon where creative thinkers, programmers, and innovators come together to build amazing projects over 24 hours.</p>
+          </div>
+        )}
+
+        <Image 
+          src={isTeamUnfolded ? Team_unfold : Team_fold} 
+          width={650} 
+          height={ isTeamUnfolded ? 300 : 85} 
+          onClick={handleTeamImageClick} 
+          alt="Team" 
+          className='questionRight'
+        />
+      </div>
+
+
+      <div className="image-container">
+        <Image 
+          src={isWhereUnfolded ? Where_unfold : Where_fold} 
+          width={650} 
+          height={ isWhereUnfolded ? 300 : 85} 
+          onClick={handleWhereImageClick} 
+          alt="Where" 
+          className='questionLeft'
+        />
+
+        <Image 
+          src={isParticipateUnfolded ? Participate_unfold : Participate_fold} 
+          width={650} 
+          height={ isParticipateUnfolded ? 300 : 85} 
+          onClick={handleParticipateImageClick} 
+          alt="Participate" 
+          className='questionRight'
+        />
+      </div>
+
+
+      <div>
+        <Image 
+          src={isWhoUnfolded ? Who_unfold : Who_fold} 
+          width={400} 
+          height={ isWhoUnfolded ? 300 : 85} 
+          onClick={handleWhoImageClick} 
+          alt="Who" 
+          className='questionLeft'
+        />
+
+        <Image 
+          src={isFreeUnfolded ? Free_unfold : Free_fold} 
+          width={550} 
+          height={ isFreeUnfolded ? 300 : 85} 
+          onClick={handleFreeImageClick} 
+          alt="Free" 
+          className='questionRight'
+        />
+      </div>
+
+        
+    </div>
+  );
+};
+
+export default FAQ;
