@@ -5,6 +5,7 @@ import MenuBar from './components/menuBar';
 import HomeScreen from './screens_components/home.js'
 import AboutUS from './screens_components/about_us.js';
 import StatsScreen from './screens_components/stats.js';
+import FAQ from './components/faq.js';
 
 const HomePage = () => {
   return (
@@ -38,7 +39,7 @@ const HomePage = () => {
      </div>
 
      <div className='container'>
-        <h1 className='heading'>FAQs </h1>  
+        <FAQ/>
      </div>
 
      <div id= "sponsors" className='container'>
