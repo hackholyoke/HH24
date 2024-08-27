@@ -22,7 +22,7 @@ const HomePage = () => {
             <StatsScreen/> 
      </div>
 
-     <div className='container' id='aboutUs'>
+     <div className='container' id='about'>
         <AboutUS/>
      </div>
 
@@ -34,13 +34,13 @@ const HomePage = () => {
         <h1 className='heading'>Speakers</h1>
      </div>
 
-     <div id = "workshop" className='container'>
-        <h1 className='heading'>Workshops </h1>
+     <div id = "schedule" className='container'>
+        <h1 className='heading'>Schedule </h1>
      </div>
 
-     <div className='container'>
-        <FAQ/>
-     </div>
+      <div id = "faq">
+         <FAQ/>
+      </div>
 
      <div id= "sponsors" className='container'>
         <h1 className='heading'>Contact Us</h1>
