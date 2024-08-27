@@ -113,14 +113,29 @@ const FAQ = () => {
             />
 
             {isHHUnfolded && (
-            <div className="answer">
-                <h1>HackHolyoke is a hackathon where creative thinkers, programmers,
-                    and innovators come together to build amazing projects over 24 
-                    hours.
+            <div className="answerRight" style={{ top: "50%"}}>
+                <h1>HackHolyoke is a 24-hour hackathon hosted every year by students 
+                  at Mount Holyoke College, one of the first historically women's colleges
+                  in the US.
+                </h1>
+                <h1>
+                  This year, HackHolyoke will be a fully in-person hackathon 
+                  with tea breaks, information sessions, and workshops.
                 </h1>
             </div>
             )}
-        </div>
+
+            {isHackathonUnfolded && (
+                  <div className="answerLeft" style={{ top: "48%"}}>
+                      <h1>An event in which participants spend a condensed period 
+                        of time (usually somewhere between 24 and 36 hours) working
+                        on a project, attending workshops, networking, and generally
+                        having a good time. At the end, the participants can present 
+                        what they have worked on to judges to win prizes.
+                      </h1>
+                  </div>
+              )}
+            </div>
 
 
         <div className="image-container">
@@ -140,7 +155,26 @@ const FAQ = () => {
             alt="Who" 
             className='questionRight'
             />
-            
+
+            {isWhoUnfolded && (
+              <div className="answerRight" style={{ top: "37%"}}>
+                  <h1>
+                  HackHolyoke is open to all students currently 
+                  enrolled in U.S - based colleges or community 
+                  colleges, regardless of all other backgrounds
+                  </h1>
+              </div>
+            )}
+
+            {isWhereUnfolded && (
+                  <div className="answerLeft" style={{ top: "42%"}}>
+                      <h1>HackHolyoke 2024 is an in-person hackathon.
+                         All of our major happenings and hacking will 
+                         be in-person held at Mount Holyoke College 
+                         and can be attended on-site.
+                      </h1>
+                  </div>
+              )}         
         </div>
 
 
@@ -161,6 +195,29 @@ const FAQ = () => {
             alt="Team" 
             className='questionRight'
             />
+
+            {isTeamUnfolded && (
+            <div className="answerRight" style={{ top: "46%"}}>
+                <h1>
+                You do not need a team to participate.
+                While we encourage people to work in teams, 
+                hackers are perfectly welcome to go solo.
+                If you want a team, but don't have one yet, 
+                sign up and we will help you find a team at the start of the event!
+                </h1>
+            </div>
+            )}
+
+            {isParticipateUnfolded && (
+              <div className="answerLeft" style={{ top: "50%"}}>
+                <h1>We're now open for registration! If you're interested in
+                   hacking with us, you can register here and then you will be
+                    all set. This year's hackathon is digital-focus, so if you're 
+                    not a Mount Holyoke student, all you will need is your computer
+                    and an internet connection.
+                </h1>
+              </div>
+            )}
            
         </div>
 
@@ -182,6 +239,24 @@ const FAQ = () => {
             alt="Required Experience" 
             className='questionRight'
             />      
+
+            {isExperienceUnfolded && (
+            <div className="answerRight" style={{ top: "48%"}}>
+                <h1>
+                Absolutely! We welcome everyone with a passion for learning 
+                and a can-do attitude. For people with limited or no coding 
+                experience who want to learn more, we will also have 
+                beginner-friendly workshops.
+                </h1>
+            </div>
+            )}
+
+            {isMemberUnfolded && (
+              <div className="answerLeft" style={{ top: "30%"}}>
+                <h1>Each team is allowed to have up to 4 members.
+                </h1>
+              </div>
+            )}
         </div>
 
         <div className="image-container">
@@ -202,17 +277,47 @@ const FAQ = () => {
             alt="Food and Housing" 
             className='questionRight'
             />
+
+            {isFHUnfolded && (
+              <div className="answerRight" style={{ top: "48%"}}>
+                  <h1>
+                  TBD
+                  </h1>
+              </div>
+            )}
+
+            {isFreeUnfolded && (
+              <div className="answerLeft" style={{ top: "40%"}}>
+                <h1>Yes, it is! You don't have to pay any fees in order 
+                  to participate in HackHolyoke 2024. 
+                  Just come, build amazing projects, and win prizes!
+                </h1>
+              </div>
+            )}
         </div>
 
         <div className="image-container">
             <Image 
             src={isOtherWayUnfolded ? Other_way_unfold : Other_way_fold} 
             width={300} 
-            height={ isOtherWayUnfolded ? 300 : 85} 
+            height={ isOtherWayUnfolded ? 350 : 85} 
             onClick={handleOtherWayImageClick} 
             alt="Other ways to contribute" 
             className='questionLeft'
-            />     
+            /> 
+
+            {isOtherWayUnfolded && (
+              <div className="answerLeft" style={{ top: "55%"}}>
+                <h1>HackHolyoke has many ways to participate!
+                   You can be a mentor or judge for the event as well.
+                    Sign up here if you're interested in becoming a mentor,
+                    and here if you're interested in becoming a judge.
+                    For current Mount Holyoke students, we're looking for on-site 
+                    volunteers who can help us with our in-person components. 
+                    Click here for more details. 
+                </h1>
+              </div>
+            )}    
         </div>
     </div>
   );

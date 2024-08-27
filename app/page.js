@@ -38,9 +38,9 @@ const HomePage = () => {
         <h1 className='heading'>Workshops </h1>
      </div>
 
-     <div className='container'>
-        <FAQ/>
-     </div>
+      <div>
+         <FAQ/>
+      </div>
 
      <div id= "sponsors" className='container'>
         <h1 className='heading'>Contact Us</h1>
