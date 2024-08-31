@@ -308,9 +308,7 @@ const FAQ = () => {
 
             {isOtherWayUnfolded && (
               <div className="answerLeft" style={{ top: "55%"}}>
-                <h1>HackHolyoke has many ways to participate!
-                   You can sign up <a href="https://forms.gle/JmHVH7szqqLJJXgd8" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>here</a> 
-                    if you are interested in being a mentor for the event.
+                <h1>
                     For current Mount Holyoke students, we're looking for on-site 
                     volunteers who can help us with our in-person components. 
                     Click here for more details. 
