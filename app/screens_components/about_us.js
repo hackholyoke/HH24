@@ -5,10 +5,10 @@ import '/styles/screenStyles/about_us.css';
 const AboutUS = () => {
   return (
     <>
-     <div className="headerContainer">
-        <p> What </p> 
-        <p> is </p> 
-        <p> HackHolyoke ? </p> 
+     <div className="headerContainer" >
+        <p > What  Is  </p> 
+        <p> Hack</p> 
+        <p> Holyoke ? </p> 
       </div>
 
       <div className="textContainer">

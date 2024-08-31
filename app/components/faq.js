@@ -3,30 +3,28 @@
 import React, { useState } from 'react';
 import '/styles/faq.css';
 import Image from 'next/image';
-import What_is_HH_fold from '../assets/FAQ/What_is_HH_fold.png';
-import What_is_HH_unfold from '../assets/FAQ/What_is_HH_unfold.png';
-import Where_fold from '../assets/FAQ/Where_fold.png';
-import Where_unfold from '../assets/FAQ/Where_unfold.png';
-import Who_fold from '../assets/FAQ/Who_fold.png';
-import Who_unfold from '../assets/FAQ/Who_unfold.png';
-import Team_unfold from '../assets/FAQ/Team_unfold.png';
-import Team_fold from '../assets/FAQ/Team_fold.png';
-import Participate_unfold from '../assets/FAQ/Participate_unfold.png';
-import Participate_fold from '../assets/FAQ/Participate_fold.png';
-import Free_unfold from '../assets/FAQ/Free_unfold.png';
-import Free_fold from '../assets/FAQ/Free_fold.png';
-import Other_way_unfold from '../assets/FAQ/Other_way_unfold.png';
-import Other_way_fold from '../assets/FAQ/Other_way_fold.png';
-import Member_unfold from '../assets/FAQ/Member_unfold.png';
-import Member_fold from '../assets/FAQ/Member_fold.png';
-import Hackathon_unfold from '../assets/FAQ/Hackathon_unfold.png';
-import Hackathon_fold from '../assets/FAQ/Hackathon_fold.png';
-import FH_unfold from '../assets/FAQ/FH_unfold.png';
-import FH_fold from '../assets/FAQ/FH_fold.png';
-import Experience_unfold from '../assets/FAQ/Experience_unfold.png';
-import Experience_fold from '../assets/FAQ/Experience_fold.png';
-import FAQ_icon from '../assets/FAQ/FAQ_icon.png';
-
+import What_is_HH_fold from '../assets/What_is_HH_fold.png';
+import What_is_HH_unfold from '../assets/What_is_HH_unfold.png';
+import Where_fold from '../assets/Where_fold.png';
+import Where_unfold from '../assets/Where_unfold.png';
+import Who_fold from '../assets/Who_fold.png';
+import Who_unfold from '../assets/Who_unfold.png';
+import Team_unfold from '../assets/Team_unfold.png';
+import Team_fold from '../assets/Team_fold.png';
+import Participate_unfold from '../assets/Participate_unfold.png';
+import Participate_fold from '../assets/Participate_fold.png';
+import Free_unfold from '../assets/Free_unfold.png';
+import Free_fold from '../assets/Free_fold.png';
+import Other_way_unfold from '../assets/Other_way_unfold.png';
+import Other_way_fold from '../assets/Other_way_fold.png';
+import Member_unfold from '../assets/Member_unfold.png';
+import Member_fold from '../assets/Member_fold.png';
+import Hackathon_unfold from '../assets/Hackathon_unfold.png';
+import Hackathon_fold from '../assets/Hackathon_fold.png';
+import FH_unfold from '../assets/FH_unfold.png';
+import FH_fold from '../assets/FH_fold.png';
+import Experience_unfold from '../assets/Experience_unfold.png';
+import Experience_fold from '../assets/Experience_fold.png';
 
 
 const FAQ = () => {
@@ -281,7 +279,9 @@ const FAQ = () => {
             {isFHUnfolded && (
               <div className="answerRight" style={{ top: "48%"}}>
                   <h1>
-                  TBD
+                   Unfortunately, due to limited budget, HackHolyoke is unable to provide housing to participants.
+                   However, guest swipes will be provided for participants to get food at the Blanchard center
+                   ( Mount Holyoke's main dining center) 
                   </h1>
               </div>
             )}
@@ -309,9 +309,8 @@ const FAQ = () => {
             {isOtherWayUnfolded && (
               <div className="answerLeft" style={{ top: "55%"}}>
                 <h1>HackHolyoke has many ways to participate!
-                   You can be a mentor or judge for the event as well.
-                    Sign up here if you're interested in becoming a mentor,
-                    and here if you're interested in becoming a judge.
+                   You can sign up <a href="https://forms.gle/JmHVH7szqqLJJXgd8" target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>here</a> 
+                    if you are interested in being a mentor for the event.
                     For current Mount Holyoke students, we're looking for on-site 
                     volunteers who can help us with our in-person components. 
                     Click here for more details. 

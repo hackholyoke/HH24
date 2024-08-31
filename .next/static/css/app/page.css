@@ -31,10 +31,11 @@
   \************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
   font-family: 'Answer Font';
-  src: url(/_next/static/media/PixelifySans-Bold.02bf6b35.ttf) format('woff2');
+  src: url(/_next/static/media/Orbitron-ExtraBold.1a4e6779.ttf) format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+  
   
   .title {
     font-size: 3rem;
@@ -320,11 +321,11 @@ section {
   
   .headerContainer {
     flex: 1 1;
-    padding: 1rem;
+    padding-left: -8%;
     color: rgb(231, 238, 238);
     font-size: 60px;
     font-family: 'About Us Font';
-    text-align: center;
+    text-align: left;
   }
   
 
