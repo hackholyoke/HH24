@@ -17,11 +17,11 @@
   
   .headerContainer {
     flex: 1;
-    padding: 1rem;
+    padding-left: -8%;
     color: rgb(231, 238, 238);
     font-size: 60px;
     font-family: 'About Us Font';
-    text-align: center;
+    text-align: left;
   }
   
 
