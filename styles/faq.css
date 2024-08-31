@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Answer Font';
+  src: url('../public/fonts/PixelifySans-Bold.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+  .title {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: aqua;
+    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between the two images */
+    gap: 50px;
+    width: 100%;
+    padding-bottom: 0.5%;
+    position: relative;
+  }
+  
+  .questionLeft {
+    cursor: pointer;
+    transition: height 0.3s ease-in-out;
+    width: 50%;
+  }
+
+  .questionRight {
+    cursor: pointer;
+    transition: height 0.3s ease-in-out;
+    width: 50%;
+  }
+  
+  .answerRight {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translate( 15%, -50%);
+    color: white;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    width: 40%; /* Adjust width based on your preference */
+    padding: 10px;
+    line-height: 25px;
+    z-index: 5;
+    box-sizing: border-box; /* Include padding within the element's width */
+    word-wrap: break-word; /* Break long words if necessary */
+  }
+
+  .answerLeft {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translate( -115%, -50%);
+    color: white;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    width: 40%; /* Adjust width based on your preference */
+    padding: 10px;
+    line-height: 25px;
+    z-index: 5;
+    box-sizing: border-box; /* Include padding within the element's width */
+    word-wrap: break-word; /* Break long words if necessary */
+  }
+
