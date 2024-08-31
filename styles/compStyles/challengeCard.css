@@ -1,0 +1,41 @@
+
+.c-card-container {
+    
+    /* border-radius: 1.8rem; */
+    display: block;
+    height: var(--slide-height);
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.cardPic{
+    display: flex;
+    min-width: auto;
+    max-height: 500px;
+    width: auto;
+    touch-action: pan-y pinch-zoom;
+
+}
+.text-overlay {
+    position: absolute;
+    width: 65%; /* Make sure it takes the full width of the container */
+    bottom: 90%;
+    left: 17%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.8); /*Adjust opacity for better readability */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; Center content vertically */
+    text-align: center;
+    line-height: 1.5; /* Adjust line-height for readability */
+    /* padding: 0 6rem; Add padding to prevent text from touching edges */
+    box-sizing: border-box; /* Include padding in the element’s total width and height */
+}
+
+.challenge-description {
+    font-size: calc(0.5rem + 0.5vw); /* Responsive font size based on viewport width */
+}

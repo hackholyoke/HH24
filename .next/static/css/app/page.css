@@ -2,41 +2,314 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/buttons.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
 .homeButtons {
-    border-radius: 40px;
-    height: 40px;
-    /*min-width: 100px; /* Minimum width of 100px */
-    min-width: -moz-fit-content;
-    min-width: fit-content; /* Maximum width based on content */
-    width: auto; /* Allows the button to resize based on content and min-width */
-    padding: 10px 20px; /* Padding for the button */
-    background:#2c3c94;
-    color: #00fff7;
-    border-width: 0;
-    font-family: 'PixelifySans-Regular', serif;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); /* Outer shadow for 3D effect */
-    transition: transform 1s, box-shadow 1s; /* Smooth transition for the click effect */
-    line-height: 40px;
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 12rem;
+    height: auto;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.button-normal {
+    width: 100%;
+    height: 100%;
+}
+.button-hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.homeButtons:hover .button-normal {
+    display: none;
+  }
+  
+.homeButtons:hover .button-hover {
+    display: block;
+  }
+
+/* .homeButtons:active { */
+    /* transform: translateY(10px); Moves the button down to give a pressed effect */
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); Adjust shadow for pressed effect */
+  /* } */
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/speakerCard.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.card {
+    position: relative;  /* Makes the overlay relative to this container */
+    display: inline-block;  /* Shrinks the container to fit the content (image size) */
+}
+
+.card-pic {
+    display: block;  /* Ensure the image takes up the full width of its container */
+    height: 500px;
+    width: auto;
+    max-width: 100%;  /* Ensure it doesn't exceed the parent container's width */
+}
+
+.text-overlay {
+    position: absolute;  /* Position text on top of the image */
+    top: 0;  /* Aligns the overlay to the top of the card */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;        /* Text color */
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); /* Optional: Text shadow for better readability */
+    z-index: 1;          /* Ensure text is above the image */
+    font-family: 'Orbitron';
+    display: flex;       /* Center the content with Flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+.speakerName {
+    font-size: 25px;     /* Font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center;  /* Center-align the text */
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/embla.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.embla {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Hide any overflow inside the component */
+  box-sizing: border-box; /* Include padding and borders in the element's width and height */
+    --slide-height: 35rem;
+    --slide-spacing: -28rem;
+    --slide-size: 55%;
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+  }
+
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -0.9);
+    
+  }
+
+  .embla__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    /* margin-left: var(--slide-spacing); */
+    margin-right: var(--slide-spacing);
+    
+  }
+
+  .embla__controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    grid-gap: 1.2rem;
+    gap: 1.2rem;
+    margin-top: -4rem;
+  }
+  .embla__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.6rem;
+    gap: 0.6rem;
+    align-items: center;
+  }
+  .embla__button {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .embla__button:disabled {
+    color: var(--detail-high-contrast);
+  }
+  .embla__button__svg {
+    width: 100%;
+    height: 100%;
+  }
+  .embla__button__svg__hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .embla__button:hover .embla__button__svg {
+    display: none;
+  }
+  
+  .embla__button:hover .embla__button__svg__hover {
+    display: block;
+  }
+
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    /* margin-right: calc((4rem - 1.4rem) / 2 * -1); */
+    
+  }
+  .embla__dot {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border-color: aqua;
+    border: 1;
+    padding: 0;
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .embla__dot:after {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    color: aqua;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: '';
+  }
+  .embla__dot--selected:after {
+    box-shadow: inset 0 0 0 0.2rem var(--text-body);
+    color: aqua;
+  }
+  .embla__slide__number {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/compStyles/challengeCard.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+
+.c-card-container {
+    
+    /* border-radius: 1.8rem; */
+    display: block;
+    height: var(--slide-height);
+    width: 100%;
+    object-fit: cover;
 
 }
 
-.homeButtons:active {
-    transform: translateY(10px); /* Moves the button down to give a pressed effect */
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); /* Adjust shadow for pressed effect */
+.cardPic{
+    display: flex;
+    min-width: auto;
+    max-height: 500px;
+    width: auto;
+    touch-action: pan-y pinch-zoom;
+
+}
+.text-overlay {
+    position: absolute;
+    width: 65%; /* Make sure it takes the full width of the container */
+    bottom: 90%;
+    left: 17%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.8); /*Adjust opacity for better readability */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; Center content vertically */
+    text-align: center;
+    line-height: 1.5; /* Adjust line-height for readability */
+    /* padding: 0 6rem; Add padding to prevent text from touching edges */
+    box-sizing: border-box; /* Include padding in the element’s total width and height */
+}
+
+.challenge-description {
+    font-size: calc(0.5rem + 0.5vw); /* Responsive font size based on viewport width */
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/challengeScreen.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.challenge-heading{
+    font-family: 'Audiowide' ;
+    color:aliceblue;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    font-size: 60px;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/screenStyles/speakerScreen.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.embla {
+    overflow: hidden;
   }
+  .embla__container {
+    display: flex;
+    
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    color: aliceblue;
+  }
+  
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/pages.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
 .heading {
-  font-family: 'PixelifySans-Regular', serif; /*Will be changing the font depending on design*/
+  font-family: 'Audiowide'; /*Will be changing the font depending on design*/
   color:aliceblue
 }
 
 .container {
     height: 100vh; /* Adjust the height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow: hidden; /* Enable vertical scrolling */
     padding: 70px; /* Optional: Add some padding */
     display: flex;
     justify-content: center;
@@ -119,7 +392,7 @@ section {
 #home {
     display: flex;
     flex-direction: column; /* Arrange children vertically */
-    /*align-items: center; /* Center items horizontally */
+    align-items: center; /* Center items horizontally
     /*justify-content: center; /* Center items vertically if the container has height */
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center text inside the container */
@@ -129,9 +402,10 @@ section {
   #home .buttonLayout{
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Add space between buttons */
-    margin-top: 60%;
-    margin-right:10%;
+    gap: 1px; /* Add space between buttons */
+    top:30rem;
+    right: 19rem;
+    position: absolute;
   }
   
   #home .heading{
@@ -158,7 +432,7 @@ section {
     position: absolute;
     width: 1000px;
     height: 108px;
-    left: 410px;
+    left: 406px;
     top: 250px;
   
     font-family: 'Audiowide';
@@ -224,15 +498,18 @@ section {
     padding: 1rem;
     color: white;
     font-size: large;
-    font-family: 'PixelifySans-Regular', serif;
+    font-family: 'Montserrat'
+
   }
   
   .headerContainer {
     flex: 1 1;
     padding: 1rem;
-    color: rgb(15, 217, 228);
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    font-size: 40px;
+    font-family: 'Audiowide';
+    -webkit-text-stroke-width: 0.5px; /* Set the width of the text stroke */
+    -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
   }
   
 
