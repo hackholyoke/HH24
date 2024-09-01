@@ -36,13 +36,12 @@ const challengeCards = [
     <ChallengeCard 
     pic={health} 
     description={"Participants are challenged to develop projects that aim to improve overall health and wellness. Your solution can address physical health, mental well-being, lifestyle enhancements, or even innovative ways to encourage wellness through travel and tourism. The key is to create something that helps individuals lead healthier, happier, and more fulfilling lives."}
-    />,
-    // Add more ChallengeCard components...
+    />
   ];
 
 const ChallengeScreen =() =>{
     return(
-        <div>
+        <div >
             <h1 className="challenge-heading">Challenges</h1>
             <EmblaCarousel slides={challengeCards} options={{ loop: true }} />
         </div>

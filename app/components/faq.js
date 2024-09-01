@@ -94,7 +94,7 @@ const FAQ = () => {
         <div className="image-container">
             <Image 
             src={isHackathonUnfolded ? Hackathon_unfold : Hackathon_fold} 
-            width={400} 
+            width={370} 
             height={ isHackathonUnfolded ? 300 : 85} 
             onClick={handleHackathonImageClick} 
             alt="Hackathon" 
@@ -112,14 +112,14 @@ const FAQ = () => {
 
             {isHHUnfolded && (
             <div className="answerRight" style={{ top: "50%"}}>
-                <h1>HackHolyoke is a 24-hour hackathon hosted every year by students 
+                <p>HackHolyoke is a 24-hour hackathon hosted every year by students 
                   at Mount Holyoke College, one of the first historically women's colleges
                   in the US.
-                </h1>
-                <h1>
+                </p>
+                <p>
                   This year, HackHolyoke will be a fully in-person hackathon 
                   with tea breaks, information sessions, and workshops.
-                </h1>
+                </p>
             </div>
             )}
 

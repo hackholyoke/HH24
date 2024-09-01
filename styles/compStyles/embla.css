@@ -4,7 +4,7 @@
   overflow: hidden; /* Hide any overflow inside the component */
   box-sizing: border-box; /* Include padding and borders in the element's width and height */
     --slide-height: 35rem;
-    --slide-spacing: -28rem;
+    --slide-spacing: -30rem;
     --slide-size: 55%;
   }
 
@@ -13,7 +13,7 @@
   }
 
   .embla__container {
-    display: flex;
+    /* display: flex; */
     touch-action: pan-y pinch-zoom;
     margin-left: calc(var(--slide-spacing) * -0.9);
     
@@ -21,26 +21,40 @@
 
   .embla__slide {
     transform: translate3d(0, 0, 0);
-    flex: 0 0 var(--slide-size);
+    /* flex: 0 0 var(--slide-size); */
     min-width: 0;
     padding-left: var(--slide-spacing);
     /* margin-left: var(--slide-spacing); */
     margin-right: var(--slide-spacing);
+    position: relative; /* Ensure z-index works */
+    transition: z-index 0.3s, transform 0.3s; /* Smooth transition */
     
+  }
+
+  .embla__slide--center {
+    position: relative;
+    z-index: 10; /* Higher z-index for the center slide */
+  }
+  
+  .embla__slide--left,
+  .embla__slide--right {
+    z-index: 1; /* Lower z-index for slides on the sides */
   }
 
   .embla__controls {
     display: grid;
-    grid-template-columns: auto 1fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
+    /* justify-content: space-between; */
+    justify-items: center;
     gap: 1.2rem;
-    margin-top: -4rem;
+    margin-top: -6rem;
   }
   .embla__buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
     align-items: center;
+    justify-content: center;
   }
   .embla__button {
     -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
@@ -106,7 +120,7 @@
     cursor: pointer;
     border-color: aqua;
     border: 1;
-    padding: 0;
+    padding: 1px;
     margin: 0;
     width: 1rem;
     height: 1rem;

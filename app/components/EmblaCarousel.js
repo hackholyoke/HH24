@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import {
   NextButton,
@@ -17,11 +17,14 @@ const numberWithinRange = (number, min, max) =>
 const EmblaCarousel = (props) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [activeIndex, setActiveIndex] = useState(0)
   const tweenFactor = useRef(0)
   const tweenNodes = useRef([])
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
+  
+    
 
   const {
     prevBtnDisabled,
@@ -75,10 +78,12 @@ const EmblaCarousel = (props) => {
         const tweenNode = tweenNodes.current[slideIndex]
         tweenNode.style.transform = `scale(${scale})`
         //emblaApi.slideNodes()[slideIndex].style.transform = `scale(${scale})`
-        
+        // Adjust z-index based on the slide's position
+        const centerIndex = activeIndex;
+        tweenNode.style.zIndex = slideIndex === centerIndex ? '10' : '1'
       })
     })
-  }, [])
+  }, [activeIndex])
 
   useEffect(() => {
     if (!emblaApi) return
@@ -87,12 +92,17 @@ const EmblaCarousel = (props) => {
     setTweenFactor(emblaApi)
     tweenScale(emblaApi)
 
+    const handleSelect = () => {
+      setActiveIndex(emblaApi.selectedScrollSnap());
+    }
+
     emblaApi
       .on('reInit', setTweenNodes)
       .on('reInit', setTweenFactor)
       .on('reInit', tweenScale)
       .on('scroll', tweenScale)
       .on('slideFocus', tweenScale)
+      .on('select', handleSelect);
   }, [emblaApi, tweenScale])
 
   return (
@@ -100,7 +110,12 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
-            <div className="embla__slide" key={index}>
+            <div
+            className=
+            //'embla__slide--center'
+            {`embla__slide ${index === activeIndex ? 'embla__slide--center' : ''}`}
+            key={index}
+          >
               {/* <div className="embla__slide__number">{index + 1}</div> */}
               <div className="c-card-container">{slide}</div>
               
@@ -115,7 +130,7 @@ const EmblaCarousel = (props) => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className="embla__dots">
+        {/* <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
@@ -125,7 +140,7 @@ const EmblaCarousel = (props) => {
               )}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -6,6 +6,7 @@
     height: var(--slide-height);
     width: 100%;
     object-fit: cover;
+    transition: z-index 0.3s ease-in-out;
 
 }
 
@@ -34,6 +35,7 @@
     line-height: 1.5; /* Adjust line-height for readability */
     /* padding: 0 6rem; Add padding to prevent text from touching edges */
     box-sizing: border-box; /* Include padding in the element’s total width and height */
+    /* background-color: rgba(255, 255, 255, 0.131); */
 }
 
 .challenge-description {
