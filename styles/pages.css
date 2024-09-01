@@ -1,11 +1,11 @@
 .heading {
-  font-family: 'PixelifySans-Regular', serif; /*Will be changing the font depending on design*/
+  font-family: 'Audiowide'; /*Will be changing the font depending on design*/
   color:aliceblue
 }
 
 .container {
     height: 100vh; /* Adjust the height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow: hidden; /* Enable vertical scrolling */
     padding: 70px; /* Optional: Add some padding */
     display: flex;
     justify-content: center;
@@ -37,4 +37,3 @@ section {
     padding: 10px;
 }  */
 
-  

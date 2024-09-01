@@ -1,7 +1,7 @@
 #home {
     display: flex;
     flex-direction: column; /* Arrange children vertically */
-    /*align-items: center; /* Center items horizontally */
+    align-items: center; /* Center items horizontally
     /*justify-content: center; /* Center items vertically if the container has height */
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center text inside the container */
@@ -11,9 +11,10 @@
   #home .buttonLayout{
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Add space between buttons */
-    margin-top: 60%;
-    margin-right:10%;
+    gap: 1px; /* Add space between buttons */
+    top:30rem;
+    right: 19rem;
+    position: absolute;
   }
   
   #home .heading{
@@ -40,7 +41,7 @@
     position: absolute;
     width: 1000px;
     height: 108px;
-    left: 410px;
+    left: 406px;
     top: 250px;
   
     font-family: 'Audiowide';

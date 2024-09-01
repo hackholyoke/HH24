@@ -4,12 +4,22 @@ import React from "react";
 import { useState } from "react";
 import '/styles/compStyles/buttons.css'
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
+import register_a from '/app/assets/buttons/register_a.png'
+import register_b from '/app/assets/buttons/register_b.png'
+import meet_a from '/app/assets/buttons/meet_a.png'
+import meet_b from '/app/assets/buttons/meet_b.png'
+import learn_a from '/app/assets/buttons/learn_a.png'
+import learn_b from '/app/assets/buttons/learn_b.png'
+import join_a from '/app/assets/buttons/join_a.png'
+import join_b from '/app/assets/buttons/join_b.png'
 
-export const HomeButtons = ({onClick, children})=>{
+export const HomeButtons = ({onClick, normalImage, hoverImage})=>{
     return(
         <button onClick={onClick} className='homeButtons'>
-            {children}
+            <Image src={normalImage} className='button-normal' />
+            <Image src={hoverImage} className='button-hover' />
         </button>
     );
 };
@@ -22,10 +32,9 @@ export const RegisterButton = () =>{
             window.open('https://forms.gle/LiPSTWoEuJGuLpMz9', '_blank');
         }, 300)
     }
+
     return(
-        <HomeButtons onClick={handleRegisterPress}>
-            Register
-        </HomeButtons>
+        <HomeButtons onClick={handleRegisterPress} normalImage={register_b} hoverImage={register_a} />
     )
 }
 
@@ -39,9 +48,8 @@ export const TeamButton = () =>{
           }, 300);
     }
     return(
-        <HomeButtons onClick={handleTeamPress}>
-            Meet the Team
-        </HomeButtons>
+        <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a}/>
+          
     )
 }
 
@@ -61,9 +69,13 @@ export const LearnMoreButton = () =>{
           }, 300);
     }
     return(
-        <HomeButtons onClick={handleLearnPress}>
-            Learn More
-        </HomeButtons>
+        <HomeButtons onClick={handleLearnPress} normalImage={learn_b} hoverImage={learn_a}/>
+    )
+}
+
+export const JoinSlackButton = () =>{
+    return(
+        <HomeButtons normalImage={join_b} hoverImage={join_a}/>
     )
 }
 

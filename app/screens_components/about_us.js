@@ -5,10 +5,8 @@ import '/styles/screenStyles/about_us.css';
 const AboutUS = () => {
   return (
     <>
-     <div className="headerContainer" >
-        <p > What  Is  </p> 
-        <p> Hack</p> 
-        <p> Holyoke ? </p> 
+     <div className="headerContainer">
+      <h1>What is Hack Holyoke?</h1>
       </div>
 
       <div className="textContainer">
@@ -23,6 +21,7 @@ const AboutUS = () => {
             (HackHolyoke 2024 will take place on November 9-10th, 2024 fully in-person tea breaks, information sessions, 
             and workshops.)
         </p>
+
       </div>
      
     </>

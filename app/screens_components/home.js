@@ -2,7 +2,7 @@ import React from "react";
 import '/styles/screenStyles/homeScreen.css'
 import Image from 'next/image';
 import HH24_logo from '../assets/HH24_logo.png';
-import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton} from '../components/buttons/HomeButtons';
+import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton, JoinSlackButton} from '../components/buttons/HomeButtons';
 
 const HomeScreen = () =>{
     return(
@@ -16,7 +16,7 @@ const HomeScreen = () =>{
                 <RegisterButton/>
                 <TeamButton/>
                 <LearnMoreButton/>
-            
+                <JoinSlackButton/>
             </div>
        </div> 
 

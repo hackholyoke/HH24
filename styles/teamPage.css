@@ -1,6 +1,7 @@
 .heading {
-    font-family: 'PixelifySans-Regular', serif; /*Will be changing the font depending on design*/
-    color:aliceblue
+    font-family: 'Audiowide', serif; /*Will be changing the font depending on design*/
+    color:aliceblue;
+    margin-bottom: 20px; /* Adds space between the heading and the cards */
   }
   
 .container {
@@ -19,3 +20,13 @@
     padding: 10px; /* Optional: Add some padding inside each section */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
   }
+
+.memberCards{
+  height: 100%;
+  width: auto;
+}
+
+#co-chairs{
+
+  
+}

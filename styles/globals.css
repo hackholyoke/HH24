@@ -16,6 +16,11 @@
   
 }
 
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(/public/fonts/Montserrat-Regular.ttf);
+}
+
 body {
     /*background-image: linear-gradient(to left bottom, #9a72a3, #a990b7, #baadc9, #cfcad9, #e7e7e7);
     /* You can also use an image background */
