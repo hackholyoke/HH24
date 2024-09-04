@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import '/styles/compStyles/speakerCard.css'
-import speakerCardPic from '../assets/speakerCardPic.png'
+import './speakerCard.css'
+import speakerCardPic from '../../assets/speakerCardPic.png'
 
 export const SpeakerCard = ({speakerPic, speakerName, speakerDesc}) =>{
     return(

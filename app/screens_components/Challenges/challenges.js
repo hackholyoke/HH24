@@ -1,16 +1,16 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import ChallengeCarousel from "../components/ChallengeCarousel";
-import { ChallengeCard } from "../components/challengeCard";
+import ChallengeCarousel from "../../components/ChallengeCarousel/ChallengeCarousel.js";
+import { ChallengeCard } from "../../components/ChallengeCard/challengeCard.js";
 import useEmblaCarousel from 'embla-carousel-react'
-import edu from '../assets/challenges/edu.png'
-import data from '../assets/challenges/data.png'
-import envior from '../assets/challenges/envior.png'
-import finance from '../assets/challenges/finance.png'
-import game from '../assets/challenges/game.png'
-import health from '../assets/challenges/health.png'
-import '/styles/screenStyles/challengeScreen.css'
+import edu from '../../assets/challenges/edu.png'
+import data from '../../assets/challenges/data.png'
+import envior from '../../assets/challenges/envior.png'
+import finance from '../../assets/challenges/finance.png'
+import game from '../../assets/challenges/game.png'
+import health from '../../assets/challenges/health.png'
+import './challengeScreen.css'
 
 const challengeCards = [
     <ChallengeCard 

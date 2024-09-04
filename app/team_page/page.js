@@ -1,10 +1,10 @@
 'use client'
 import React from 'react';
-import '/styles/teamPage.css';
-import MenuBar from '../components/menuBar';
-import SideMenu from '../components/sideMenu';
-import LogisticsCarousel from '../components/LogisticsCarousel';
-import { MemberCards,CoChairCards } from '../components/memberCard';
+import '../../styles/teamPage.css';
+import MenuBar from '../components/Menu/menuBar';
+import SideMenu from '../components/SideMenu/sideMenu';
+import LogisticsCarousel from '../components/LogisticCarousel/LogisticsCarousel';
+import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
 import Image from 'next/image';
 import Member_Card_Back from '../assets/team/Member_Card_Back.png'
 

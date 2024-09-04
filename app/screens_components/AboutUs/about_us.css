@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'About Us Font';
-  src: url('../../public/fonts/PixelifySans-Bold.ttf') format('woff2');
+  src: url('../../../public/fonts/PixelifySans-Bold.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

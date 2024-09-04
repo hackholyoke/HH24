@@ -16,10 +16,8 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import coChair from '../assets/team/coChair.png'
-import Member_Card_Back from '../assets/team/Member_Card_Back.png'
-import zoey from '../assets/team_pics/zoey.png'
-import '/styles/compStyles/memberCard.css'
+import Member_Card_Back from '../../assets/team/Member_Card_Back.png'
+import './memberCard.css'
 
 export const MemberCards = ({frontCard, mbrPic, name, pronouns, year, major, answer}) =>{
     return(

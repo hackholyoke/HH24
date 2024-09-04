@@ -1,10 +1,10 @@
 import React from "react";
-import '/styles/screenStyles/statsPage.css'
+import './statsPage.css'
 import Image from 'next/image';
-import colleges_num from '../assets/stats/colleges_num.png';
-import majors_num from '../assets/stats/majors_num.png';
-import participants from '../assets/stats/particpants.png';
-import years_num from '../assets/stats/years_num.png';
+import colleges_num from '../../assets/stats/colleges_num.png';
+import majors_num from '../../assets/stats/majors_num.png';
+import participants from '../../assets/stats/particpants.png';
+import years_num from '../../assets/stats/years_num.png';
 
 const StatsScreen =() =>{
     return(

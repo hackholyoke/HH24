@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import '/styles/compStyles/menuBar.css';
+import './menuBar.css';
 import { useRouter } from "next/navigation";
 
 const MenuBar = () => {

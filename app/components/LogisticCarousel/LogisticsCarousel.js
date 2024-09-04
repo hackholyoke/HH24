@@ -1,14 +1,14 @@
 'use client'
 
 import React from "react"
-import {DotButton, useDotButton} from './buttons/logisticDotButton'
+import {DotButton, useDotButton} from './logisticDotButton'
 import {
     PrevButton,
     NextButton,
     usePrevNextButtons
-} from './buttons/logisticButtons'
+} from './logisticButtons'
 import useEmblaCarousel from 'embla-carousel-react'
-import '/styles/compStyles/log_carousel.css'
+import './log_carousel.css'
 
 const LogisticsCarousel = (props) => {
     const {slides, options} = props

@@ -1,5 +1,5 @@
 import React from 'react';
-import '/styles/screenStyles/about_us.css';
+import './about_us.css';
 
 
 const AboutUS = () => {

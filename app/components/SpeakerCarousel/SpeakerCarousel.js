@@ -1,12 +1,12 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Fade from 'embla-carousel-fade'
-import '/styles/compStyles/speakerCarousel.css'
+import './speakerCarousel.css'
 import {
   NextButton,
   //PrevButton,
   usePrevNextButtons
-} from './buttons/speakerButtons'
+} from './speakerButtons'
 //import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
 const SpeakerCarousel = (props) => {

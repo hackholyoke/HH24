@@ -1,10 +1,10 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import SpeakerCarousel from "../components/SpeakerCarousel";
-import { SpeakerCard } from "../components/speakerCard";
-import speakerCardPic from '../assets/speakerCardPic.png'
-import '/styles/screenStyles/speakerScreen.css'
+import SpeakerCarousel from "../../components/SpeakerCarousel/SpeakerCarousel";
+import { SpeakerCard } from "../../components/SpeakerCard/speakerCard";
+import speakerCardPic from '../../assets/speakerCardPic.png'
+import './speakerScreen.css'
 
 const speakerCards=[
 

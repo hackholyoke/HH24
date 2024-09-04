@@ -4,10 +4,10 @@ import {
   NextButton,
   PrevButton,
   usePrevNextButtons
-} from './buttons/challengeButtons'
-import { DotButton, useDotButton } from './buttons/challengeDotButton'
-import '/styles/compStyles/challengeCarousel.css'
-import '/styles/compStyles/challengeCard.css'
+} from './challengeButtons'
+import { DotButton, useDotButton } from './challengeDotButton'
+import './challengeCarousel.css'
+import '../ChallengeCard/challengeCard.css'
 
 const TWEEN_FACTOR_BASE = 0.2
 
