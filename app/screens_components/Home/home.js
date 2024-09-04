@@ -1,8 +1,8 @@
 import React from "react";
-import '/styles/screenStyles/homeScreen.css'
+import './homeScreen.css'
 import Image from 'next/image';
-import HH24_logo from '../assets/HH24_logo.png';
-import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton, JoinSlackButton} from '../components/buttons/HomeButtons';
+import HH24_logo from '../../assets/HH24_logo.png';
+import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton, JoinSlackButton} from '../../components/buttons/HomeButtons';
 
 const HomeScreen = () =>{
     return(

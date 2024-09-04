@@ -2,18 +2,18 @@
 
 import React from "react";
 import { useState } from "react";
-import '/styles/compStyles/buttons.css'
+import './buttons.css'
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import register_a from '/app/assets/buttons/register_a.png'
-import register_b from '/app/assets/buttons/register_b.png'
-import meet_a from '/app/assets/buttons/meet_a.png'
-import meet_b from '/app/assets/buttons/meet_b.png'
-import learn_a from '/app/assets/buttons/learn_a.png'
-import learn_b from '/app/assets/buttons/learn_b.png'
-import join_a from '/app/assets/buttons/join_a.png'
-import join_b from '/app/assets/buttons/join_b.png'
+import register_a from '../../assets/buttons/register_a.png'
+import register_b from '../../assets/buttons/register_b.png'
+import meet_a from '../../assets/buttons/meet_a.png'
+import meet_b from '../../assets/buttons/meet_b.png'
+import learn_a from '../../assets/buttons/learn_a.png'
+import learn_b from '../../assets/buttons/learn_b.png'
+import join_a from '../../assets/buttons/join_a.png'
+import join_b from '../../assets/buttons/join_b.png'
 
 export const HomeButtons = ({onClick, normalImage, hoverImage})=>{
     return(

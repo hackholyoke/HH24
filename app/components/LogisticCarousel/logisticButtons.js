@@ -1,9 +1,9 @@
 import React, {useCallback, useEffect, useState } from 'react'
 
-import la_a from '/app/assets/buttons/la_a.png'
-import la_b from '/app/assets/buttons/la_b.png'
-import ra_b from '/app/assets/buttons/ra_b.png'
-import ra_a from '/app/assets/buttons/ra_a.png'
+import la_a from '../../assets/buttons/la_a.png'
+import la_b from '../../assets/buttons/la_b.png'
+import ra_b from '../../assets/buttons/ra_b.png'
+import ra_a from '../../assets/buttons/ra_a.png'
 
 import Image from 'next/image'
 

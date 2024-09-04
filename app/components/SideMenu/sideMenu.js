@@ -1,21 +1,21 @@
 'use client'
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import '/styles/compStyles/sideMenu.css';
-import ca from '../assets/sidemenu/ca.png';
-import cb from '../assets/sidemenu/cb.png';
-import da from '../assets/sidemenu/da.png';
-import db from '../assets/sidemenu/db.png';
-import fa from '../assets/sidemenu/fa.png';
-import fb from '../assets/sidemenu/fb.png';
-import la from '../assets/sidemenu/la.png';
-import lb from '../assets/sidemenu/lb.png';
-import ma from '../assets/sidemenu/ma.png';
-import mb from '../assets/sidemenu/mb.png';
-import sa from '../assets/sidemenu/sa.png'; 
-import sb from '../assets/sidemenu/sb.png';
-import wa from '../assets/sidemenu/wa.png';
-import wb from '../assets/sidemenu/wb.png';
+import './sideMenu.css';
+import ca from '../../assets/sidemenu/ca.png';
+import cb from '../../assets/sidemenu/cb.png';
+import da from '../../assets/sidemenu/da.png';
+import db from '../../assets/sidemenu/db.png';
+import fa from '../../assets/sidemenu/fa.png';
+import fb from '../../assets/sidemenu/fb.png';
+import la from '../../assets/sidemenu/la.png';
+import lb from '../../assets/sidemenu/lb.png';
+import ma from '../../assets/sidemenu/ma.png';
+import mb from '../../assets/sidemenu/mb.png';
+import sa from '../../assets/sidemenu/sa.png'; 
+import sb from '../../assets/sidemenu/sb.png';
+import wa from '../../assets/sidemenu/wa.png';
+import wb from '../../assets/sidemenu/wb.png';
 
 const SideMenu = () => {
     

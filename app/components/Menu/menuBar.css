@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Menu Bar Font';
-  src: url('../../public/fonts/Orbitron-Bold.ttf') format('woff2');
+  src: url('../../../public/fonts/Orbitron-Bold.ttf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
