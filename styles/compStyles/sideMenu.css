@@ -1,6 +1,6 @@
 .sideMenu{
     position: fixed;
-    top: 25%; 
+    top: 22%; 
     left: 5px;
     width: 50px;
     padding-top: 20px;
@@ -10,5 +10,11 @@
     /*padding: 3%;*/
     color: aliceblue;
     text-decoration: none; 
-    font-family: 'PixelifySans-Regular', serif;
+    font-family: 'Orbitron';
+}
+
+.choice, .choice-active {
+    height: 2.3rem;
+    width: auto;
+    display: block;
 }

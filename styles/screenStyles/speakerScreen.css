@@ -1,13 +1,10 @@
-.embla {
-    overflow: hidden;
-  }
-  .embla__container {
+.speaker-heading{
+    font-family: 'Audiowide' ;
+    color:aliceblue;
     display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    font-size: 60px;
     
-  }
-  .embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-    color: aliceblue;
-  }
+}
   

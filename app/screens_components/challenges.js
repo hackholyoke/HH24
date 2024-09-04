@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import EmblaCarousel from "../components/EmblaCarousel";
+import ChallengeCarousel from "../components/ChallengeCarousel";
 import { ChallengeCard } from "../components/challengeCard";
 import useEmblaCarousel from 'embla-carousel-react'
 import edu from '../assets/challenges/edu.png'
@@ -43,7 +43,7 @@ const ChallengeScreen =() =>{
     return(
         <div >
             <h1 className="challenge-heading">Challenges</h1>
-            <EmblaCarousel slides={challengeCards} options={{ loop: true }} />
+            <ChallengeCarousel slides={challengeCards} options={{ loop: true }} />
         </div>
     
     );
