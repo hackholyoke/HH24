@@ -15,7 +15,7 @@
     text-align: center;
     z-index: 10;
     border: 3px solid white; /* Create a white border */
-    padding: 30px 0; /* Adjust padding for more height */
+    padding: 15px 0; /* Adjust padding for more height */
     border-radius: 40px; /* Rounded corners */
     backdrop-filter: blur(50px);
   }

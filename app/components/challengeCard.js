@@ -9,7 +9,7 @@ export const ChallengeCard =({pic, description}) =>{
     <div className="c-card-container">
         <div className="card">
         <Image src={pic} className="cardPic"/>
-        <div className="text-overlay">
+        <div className="text-overlay-challenge">
             <p className ="challenge-description">
                 {description}
             </p>
