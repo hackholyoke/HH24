@@ -70,11 +70,9 @@ const TeamPage = () => {
       ];
     return(
         <div>
-            {/* <div> 
+            <div> 
                 <MenuBar/>
-            </div> */}
-
-<MenuBar/>
+            </div>
 
             <div>
                 <SideMenu/>
