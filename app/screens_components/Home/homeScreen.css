@@ -27,6 +27,11 @@
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center text inside the container */
     padding: 10px; /* Add padding around the container */
+    background-image: url('../../assets/background/Bg_lines.png'), url('../../assets/background/Bg_lines.png');
+    background-size: 40% , 60%;
+    background-repeat: no-repeat , no-repeat;
+    background-position: left center , 740px 180px;
+
   }
   
   #home .buttonLayout{
