@@ -5,9 +5,15 @@ import { useRouter } from "next/navigation";
 
 const MenuBar = () => {
   const router = useRouter();
-  
+
   const handleClick = (hash) => {
     router.push(hash);
+  }
+
+  const handleRegisterClick = () => {
+    setTimeout(() => {
+      window.open('https://forms.gle/LiPSTWoEuJGuLpMz9', '_blank');
+  }, 300)
   }
 
   return (
@@ -21,7 +27,7 @@ const MenuBar = () => {
         <a onClick={() => handleClick('/#sponsors')} href='#sponsors' className='item'>Sponsors</a>
         <a onClick={() => handleClick('/#faq')} href='#faq' className='item'>FAQ</a>
         <a onClick={() => handleClick('/team_page')}  className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
-        <a onClick={() => handleClick('/#register')} href='#register' className='item'>Register</a>
+        <a onClick={() => handleRegisterClick()} className='item'>Register</a>
 
       </div>
    
