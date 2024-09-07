@@ -112,14 +112,14 @@ const FAQ = () => {
 
             {isHHUnfolded && (
             <div className="answerRight" style={{ top: "50%"}}>
-                <p>HackHolyoke is a 24-hour hackathon hosted every year by students 
+                <h1>HackHolyoke is a 24-hour hackathon hosted every year by students 
                   at Mount Holyoke College, one of the first historically women's colleges
                   in the US.
-                </p>
-                <p>
+                </h1>
+                <h1>
                   This year, HackHolyoke will be a fully in-person hackathon 
                   with tea breaks, information sessions, and workshops.
-                </p>
+                </h1>
             </div>
             )}
 
@@ -307,7 +307,7 @@ const FAQ = () => {
             /> 
 
             {isOtherWayUnfolded && (
-              <div className="answerLeft" style={{ top: "55%"}}>
+              <div className="answerLeft" style={{ top: "40%"}}>
                 <h1>
                     For current Mount Holyoke students, we're looking for on-site 
                     volunteers who can help us with our in-person components. 

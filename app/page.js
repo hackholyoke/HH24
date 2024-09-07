@@ -16,38 +16,40 @@ const HomePage = () => {
          <MenuBar/>
       </div>
       
-     <div className='container' id='home'>
-         <HomeScreen/>
-     </div>
+      <div className='background'>
+         <div className='container' id='home'>
+               <HomeScreen/>
+         </div>
 
-     <div className='container' id='stats'>
-            <StatsScreen/> 
-     </div>
+         <div className='container' id='stats'>
+                  <StatsScreen/> 
+         </div>
 
-     <div className='container' id='about'>
-        <AboutUS/>
-     </div>
+         <div className='container' id='about'>
+            <AboutUS/>
+         </div>
 
-     <div id = "challenges" className='container'>
-        {/* <h1 className='heading'>Challenges </h1> */}
-        <ChallengeScreen/>
-     </div>
+         <div id = "challenges" className='container'>
+            {/* <h1 className='heading'>Challenges </h1> */}
+            <ChallengeScreen/>
+         </div>
 
-     <div id = "speakers" className='container'>
-        {/* <h1 className='heading'>Speakers</h1> */}
-        <SpeakerScreen/>
-     </div>
+         <div id = "speakers" className='container'>
+            {/* <h1 className='heading'>Speakers</h1> */}
+            <SpeakerScreen/>
+         </div>
 
-     <div id = "schedule" className='container'>
-        <h1 className='heading'>Schedule </h1>
-     </div>
+         <div id = "schedule" className='container'>
+            <h1 className='heading'>Schedule </h1>
+         </div>
 
-      <div id = "faq">
-         <FAQ/>
-      </div>
+            <div id = "faq">
+               <FAQ/>
+            </div>
 
-     <div id= "sponsors" className='container'>
-        <h1 className='heading'>Contact Us</h1>
+         <div id= "sponsors" className='container'>
+            <h1 className='heading'>Contact Us</h1>
+         </div>
      </div>
 
 
