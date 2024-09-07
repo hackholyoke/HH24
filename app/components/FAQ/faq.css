@@ -69,3 +69,28 @@
     box-sizing: border-box; /* Include padding within the element's width */
     word-wrap: break-word; /* Break long words if necessary */
   }
+
+
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      gap: 0px;
+    }
+    .questionLeft, .questionRight {
+      width: 105%; 
+      position: relative;
+    }
+
+    .answerLeft, .answerRight{
+      width: 80%; 
+      padding: 10px; 
+      position: absolute; 
+    }
+  }
+
+  /* Large screens */
+  @media (min-width: 769px) {
+    .questionLeft, .questionRight {
+      width: 48%; 
+    }
+  }
