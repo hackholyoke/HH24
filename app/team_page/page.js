@@ -93,7 +93,7 @@ const TeamPage = () => {
                 name={"Yerim Oh"}
                 pronouns={"she/her"} year ={"2025"}
                 major ={"Statistics"}
-                answer={"As a co-chair for HackHolyoke, I am thrilled about this incredible opportunity we have to create something special together. Working alongside a talented team, we have put in a lot of effort to ensure this hackathon is both memorable and impactful for everyone involved. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
+                answer={"As a co-chair for HackHolyoke, I’m thrilled about this incredible opportunity we have to create something special together. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
                 />
                
             </div>

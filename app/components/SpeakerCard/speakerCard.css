@@ -5,9 +5,9 @@
 
 .card-pic {
     display: block;  /* Ensure the image takes up the full width of its container */
-    height: 500px;
+    height: 700px;
     width: auto;
-    max-width: 100%;  /* Ensure it doesn't exceed the parent container's width */
+    /* max-width: 100%;  Ensure it doesn't exceed the parent container's width */
 }
 
 .text-overlay-speaker{
