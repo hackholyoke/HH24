@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Audiowide';
+  src: url(../../../public/fonts/Audiowide-Regular.ttf) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pixelify';
+  src: url(../../../public/fonts/PixelifySans-Medium.ttf) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../../../public/fonts/Orbitron-Regular.ttf) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #home {
     display: flex;
     flex-direction: column; /* Arrange children vertically */
@@ -6,6 +27,11 @@
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center text inside the container */
     padding: 10px; /* Add padding around the container */
+    background-image: url('../../assets/background/Bg_lines.png'), url('../../assets/background/Bg_lines.png');
+    background-size: 40% , 60%;
+    background-repeat: no-repeat , no-repeat;
+    background-position: left center , 740px 180px;
+
   }
   
   #home .buttonLayout{
@@ -27,8 +53,6 @@
     top: 250px;
   
     font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: 400;
     font-size: 85px;
     line-height: 119px;
   
@@ -65,14 +89,9 @@
     top: 240px;
   
     font-family: 'Orbitron';
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-  
     color: #FFFFFF;
-  
-  
   }
   
   #home .desc{
@@ -84,12 +103,9 @@
     left: 335px;
     top: 350px;
     padding-top: 50px;
-    font-family: 'Pixelify Sans';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Pixelify';
     font-size: 25px;
     line-height: 30px;
-  
     color: #9CFFFC;
   
   }

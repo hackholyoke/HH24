@@ -70,7 +70,6 @@ const TeamPage = () => {
       ];
     return(
         <div>
-
             <div> 
                 <MenuBar/>
             </div>

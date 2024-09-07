@@ -25,7 +25,7 @@
     padding-left: 1%;
     text-decoration: none;  /* Removes the auto-underline fron the hyperlink */
     color:rgb(232, 237, 237);
-    font-family: 'Menu Bar Font';
+    font-family: 'Menu Bar Font' !important;
     font-size: 20;
     letter-spacing: 2.3px;
     line-height: 20px;
