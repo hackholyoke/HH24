@@ -12,11 +12,12 @@ import FAQ from './components/FAQ/faq.js';
 const HomePage = () => {
   return (
     <div>
-      <div> 
-         <MenuBar/>
-      </div>
-      
-      <div className='background'>
+      <div className='bg-assets'>
+
+         <div> 
+            <MenuBar/>
+         </div>
+            
          <div className='container' id='home'>
                <HomeScreen/>
          </div>
@@ -43,16 +44,14 @@ const HomePage = () => {
             <h1 className='heading'>Schedule </h1>
          </div>
 
-            <div id = "faq">
-               <FAQ/>
-            </div>
+         <div id = "faq">
+            <FAQ/>
+         </div>
 
          <div id= "sponsors" className='container'>
             <h1 className='heading'>Contact Us</h1>
          </div>
-     </div>
-
-
+      </div>
     </div>
   );
 };

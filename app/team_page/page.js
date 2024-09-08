@@ -21,6 +21,7 @@ import graceS from '../assets/team_pics/graceS_log.png'
 
 import sponsor from '../assets/team/sponsor.png'
 import nha from '../assets/team_pics/nha_spn.png'
+import hana from '../assets/team_pics/hana_spn.png'
 
 import design from '../assets/team/design.png'
 import linxi from '../assets/team_pics/linxi_design.png'
@@ -92,7 +93,7 @@ const TeamPage = () => {
                 name={"Yerim Oh"}
                 pronouns={"she/her"} year ={"2025"}
                 major ={"Statistics"}
-                answer={"As a co-chair for HackHolyoke, I am thrilled about this incredible opportunity we have to create something special together. Working alongside a talented team, we have put in a lot of effort to ensure this hackathon is both memorable and impactful for everyone involved. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
+                answer={"As a co-chair for HackHolyoke, I’m thrilled about this incredible opportunity we have to create something special together. I hope this event serves as a fantastic platform for you to connect with like-minded individuals who share your interests and passion. Looking forward to an amazing experience with all of you!"}
                 />
                
             </div>
@@ -109,6 +110,13 @@ const TeamPage = () => {
                 pronouns={"she/her"} year ={"2027"}
                 major={"Computer Science & Economics"}
                 answer={"Seeing all the innovative products that hackers put out!"}
+                />
+
+                <MemberCards frontCard={sponsor} mbrPic={hana}
+                name={"Hana Cho"}
+                pronouns={"she/her"} year ={"2027"}
+                major={"Economics"}
+                answer={"The people coming! "}
                 />
             </div>
 

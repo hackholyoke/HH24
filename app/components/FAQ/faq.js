@@ -103,7 +103,7 @@ const FAQ = () => {
 
             <Image 
             src={isHHUnfolded ? What_is_HH_unfold : What_is_HH_fold} 
-            width={650} 
+            // width={650} 
             height={isHHUnfolded ?  300 : 85 } 
             onClick={handleHHImageClick} 
             alt="What is HH" 
@@ -139,7 +139,7 @@ const FAQ = () => {
         <div className="image-container">
             <Image 
             src={isWhereUnfolded ? Where_unfold : Where_fold} 
-            width={650} 
+            // width={650} 
             height={ isWhereUnfolded ? 300 : 85} 
             onClick={handleWhereImageClick} 
             alt="Where" 
@@ -147,7 +147,7 @@ const FAQ = () => {
             />
             <Image 
             src={isWhoUnfolded ? Who_unfold : Who_fold} 
-            width={400} 
+            // width={400} 
             height={ isWhoUnfolded ? 300 : 85} 
             onClick={handleWhoImageClick} 
             alt="Who" 
@@ -179,7 +179,7 @@ const FAQ = () => {
         <div className="image-container">
             <Image 
             src={isParticipateUnfolded ? Participate_unfold : Participate_fold} 
-            width={650} 
+            // width={650} 
             height={ isParticipateUnfolded ? 300 : 85} 
             onClick={handleParticipateImageClick} 
             alt="Participate" 
@@ -187,7 +187,7 @@ const FAQ = () => {
             />
             <Image 
             src={isTeamUnfolded ? Team_unfold : Team_fold} 
-            width={650} 
+            // width={650} 
             height={ isTeamUnfolded ? 300 : 85} 
             onClick={handleTeamImageClick} 
             alt="Team" 
@@ -222,7 +222,7 @@ const FAQ = () => {
         <div className="image-container">
             <Image 
             src={isMemberUnfolded ? Member_unfold : Member_fold} 
-            width={600} 
+            // width={600} 
             height={ isMemberUnfolded ? 300 : 85} 
             onClick={handleMemberImageClick} 
             alt="Member" 
@@ -231,7 +231,7 @@ const FAQ = () => {
 
             <Image 
             src={isExperienceUnfolded ? Experience_unfold : Experience_fold} 
-            width={600} 
+            // width={600} 
             height={ isExperienceUnfolded ? 300 : 85} 
             onClick={handleExperienceImageClick} 
             alt="Required Experience" 
@@ -260,7 +260,7 @@ const FAQ = () => {
         <div className="image-container">
              <Image 
             src={isFreeUnfolded ? Free_unfold : Free_fold} 
-            width={550} 
+            // width={550} 
             height={ isFreeUnfolded ? 300 : 85} 
             onClick={handleFreeImageClick} 
             alt="Free" 
@@ -269,7 +269,7 @@ const FAQ = () => {
 
             <Image 
             src={isFHUnfolded ? FH_unfold : FH_fold} 
-            width={550} 
+            // width={550} 
             height={ isFHUnfolded ? 300 : 85} 
             onClick={handleFHImageClick} 
             alt="Food and Housing" 
@@ -299,7 +299,7 @@ const FAQ = () => {
         <div className="image-container">
             <Image 
             src={isOtherWayUnfolded ? Other_way_unfold : Other_way_fold} 
-            width={300} 
+            // width={300} 
             height={ isOtherWayUnfolded ? 350 : 85} 
             onClick={handleOtherWayImageClick} 
             alt="Other ways to contribute" 

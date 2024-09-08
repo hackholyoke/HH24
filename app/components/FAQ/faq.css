@@ -41,7 +41,8 @@
   .answerRight {
     position: absolute;
     left: 50%; /* Center horizontally */
-    transform: translate( 20%, -50%);
+    transform: translate( 18%, -50%);
+    transition: height 0.3s ease-in-out;
     color: white;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif ;

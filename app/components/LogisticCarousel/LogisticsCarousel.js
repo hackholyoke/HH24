@@ -8,7 +8,7 @@ import {
     usePrevNextButtons
 } from './logisticButtons'
 import useEmblaCarousel from 'embla-carousel-react'
-import './log_carousel.css'
+import './logCarousel.css'
 
 const LogisticsCarousel = (props) => {
     const {slides, options} = props
