@@ -1,5 +1,6 @@
-.card {
+.speaker-card {
     position: relative;  /* Makes the overlay relative to this container */
+    left: 15%;
     display: inline-block;  /* Shrinks the container to fit the content (image size) */
 }
 
@@ -13,7 +14,7 @@
 .text-overlay-speaker{
     position: absolute;  /* Position text on top of the image */
     top: 0;  /* Aligns the overlay to the top of the card */
-    left: 50px;
+    left: 150px;
     width: 100%;
     height: 100%;
     color: white;        /* Text color */

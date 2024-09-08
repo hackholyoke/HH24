@@ -21,6 +21,7 @@ import graceS from '../assets/team_pics/graceS_log.png'
 
 import sponsor from '../assets/team/sponsor.png'
 import nha from '../assets/team_pics/nha_spn.png'
+import hana from '../assets/team_pics/hana_spn.png'
 
 import design from '../assets/team/design.png'
 import linxi from '../assets/team_pics/linxi_design.png'
@@ -109,6 +110,13 @@ const TeamPage = () => {
                 pronouns={"she/her"} year ={"2027"}
                 major={"Computer Science & Economics"}
                 answer={"Seeing all the innovative products that hackers put out!"}
+                />
+
+                <MemberCards frontCard={sponsor} mbrPic={hana}
+                name={"Hana Cho"}
+                pronouns={"she/her"} year ={"2027"}
+                major={"Economics"}
+                answer={"The people coming! "}
                 />
             </div>
 

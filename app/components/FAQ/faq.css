@@ -25,13 +25,13 @@
   
   .questionLeft {
     cursor: pointer;
-    /* transition: height 0.3s ease-in-out; */
+    transition: height 0.3s ease-in-out;
     width: 50%;
   }
 
   .questionRight {
     cursor: pointer;
-    /* transition: height 0.3s ease-in-out; */
+    transition: height 0.3s ease-in-out;
     width: 50%;
   }
   
@@ -39,7 +39,7 @@
   .answerRight {
     position: absolute;
     left: 50%; /* Center horizontally */
-    /* transform: translate( 18%, -50%); */
+    transform: translate( 18%, -50%);
     transition: height 0.3s ease-in-out;
     color: white;
     font-size: 10px;
@@ -56,7 +56,7 @@
   .answerLeft {
     position: absolute;
     left: 50%; /* Center horizontally */
-    /* transform: translate( -105%, -50%); */
+    transform: translate( -105%, -50%);
     color: white;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
