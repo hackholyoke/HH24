@@ -17,8 +17,8 @@
     display: flex;
     justify-content: space-between; /* Adds space between the two images */
     gap: 50px;
-    width: 90%;
-    padding-left: 4.5%;
+    width: 85%;
+    padding-left: 7%;
     padding-bottom: 0.5%;
     position: relative;
   }
@@ -27,12 +27,14 @@
     cursor: pointer;
     transition: height 0.3s ease-in-out;
     width: 50%;
+    overflow: hidden;
   }
 
   .questionRight {
     cursor: pointer;
     transition: height 0.3s ease-in-out;
     width: 50%;
+    overflow: hidden;
   }
   
   
@@ -43,10 +45,10 @@
     transition: height 0.3s ease-in-out;
     color: white;
     font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif ;
     text-align: justify;
-    width: 40%; /* Adjust width based on your preference */
-    padding: 10px;
+    width: 39%; /* Adjust width based on your preference */
+    padding: 15px;
     line-height: 25px;
     z-index: 5;
     box-sizing: border-box; /* Include padding within the element's width */
@@ -56,7 +58,7 @@
   .answerLeft {
     position: absolute;
     left: 50%; /* Center horizontally */
-    transform: translate( -105%, -50%);
+    transform: translate( -101%, -50%);
     color: white;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -67,4 +69,29 @@
     z-index: 5;
     box-sizing: border-box; /* Include padding within the element's width */
     word-wrap: break-word; /* Break long words if necessary */
+  }
+
+
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      gap: 0px;
+    }
+    .questionLeft, .questionRight {
+      width: 105%; 
+      position: relative;
+    }
+
+    .answerLeft, .answerRight{
+      width: 80%; 
+      padding: 10px; 
+      position: absolute; 
+    }
+  }
+
+  /* Large screens */
+  @media (min-width: 769px) {
+    .questionLeft, .questionRight {
+      width: 48%; 
+    }
   }

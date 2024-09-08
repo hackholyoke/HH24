@@ -27,7 +27,6 @@
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center text inside the container */
     padding: 10px; /* Add padding around the container */
-
   }
   
   #home .buttonLayout{

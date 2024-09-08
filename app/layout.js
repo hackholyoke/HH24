@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href={metadata.icons.icon[0].url} sizes={metadata.icons.icon[0].sizes} type={metadata.icons.icon[0].type} />
       </Head>
-      <body style={{ backgroundColor: '#FFB6C1' }}>{children}</body>
+      <title>HackHolyoke 2024</title>
+      <body style={{backgroundImage: 'linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black)'
+}}>{children}</body>
       
     </html>
   );
