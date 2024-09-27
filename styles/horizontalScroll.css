@@ -1,0 +1,12 @@
+.Horizontalcontainer {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  Horizontalsection {
+    flex: 0 0 auto; /* Prevent sections from shrinking */
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the spacing between sections as needed */
+  }
+  

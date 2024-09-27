@@ -1,0 +1,34 @@
+.speaker-card {
+    position: relative;  /* Makes the overlay relative to this container */
+    left: 15%;
+    display: inline-block;  /* Shrinks the container to fit the content (image size) */
+}
+
+.card-pic {
+    display: block;  /* Ensure the image takes up the full width of its container */
+    height: 700px;
+    width: auto;
+    /* max-width: 100%;  Ensure it doesn't exceed the parent container's width */
+}
+
+.text-overlay-speaker{
+    position: absolute;  /* Position text on top of the image */
+    top: 0;  /* Aligns the overlay to the top of the card */
+    left: 150px;
+    width: 100%;
+    height: 100%;
+    color: white;        /* Text color */
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); /* Optional: Text shadow for better readability */
+    z-index: 1;          /* Ensure text is above the image */
+    font-family: 'Orbitron';
+    display: flex;       /* Center the content with Flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+.speakerName {
+    font-size: 25px;     /* Font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-bottom: 30%;
+
+}

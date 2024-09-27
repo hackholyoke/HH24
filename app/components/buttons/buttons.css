@@ -1,0 +1,47 @@
+.homeButtons {
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 12rem;
+    height: auto;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.button-normal {
+    width: 100%;
+    height: 100%;
+}
+.button-hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.homeButtons:hover .button-normal {
+    display: none;
+  }
+  
+.homeButtons:hover .button-hover {
+    display: block;
+  }
+
+/* .homeButtons:active { */
+    /* transform: translateY(10px); Moves the button down to give a pressed effect */
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); Adjust shadow for pressed effect */
+  /* } */

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Menu Bar Font';
+  src: url('../../../public/fonts/Orbitron-Bold.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+
+.menuBar {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
+    text-align: center;
+    z-index: 10;
+    border: 3px solid white; /* Create a white border */
+    padding: 15px 0; /* Adjust padding for more height */
+    border-radius: 40px; /* Rounded corners */
+    backdrop-filter: blur(50px);
+  }
+
+.item{
+    padding-right: 2%;
+    padding-left: 1%;
+    text-decoration: none;  /* Removes the auto-underline fron the hyperlink */
+    color:rgb(232, 237, 237);
+    font-family: 'Menu Bar Font' !important;
+    font-size: 20;
+    letter-spacing: 2.3px;
+    line-height: 20px;
+}
+ 
+

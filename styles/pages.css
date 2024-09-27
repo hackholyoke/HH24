@@ -1,0 +1,103 @@
+.heading {
+  font-family: 'Audiowide'; /*Will be changing the font depending on design*/
+  color:aliceblue
+}
+
+.container {
+    height: 110vh; /* Adjust the height as needed */
+    overflow: hidden; /* Enable vertical scrolling */
+    padding: 70px; /* Optional: Add some padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
+  }
+
+.opp_container{
+  height: 100vh; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Optional: Add some padding */
+  /*background-image: linear-gradient(to bottom, #000000 , #2c3c94);*/
+}
+  
+section {
+    margin-bottom: 20px; /* Adjust the spacing between sections as needed */
+    padding: 10px; /* Optional: Add some padding inside each section */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+  }
+
+.bg-assets{
+  background-image: 
+  url('../app/assets/background/Bg_lines.png'), 
+  url('../app/assets/background/Bg_lines.png'), 
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'),
+  url('../app/assets/background/Bg_lines.png')
+  ;
+
+  background-size: 
+  30%, 
+  60%,
+  100%,
+  50%,
+  100%,
+  100%,
+  90%,
+  30%,
+  40%
+  ;
+
+  background-repeat: 
+  no-repeat,
+  no-repeat, 
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat;
+
+  background-position: 
+  left top 3%,
+  900px 200px,
+  left -300px top 10%,
+  left -200px top 26%,
+  left -700px top 27%,
+  right -600px top 40%,
+  center top 57%,
+  right top 60%,
+  left top 54%
+  ;
+
+
+
+}
+
+/* Pseudo-element for rotating the fifth background image */
+.bg-assets::before {
+  content: ''; /* Required to create the pseudo-element */
+  top: 30%; /* Adjust the vertical position */
+  width: 140%; /* Set width to cover the area */
+  height: 140%; /* Set height to cover the area */
+  background-image: url('../app/assets/background/Bg_circle.png'); /* The image to rotate */
+  background-size: 140%; /* Adjust size */
+  background-repeat: no-repeat; /* No repeat */
+  background-position: center; 
+  transform: rotate(-144.61deg); /* Rotate the image */
+}
+
+/* #home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    text-align: center; 
+    padding: 10px;
+}  */

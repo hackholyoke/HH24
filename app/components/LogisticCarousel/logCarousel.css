@@ -1,0 +1,171 @@
+.logistics-embla{
+    position: absolute;
+    max-width: 76rem;
+    left: 14rem;
+    margin: auto;
+    --slide-height: 19rem;
+    --slide-spacing: 5rem;
+    --slide-size: 100%;
+    --slide-spacing-sm: 1rem;
+    --slide-size-sm: 50%;
+    --slide-spacing-lg: 2rem;
+    --slide-size-lg: calc(100% / 3);
+}
+.log-embla-viewport{
+    /* margin-left: 10rem; */
+    overflow: hidden;
+}
+
+.log-embla-container{
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -1);
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 750px) {
+    .log-embla-container {
+      margin-left: calc(var(--slide-spacing-sm) * -1);
+    }
+  }
+  @media (min-width: 1200px) {
+    .log-embla-container {
+      margin-left: calc(var(--slide-spacing-lg) * -1);
+    }
+  }
+
+.log-embla-slide{
+    min-width: 0;
+    flex: 0 0 var(--slide-size);
+    padding-left: calc(var(--slide-spacing)*0.5);
+}
+@media (min-width: 750px) {
+    .log-embla-slide {
+      flex: 0 0 var(--slide-size-sm);
+      padding-left: var(--slide-spacing-sm);
+    }
+  }
+  @media (min-width: 1200px) {
+    .log-embla-slide {
+      flex: 0 0 var(--slide-size-lg);
+      padding-left: calc(var(--slide-spacing-lg )*-0.5);
+      padding-right: calc(var(--slide-spacing-lg )*-0.5);
+    }
+  }
+.log-embla-controls{
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 1fr; */
+    /* justify-content: space-between; */
+    justify-items: center;
+    justify-content: center;
+    /* gap: 1.2rem; */
+    margin-top: 1rem;
+    /* margin-left: 15rem; */
+    
+}
+
+.log-embla-buttons{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-embla-button{
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    border-radius: 50%;
+    color: var(--text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.log-embla-button--prev{
+
+}
+
+.log-embla-button--next{
+
+}
+
+.log-embla-button__norm{
+    width: 100%;
+    height: 100%;
+}
+
+.log-embla-button__norm_hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.log-embla-button:hover .log-embla-button__norm{
+    display: none;
+}
+.log-embla-button:hover .log-embla-button__norm_hover{
+    display: block;
+}
+.log-embla-dots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc((1.5rem - 1rem) / 2);
+    gap:1rem;
+}
+.log-embla-dot{
+    border: 2px solid #ccc; /* Change this to your desired border color */
+    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.log-embla-dot:after{
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: '';
+    /* background-color: aqua; */
+    border: 2px solid #ccc;
+    
+}
+.log-embla-dot--selected{
+    box-shadow: inset 0 0 0 0.2rem var(--text-body);
+    background: linear-gradient(white, aqua, #2c3c94);
+}
