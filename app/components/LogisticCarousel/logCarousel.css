@@ -56,13 +56,9 @@
 .log-embla-controls{
     display: flex;
     flex-direction: row;
-    /* grid-template-columns: 1fr; */
-    /* justify-content: space-between; */
     justify-items: center;
     justify-content: center;
-    /* gap: 1.2rem; */
     margin-top: 1rem;
-    /* margin-left: 15rem; */
     
 }
 
@@ -99,13 +95,6 @@
     position: relative;
 }
 
-.log-embla-button--prev{
-
-}
-
-.log-embla-button--next{
-
-}
 
 .log-embla-button__norm{
     width: 100%;
