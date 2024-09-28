@@ -7,11 +7,11 @@ import speakerCardPic from '../../assets/speakerCardPic.png'
 export const SpeakerCard = ({speakerPic, speakerName, speakerDesc}) =>{
     return(
         <div className = "speaker-card">
-            <Image src ={speakerCardPic} className="card-pic"/>
+            
             <div className="speaker-pic-container">
                 <Image src ={speakerPic} className="speaker-pic"/>
             </div>
-
+            <Image src ={speakerCardPic} className="card-pic"/>
             <div className = "text-overlay-speaker">
                 <h1 className="speakerName">{speakerName}</h1>
                 <p className="speakerDesc">{speakerDesc}</p>

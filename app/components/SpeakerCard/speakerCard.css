@@ -5,10 +5,29 @@
 }
 
 .card-pic {
+    /* top: 20%; */
+    position: relative;
     display: block;  /* Ensure the image takes up the full width of its container */
-    height: 700px;
+    height: 650px;
     width: auto;
+    left: 10%;
+    
     /* max-width: 100%;  Ensure it doesn't exceed the parent container's width */
+}
+
+.speaker-pic-container{
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    top: 20%;
+    left: 25%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.speaker-pic{
+    position: absolute;
+    right:15%;
 }
 
 .text-overlay-speaker{
