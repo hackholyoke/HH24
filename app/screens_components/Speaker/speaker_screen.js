@@ -5,11 +5,12 @@ import SpeakerCarousel from "../../components/SpeakerCarousel/SpeakerCarousel";
 import { SpeakerCard } from "../../components/SpeakerCard/speakerCard";
 import speakerCardPic from '../../assets/speakerCardPic.png'
 import './speakerScreen.css'
+import graceHopper from "../../assets/speakers/graceHopper.png"
 
 const speakerCards=[
 
   <SpeakerCard 
-  //speakerPic={}
+  speakerPic={graceHopper}
   speakerName={"Speaker 1"}
   speakerDesc={"hello"}
   />,
