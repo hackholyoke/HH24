@@ -34,7 +34,7 @@
     flex-direction: row;
     gap: 1px; /* Add space between buttons */
     top:30rem;
-    right: 19rem;
+    left : 30%;
     position: absolute;
   }
   
@@ -44,8 +44,8 @@
     position: absolute;
     width: 1000px;
     height: 108px;
-    left: 400px;
-    top: 250px;
+    left: 60%;
+    top: 37%;
   
     font-family: 'Audiowide';
     font-size: 85px;
@@ -60,8 +60,8 @@
     position: absolute;
     width: 1000px;
     height: 108px;
-    left: 406px;
-    top: 250px;
+    left: 60%;
+    top: 35%;
   
     font-family: 'Audiowide';
     font-style: normal;
@@ -78,13 +78,13 @@
     /* Welcome to */
   
     position: absolute;
-    width: 304px;
-    height: 67px;
-    left: 380px;
-    top: 240px;
+    width: 40%;
+    height: 5%;
+    left: 50%;
+    top: 35%;
   
     font-family: 'Orbitron';
-    font-size: 40px;
+    font-size: 5vw;
     line-height: 48px;
     color: #FFFFFF;
   }
@@ -93,9 +93,9 @@
     /* November 14-15 | Chapin Auditorium, South Hadley, MA */
   
     position: absolute;
-    width: 781px;
-    height: 46px;
-    left: 335px;
+    width: 100%;
+    height: 20%;
+    left: 55%;
     top: 350px;
     padding-top: 50px;
     font-family: 'Pixelify';
@@ -107,6 +107,18 @@
   
   #home .image{
     position: absolute;
-    left: 150px;
-    top: 300px;
+    left: 20%;
+    top: 40%;
+  }
+
+
+  @media (max-width: 468px) {
+    .image{
+      position: auto;
+    }
+  
+    .buttonLayout{
+      gap: 5px;
+      flex-direction: column;
+    }
   }
