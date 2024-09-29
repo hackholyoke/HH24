@@ -5,9 +5,10 @@
   font-style: normal;
 }
 
-.menuBarMobile {
+.menuBarMobile,.smallMenuBar {
   display: none;
 }
+
 
 .menuBar {
   position: fixed;
@@ -16,7 +17,7 @@
   width: 90%;
   text-align: center;
   z-index: 10;
-  border: 3px solid white; /* Create a white border */
+  border: 2px solid white; /* Create a white border */
   padding: 15px 0; /* Adjust padding for more height */
   border-radius: 40px; /* Rounded corners */
   backdrop-filter: blur(50px);
@@ -31,10 +32,30 @@
   font-size: 20px; /* Added px to font size */
   letter-spacing: 2.3px;
   line-height: 20px;
+  
 }
+@media only screen and (max-width: 1110px) {
+  .smallMenuBar {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+    padding: 15px 0; /* Adjust padding for more height */
+    border-radius: 40px; /* Rounded corners */
+    backdrop-filter: blur(50px);
+    border: 2px solid white; /* Create a white border */
 
-@media only screen and (max-width: 910px) {
+    
+  }
   .menuBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .menuBar, .smallMenuBar {
     display: none;
   }
   
@@ -48,6 +69,7 @@
     z-index: 10;
     padding: 15px 0; /* Adjust padding for more height */
     border-radius: 40px; /* Rounded corners */
+
   }
   
   .hamburger {

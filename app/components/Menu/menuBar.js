@@ -47,6 +47,16 @@ const MenuBar = () => {
         <a onClick={() => handleRegisterClick()} className='item'>Register</a>
       </div>
 
+        {/* Desktop Menu */}
+      <div className={`smallMenuBar ${isMobileView ? 'hidden' : ''}`}>
+        <a onClick={() => handleClick('/#about')} href='#about' className='item'>About</a>
+        <a onClick={() => handleClick('/#schedule')} href='#schedule' className='item'>Schedule</a>
+        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
+
+        <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
+        <a onClick={() => handleRegisterClick()} className='item'>Register</a>
+      </div>
+
       {/* Mobile Menu */}
       {isMobileView && (
         <div className="menuBarMobile">
