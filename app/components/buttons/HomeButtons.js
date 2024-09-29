@@ -1,7 +1,6 @@
 'use client'
 
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import './buttons.css'
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -15,8 +14,8 @@ import learn_b from '../../assets/buttons/learn_b.png'
 import join_a from '../../assets/buttons/join_a.png'
 import join_b from '../../assets/buttons/join_b.png'
 
-export const HomeButtons = ({onClick, normalImage, hoverImage})=>{
-    return(
+const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
+    return (
         <button onClick={onClick} className='homeButtons'>
             <Image src={normalImage} className='button-normal' />
             <Image src={hoverImage} className='button-hover' />
@@ -24,59 +23,56 @@ export const HomeButtons = ({onClick, normalImage, hoverImage})=>{
     );
 };
 
-export const RegisterButton = () =>{
-    const[clicked, setClicked] = useState(false);
-    function handleRegisterPress(){
+export const RegisterButton = () => {
+    const [clicked, setClicked] = useState(false);
+    function handleRegisterPress() {
         setClicked(true);
         setTimeout(() => {
             window.open('https://forms.gle/LiPSTWoEuJGuLpMz9', '_blank');
-        }, 300)
+        }, 300);
     }
 
-    return(
+    return (
         <HomeButtons onClick={handleRegisterPress} normalImage={register_b} hoverImage={register_a} />
     )
 }
 
-export const TeamButton = () =>{
-    const[clicked, setClicked] = useState(false);
+export const TeamButton = () => {
+    const [clicked, setClicked] = useState(false);
     const router = useRouter(); // Initialize router
-    function handleTeamPress(){
+    function handleTeamPress() {
         setClicked(true);
         setTimeout(() => {
             router.push('/team_page'); // Navigate to another page
-          }, 300);
+        }, 300);
     }
-    return(
-        <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a}/>
-          
+    return (
+        <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a} />
     )
 }
 
-export const LearnMoreButton = () =>{
-    const[clicked, setClicked] = useState(false);
+export const LearnMoreButton = () => {
+    const [clicked, setClicked] = useState(false);
     const router = useRouter(); // Initialize router
-    function handleLearnPress(){
+    function handleLearnPress() {
         setClicked(true);
         setTimeout(() => {
             const targetElement = document.querySelector('#stats');
             if (targetElement) {
-              targetElement.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling
-                block: 'start', // Align to the start of the element
-              });
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Smooth scrolling
+                    block: 'start', // Align to the start of the element
+                });
             }
-          }, 300);
+        }, 300);
     }
-    return(
-        <HomeButtons onClick={handleLearnPress} normalImage={learn_b} hoverImage={learn_a}/>
+    return (
+        <HomeButtons onClick={handleLearnPress} normalImage={learn_b} hoverImage={learn_a} />
     )
 }
 
-export const JoinSlackButton = () =>{
-    return(
-        <HomeButtons normalImage={join_b} hoverImage={join_a}/>
+export const JoinSlackButton = () => {
+    return (
+        <HomeButtons normalImage={join_b} hoverImage={join_a} />
     )
 }
-
-/*export default {HomeButtons, RegisterButton};*/

@@ -7,7 +7,7 @@
     width: 100vw;
     height: 100vh; /* Adjust the height as needed */
     overflow: hidden; /* Enable vertical scrolling */
-    padding: 70px; /* Optional: Add some padding */
+    padding: 2%; /* Optional: Add some padding */
     display: flex;
     justify-content: center;
     align-items: center;
