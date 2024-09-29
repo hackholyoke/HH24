@@ -5,7 +5,7 @@
 
 .container {
     width: 100vw;
-    height: 100vh; /* Adjust the height as needed */
+    height: 130vh; /* Adjust the height as needed */
     overflow: hidden; /* Enable vertical scrolling */
     padding: 2%; /* Optional: Add some padding */
     display: flex;
