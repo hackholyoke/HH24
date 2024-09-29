@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Answer Font';
   src: url('../../../public/fonts/Orbitron-ExtraBold.ttf') format('woff2');
@@ -23,25 +24,17 @@
     position: relative;
   }
   
-  .questionLeft {
+  .questionLeft, .questionRight {
     cursor: pointer;
     transition: height 0.3s ease-in-out;
     width: 50%;
     overflow: hidden;
   }
-
-  .questionRight {
-    cursor: pointer;
-    transition: height 0.3s ease-in-out;
-    width: 50%;
-    overflow: hidden;
-  }
-  
   
   .answerRight {
     position: absolute;
     left: 50%; /* Center horizontally */
-    transform: translate( 18%, -50%);
+    transform: translate( 20%, -50%);
     transition: height 0.3s ease-in-out;
     color: white;
     font-size: 10px;
@@ -71,10 +64,11 @@
     word-wrap: break-word; /* Break long words if necessary */
   }
 
+ 
 
   @media (max-width: 768px) {
     .image-container {
-      flex-direction: column; /* Stack images vertically on smaller screens */
+      flex-direction: column; 
       gap: 0px;
     }
     .questionLeft, .questionRight {
@@ -85,13 +79,19 @@
     .answerLeft, .answerRight{
       width: 80%; 
       padding: 10px; 
-      position: absolute; 
+      position: static; 
+      transform: translate( 10%, -200%);;
     }
   }
 
-  /* Large screens */
+  
   @media (min-width: 769px) {
     .questionLeft, .questionRight {
       width: 48%; 
     }
   }
+
+
+  
+
+
