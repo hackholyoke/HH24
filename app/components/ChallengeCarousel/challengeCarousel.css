@@ -1,3 +1,4 @@
+
 .challenge-embla {
   max-width: 90rem;
   margin: auto;
@@ -147,3 +148,10 @@
     backface-visibility: hidden;
   }
   
+  @media(max-width: 638px) {
+    .challenge-embla__container,
+    .challenge-embla__slide {
+      transform: scale(0.8); /* Scale down everything by 80% */
+    }
+    
+  }

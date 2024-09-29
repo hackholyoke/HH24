@@ -30,3 +30,55 @@
 
   
 }
+
+.bg-assets{
+  background-image: 
+  url('../app/assets/background/Bg_lines.png'), 
+  url('../app/assets/background/Bg_lines.png'), 
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'),
+  url('../app/assets/background/Bg_lines.png')
+  ;
+
+  background-size: 
+  30%, 
+  60%,
+  100%,
+  50%,
+  100%,
+  100%,
+  90%,
+  30%,
+  40%
+  ;
+
+  background-repeat: 
+  no-repeat,
+  no-repeat, 
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat;
+
+  background-position: 
+  left top 3%,
+  900px 200px,
+  left -300px top 10%,
+  left -200px top 26%,
+  left -700px top 27%,
+  right -600px top 40%,
+  center top 57%,
+  right top 60%,
+  left top 54%
+  ;
+
+
+
+}
