@@ -107,6 +107,43 @@
   
   #home .image{
     position: absolute;
-    left: 150px;
+    left: 100px;
     top: 300px;
+    /* animation: upAndDown 5s infinite linear; */
   }
+
+  .imageTop{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    /* animation: upAndDown 5s infinite linear; */
+  }
+
+  .imageBottom{
+    position: absolute;
+    left: 300px;
+    top: 530px;
+    /* animation: upAndDown 5s infinite linear; */
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes upAndDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
