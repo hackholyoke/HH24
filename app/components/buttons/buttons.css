@@ -39,9 +39,13 @@
 
 .homeButtons:hover .button-normal {
   display: none; /* Hide normal image on hover */
+  width: 150%; /* Keep hover button image full width */
+  height: 150%; /* Keep hover button image full height */
 }
 
 .homeButtons:hover .button-hover {
+  width: 130%; /* Keep hover button image full width */
+  height: 130%; /* Keep hover button image full height */
   display: block; /* Show hover image on hover */
 }
 
@@ -50,6 +54,13 @@
   transform: translateY(2px); /* Slightly move down */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for pressed effect */
 }
+/* Media queries for responsive button layout */
+@media (max-width: 2000px) {
+  .homeButtons {
+      max-width: 45%; /* Change to 2 buttons per row */
+  }
+}
+
 
 /* Media queries for responsive button layout */
 @media (max-width: 1200px) {

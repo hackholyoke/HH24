@@ -1,7 +1,7 @@
 .sideMenu{
-    position: fixed;
+    position: absolute;
     top: 22%; 
-    left: 5px;
+    left: 52;
     width: 50px;
     padding-top: 20px;
     /*border-right: 2px solid aliceblue;*/
