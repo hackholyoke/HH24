@@ -1,6 +1,6 @@
 /* Side Menu Styling */
 .sideMenu {
-    position: absolute;
+    position: fixed;
     top: 22%;
     left: 1%;
     width: 50%; /* Default width for larger screens */
