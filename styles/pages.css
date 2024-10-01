@@ -14,9 +14,7 @@
     align-items: center;
     width:100vw;
     overflow-x: hidden;
-    /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
   }
-
   
 section {
     margin-bottom: 20px; /* Adjust the spacing between sections as needed */
