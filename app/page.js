@@ -36,8 +36,7 @@ const HomePage = () => {
          </div>
 
          <div id = "speakers" className='container'>
-            {/* <h1 className='heading'>Speakers</h1> */}
-            <SpeakerScreen/>
+            {/* <SpeakerScreen/> */}
          </div>
 
          <div id = "schedule" className='container'>

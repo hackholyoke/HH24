@@ -1,53 +1,52 @@
 .speaker-card {
-    position: relative;  /* Makes the overlay relative to this container */
-    left: 15%;
-    display: inline-block;  /* Shrinks the container to fit the content (image size) */
+    display: grid;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-pic {
     /* top: 20%; */
     position: relative;
-    display: block;  /* Ensure the image takes up the full width of its container */
-    height: 650px;
+    height: 600px;
     width: auto;
-    left: 10%;
     
     /* max-width: 100%;  Ensure it doesn't exceed the parent container's width */
 }
 
 .speaker-pic-container{
     position: absolute;
-    width: 350px;
+    width: 310px;
     height: 400px;
     top: 20%;
-    left: 25%;
+    left: 20%;
     overflow: hidden;
     justify-content: center;
 }
 
 .speaker-pic{
     position: absolute;
-    right:15%;
+    right: 10%;
 }
 
 .text-overlay-speaker{
-    position: absolute;  /* Position text on top of the image */
-    top: 0;  /* Aligns the overlay to the top of the card */
+    position: absolute;  
+    top: 0;  
     left: 150px;
     width: 100%;
     height: 100%;
-    color: white;        /* Text color */
-    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); /* Optional: Text shadow for better readability */
-    z-index: 1;          /* Ensure text is above the image */
+    color: white;       
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); 
+    z-index: 1;          
     font-family: 'Orbitron';
-    display: flex;       /* Center the content with Flexbox */
+    display: flex;       
     justify-content: center;
     align-items: center;
 }
 
 .speakerName {
-    font-size: 25px;     /* Font size */
-    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 25px;     
+    white-space: nowrap; 
     margin-bottom: 30%;
 
 }
