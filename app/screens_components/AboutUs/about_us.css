@@ -14,9 +14,9 @@
   
   .textContainer {
     flex: 1;
-    padding: 1rem;
+    padding: 3vw;
     color: white;
-    font-size: large;
+    font-size: 2vw;
     font-family: 'Montserrat'
 
   }
@@ -25,7 +25,7 @@
     flex: 1;
     padding: 1rem;
     color: transparent;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: 'Audiowide';
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #00FFF7; 

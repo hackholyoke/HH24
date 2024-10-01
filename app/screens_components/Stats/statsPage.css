@@ -1,3 +1,17 @@
+.stats-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add some padding */
+}
+
+.stat-item {
+    text-align: center; /* Center text under images */
+    margin: 10px 0; /* Space between items */
+}
+
+
+
 @font-face {
     font-family: 'Orbitron';
     src: url(../../../public/fonts/Orbitron-Regular.ttf) format('woff2');
@@ -31,7 +45,11 @@
     /* font-size: 80%; */
 
 }
-
+#stats .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /* heading: HackHolyoke 2022 */
 /* #stats .heading_container {
     display: flex;
@@ -51,7 +69,7 @@
     background-color: #00FFF7;
     width: 20%;
     top: 50%;
-    left: 5%;
+    left: 2%;
 
 }
 
@@ -61,12 +79,12 @@
     background-color: #00FFF7;
     top:50%;
     width: 20%;
-    right: 5%;
+    right: 2%;
 
 }
 #stats .stats_heading{
     font-family: "Audiowide", sans-serif;
-    font-size: 120%;
+    font-size: 5vw;
     color: transparent;
     -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
     -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
@@ -76,7 +94,7 @@
 #stats .stats_heading_2{
     position: absolute;
     font-family: "Orbitron";
-    font-size: 40%;
+    font-size: 3vw;
     top: 55%;
     left: 45%;
     color: #00FFF7;
@@ -141,7 +159,7 @@
 #stats .colleges{
     position: absolute;
     top: 20%;             /* Align to the top */
-    right: 9%;            /* Align to the left */
+    right: 5%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
     font-size: 70%;
@@ -153,7 +171,7 @@
 #stats .participating{
     position: absolute;
     top: 30%;             /* Align to the top */
-    right: 10%;            /* Align to the left */
+    right: 15%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
     font-size: 70%;
@@ -194,4 +212,14 @@
     font-size:70%;
     width: 30%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
+}
+
+@media (max-width: 1720px){
+    .major, .participants, .colleges, .participating, .th, .year,.line-left, .line-right, .stats_heading_2,.majors_num,.years_num,.participants_num,.colleges_num,.stats_words,.stats_heading,.stats_num,.stats-container,.stat-item, .colleges{
+        font-size: 4vw;
+    }
+
+    .container{
+        max-width: 1420px
+    }
 }

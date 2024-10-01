@@ -1,18 +1,19 @@
 .heading {
   font-family: 'Audiowide'; /*Will be changing the font depending on design*/
-  color:aliceblue
+  color:aliceblue; 
 }
 
 .container {
-    height: 120vh; /* Adjust the height as needed */
+    height: 130vh; /* Adjust the height as needed */
     overflow: hidden; /* Enable vertical scrolling */
+    /* padding: 2%; */
     /* padding: 70px;  */
     /* Optional: Add some padding */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
     width:100vw;
+    overflow-x: hidden;
     /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
   }
 
