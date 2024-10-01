@@ -1,4 +1,3 @@
-
 .c-card-container {
     /* border-radius: 1.8rem; */
     display: block;
@@ -42,4 +41,22 @@
 
 .challenge-description {
     font-size: 15px
+}
+
+/* Media query for smaller screens */
+@media (max-width: 638px) {
+    .c-card-container,
+    .cardPic {
+        transform: scale(0.9); /* Scale down the container and image */
+    }
+
+    .text-overlay-challenge {
+        width: 400px;
+        left: 20%;
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .challenge-description {
+        font-size: 13px; /* Slightly smaller description text */
+    }
 }

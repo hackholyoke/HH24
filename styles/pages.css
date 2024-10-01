@@ -4,24 +4,17 @@
 }
 
 .container {
-    width: 100vw;
     height: 130vh; /* Adjust the height as needed */
     overflow: hidden; /* Enable vertical scrolling */
-    padding: 2%; /* Optional: Add some padding */
+    /* padding: 2%; */
+    /* padding: 70px;  */
+    /* Optional: Add some padding */
     display: flex;
     justify-content: center;
     align-items: center;
+    width:100vw;
     overflow-x: hidden;
-    /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
   }
-
-.opp_container{
-  height: 100vh; /* Adjust the height as needed */
-  width: 100vw;
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding: 20px; /* Optional: Add some padding */
-  /*background-image: linear-gradient(to bottom, #000000 , #2c3c94);*/
-}
   
 section {
     margin-bottom: 20px; /* Adjust the spacing between sections as needed */
