@@ -6,6 +6,7 @@ import { SpeakerCard } from "../../components/SpeakerCard/speakerCard";
 import speakerCardPic from '../../assets/speakerCardPic.png'
 import './speakerScreen.css'
 import graceHopper from "../../assets/speakers/graceHopper.png"
+import zoey from "../../assets/team_pics/zoey.png"
 
 const speakerCards=[
 

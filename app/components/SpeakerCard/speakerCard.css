@@ -4,17 +4,19 @@
     align-items: center;     /* Centers the content vertically */
     width: 100%;              /* Adjust the width as needed */
     position: relative;
+    object-fit: cover;
 }
 .card-pic {
     position: relative;
-    height: 600px;
-    width: auto;
+    height: 40rem;
+    width: 58rem;
+
 }
 .text-overlay-speaker{
     position: absolute;  
     bottom: 15%;
-    left: 50%;
-    width: 50%;
+    transform: translateX(50%);
+    width: 450px;
     height: 600px;
     color: white;       
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); 
@@ -22,39 +24,44 @@
     display: flex;       
     justify-content: center;
     align-items: center;
+    max-width: 100%;      /* Ensure it doesn't exceed the parent's width */
+    max-height: 100%;
 }
 .speakerName {
     position: absolute;
     font-size: 25px;  
     font-family: 'Orbitron';  
     bottom: 55%; 
-    right: 40%;
+    transform: translateX(-40%);
     
 }
 .speakerDesc{
     display: flex;
     align-items: center;
     position: absolute;
-    font-size: 0.9vw;
-    top: 42%;
+    font-size: 12px;
+    top: 40%;
     height: 230px;
-    width: 70%;
-    right: 30%;
+    width: 60%;
+    transform: translateX(-35%);
     font-family: 'Montserrat';
 }
 .speaker-pic-container {
     position: absolute;
-    width: 300px;
-    height: 370px;
+    width: 360px;
+    height: 385px;
     overflow: hidden;
-    right: 50%;
+    transform: translateX(-48%);
     display: flex;  /* Make the container a flexbox */
     justify-content: center;  /* Horizontally center the child */
     align-items: center;  /* Vertically center the child */
+    object-fit: cover;
 }
 
 .speaker-pic {
     height: 100%;     /* Maintain aspect ratio */
-    width:auto;
+    width:100%;
+    object-fit: cover;
 }
+
 

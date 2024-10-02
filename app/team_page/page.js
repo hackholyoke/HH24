@@ -71,6 +71,7 @@ const TeamPage = () => {
       ];
     return(
         <div>
+            <div className='bg-assets'>
             <div> 
                 <MenuBar/>
             </div>
@@ -168,7 +169,7 @@ const TeamPage = () => {
             </div>
 
         
-
+            </div>
         </div>
 
 

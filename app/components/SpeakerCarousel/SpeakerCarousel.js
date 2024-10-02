@@ -4,17 +4,17 @@ import Fade from 'embla-carousel-fade'
 import './speakerCarousel.css'
 import {
   NextButton,
-  PrevButton,
+  //PrevButton,
   usePrevNextButtons
 } from './speakerButtons'
-import { DotButton, useDotButton } from './speakerDotButton'
+//import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 
 const SpeakerCarousel = (props) => {
     const { slides, options } = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade()])
   
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-      useDotButton(emblaApi)
+    // const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    //   useDotButton(emblaApi)
   
     const {
       prevBtnDisabled,
@@ -25,11 +25,6 @@ const SpeakerCarousel = (props) => {
 
     return (
         <div className="speaker-embla">
-          <div className="speaker-embla__controls">
-            <div className="speaker-embla__buttons">
-            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-            </div>
-          </div>
           <div className="speaker-embla__viewport" ref={emblaRef}>
             <div className="speaker-embla__container">
               {slides.map((slide, index) => (
