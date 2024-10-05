@@ -14,7 +14,13 @@
   font-size: 50px;
   /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
 }
-
+@media screen and (max-width: 910px) {
+  .container {
+    height: 176vh; /* Double the height */
+    flex-direction: column; /* Stacks the cards vertically */
+    align-items: center; /* Optional: Center them */
+  }
+}
 .section {
   margin-bottom: 0.5%; /* Adjust the spacing between sections as needed */
   padding: 10px; /* Optional: Add some padding inside each section */
@@ -24,109 +30,14 @@
 height: 100%;
 width: auto;
 }
+.stacked-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Optional: Adjust the gap between cards */
+  align-items: center; /* Optional: Center align the stacked cards */
+}
 
 #co-chairs{
  
 }
 
-.bg-assets{
-  background-image: 
-  url('../app/assets/background/Bg_lines.png'), 
-  url('../app/assets/background/Bg_lines.png'), 
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_circle_copy.png'),
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_lines.png')
-  ;
-
-  background-size: 
-  30%, 
-  60%,
-  100%,
-  50%,
-  100%,
-  100%,
-  90%,
-  30%,
-  40%
-  ;
-
-  background-repeat: 
-  no-repeat,
-  no-repeat, 
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat;
-
-  background-position: 
-  left top 3%,
-  900px 200px,
-  left -300px top 10%,
-  left -200px top 26%,
-  left -700px top 27%,
-  right -600px top 40%,
-  center top 57%,
-  right top 60%,
-  left top 54%
-  ;
-
-  
-}
-
-.bg-assets{
-  background-image: 
-  url('../app/assets/background/Bg_lines.png'), 
-  url('../app/assets/background/Bg_lines.png'), 
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_circle_copy.png'),
-  url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_lines.png')
-  ;
-
-  background-size: 
-  30%, 
-  60%,
-  100%,
-  50%,
-  100%,
-  100%,
-  90%,
-  30%,
-  40%
-
-  ;
-
-  background-repeat: 
-  no-repeat,
-  no-repeat, 
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat;
-
-  background-position: 
-  left top 3%,
-  900px 200px,
-  left -300px top 10%,
-  left -200px top 26%,
-  left -700px top 27%,
-  right -600px top 40%,
-  center top 57%,
-  right top 60%,
-  left top 54%
-  ;
-
-}

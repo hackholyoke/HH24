@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import { useState, useEffect } from 'react';
 import '../../styles/teamPage.css';
 import MenuBar from '../components/Menu/menuBar';
 import SideMenu from '../components/SideMenu/sideMenu';
@@ -69,6 +70,18 @@ const TeamPage = () => {
         answer ={"Can't wait to meet new people and learn more from this unforgettable event and people!"}
         />
       ];
+      const [isMobileView, setIsMobileView] = useState(false);
+
+      useEffect(() => {
+          const handleResize = () => {
+              setIsMobileView(window.innerWidth < 910);
+          };
+  
+          window.addEventListener('resize', handleResize);
+          handleResize(); // Initial check
+  
+          return () => window.removeEventListener('resize', handleResize);
+      }, []);
     return(
         <div>
             <div className='bg-assets'>
@@ -101,7 +114,18 @@ const TeamPage = () => {
 
             <div id='logistics' className='container'>
                 {/* <h1 className='heading'>Logistics</h1> */}
-                <LogisticsCarousel slides={logisticCards} options={{ loop: false }} />
+                {/* <LogisticsCarousel slides={logisticCards} options={{ loop: false }} /> */}
+                {isMobileView ? (
+                        <div className="stacked-cards">
+                            {logisticCards.map((card, index) => (
+                                <div key={index} className="card">
+                                    {card}
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <LogisticsCarousel slides={logisticCards} options={{ loop: false }} />
+                    )}
             </div>
 
             <div id='sponsorship' className='container'>
