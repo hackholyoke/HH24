@@ -37,7 +37,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
     .sideMenu{
       display: none; /* Hide side menu on mobile devices */ 
     }
