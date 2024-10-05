@@ -32,25 +32,21 @@
   #home .buttonLayout{
     display: flex;
     flex-direction: row;
-    gap: 1px; /* Add space between buttons */
-    top:30rem;
-    right: 19rem;
+    gap: 0.2%; /* Add space between buttons */
+    top: 60%;
+    left : 31%;
     position: absolute;
+    transform: translate(-5%);
   }
   
   #home .heading{
     /* HACK HOLYOKE 2024! */
     display: flex;
     position: absolute;
-    width: 1000px;
-    height: 108px;
-    left: 400px;
-    top: 250px;
-  
+    left: 30%;
+    top: 37%;
     font-family: 'Audiowide';
-    font-size: 85px;
-    line-height: 119px;
-  
+    font-size: 5vw;
     color: #00FFF7;
   
   }
@@ -58,16 +54,13 @@
     /* HACK HOLYOKE 2024! */
     display: flex;
     position: absolute;
-    width: 1000px;
-    height: 108px;
-    left: 406px;
-    top: 250px;
+    left: 30.5%;
+    top: 37%;
   
     font-family: 'Audiowide';
     font-style: normal;
     font-weight: 400;
-    font-size: 85px;
-    line-height: 119px;
+    font-size: 5vw;
   
     background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
     -webkit-background-clip: text;
@@ -78,13 +71,13 @@
     /* Welcome to */
   
     position: absolute;
-    width: 304px;
-    height: 67px;
-    left: 380px;
-    top: 240px;
+
+    height: 5%;
+    left: 30%;
+    top: 30%;
   
     font-family: 'Orbitron';
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 48px;
     color: #FFFFFF;
   }
@@ -93,20 +86,19 @@
     /* November 14-15 | Chapin Auditorium, South Hadley, MA */
   
     position: absolute;
-    width: 781px;
-    height: 46px;
-    left: 335px;
-    top: 350px;
-    padding-top: 50px;
+    left: 30%;
+    top: 51%;
     font-family: 'Pixelify';
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 2vw;
+    /* line-height: 30px; */
     color: #9CFFFC;
   
   }
   
   #home .image{
     position: absolute;
-    left: 150px;
-    top: 300px;
+    max-width: 17%;
+    left: 10%;
+    top: 31%;
   }
+

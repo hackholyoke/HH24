@@ -8,7 +8,7 @@ import years_num from '../../assets/stats/years_num.png';
 
 const StatsScreen =() =>{
     return(
-        <div>
+        <div className="stats-container">
         {/* PARTICIPANTS  */}
         <Image src = {participants} className="participants_num  stats_num" />
         <p className='participants stats_words'>participants</p>

@@ -50,4 +50,3 @@ export const MemberCards = ({frontCard, mbrPic, name, pronouns, year, major, ans
         </div>
     );
 }
-
