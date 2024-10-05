@@ -9,6 +9,8 @@ import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import FAQ from './components/FAQ/faq.js';
 import FAQScreen from './screens_components/FAQScreen/FAQScreen.js';
+import ScheduleScreen from './screens_components/Schedule/schedule.js';
+
 const HomePage = () => {
   return (
     <div>
@@ -40,7 +42,7 @@ const HomePage = () => {
          </div>
 
          <div id = "schedule" className='container'>
-            <h1 className='heading'>Schedule </h1>
+            <ScheduleScreen/>
          </div>
 
          <div id = "faq">

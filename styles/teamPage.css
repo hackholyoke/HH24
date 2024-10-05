@@ -17,8 +17,56 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
+  /* background-image: linear-gradient(to bottom, #2c3c94, #000000 ); */
 }
+
+
+.bg-assets{
+  background-image: 
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png'),
+  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png')
+  ;
+
+  background-size: 
+  70%,
+  115%,
+  100%,
+  100%,
+  80%,
+  80%,
+  80%,
+  70%
+  /* 90% */
+  ;
+
+  background-repeat: 
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat;
+
+  background-position: 
+  left -550px top 0%,
+  left 500px top 4%,
+  left -700px top 35%,
+  right -600px top 50%,
+  left -650px top 65%,
+  left 700px top 80%,
+  left -650px top 95%,
+  left 950px top 105%
+
+}
+
 @media screen and (max-width: 910px) {
   #co-chairs, #sponsorship, #webmaster{
     height: 1400px; /* Double the height */

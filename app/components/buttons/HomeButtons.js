@@ -71,8 +71,15 @@ export const LearnMoreButton = () => {
     )
 }
 
-export const JoinSlackButton = () => {
+export const JoinDiscordButton = () => {
+    const [clicked, setClicked] = useState(false);
+    function handleJoinPress() {
+        setClicked(true);
+        setTimeout(() => {
+            window.open('https://discord.com/invite/7STg7McVWU', '_blank');
+        }, 300);
+    }
     return (
-        <HomeButtons normalImage={join_b} hoverImage={join_a} />
+        <HomeButtons onClick={handleJoinPress} normalImage={join_b} hoverImage={join_a} />
     )
 }
