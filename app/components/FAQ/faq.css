@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Answer Font';
   src: url('../../../public/fonts/Orbitron-ExtraBold.ttf') format('woff2');
@@ -15,7 +16,7 @@
 
   .image-container {
     display: flex;
-    justify-content: space-between; /* Adds space between the two images */
+    justify-content: space-between; 
     gap: 50px;
     width: 85%;
     padding-left: 7%;
@@ -23,58 +24,51 @@
     position: relative;
   }
   
-  .questionLeft {
+  .questionLeft, .questionRight {
     cursor: pointer;
     transition: height 0.3s ease-in-out;
     width: 50%;
     overflow: hidden;
   }
-
-  .questionRight {
-    cursor: pointer;
-    transition: height 0.3s ease-in-out;
-    width: 50%;
-    overflow: hidden;
-  }
-  
   
   .answerRight {
     position: absolute;
-    left: 50%; /* Center horizontally */
-    transform: translate( 18%, -50%);
+    left: 50%; 
+    transform: translate( 20%, -50%);
     transition: height 0.3s ease-in-out;
     color: white;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif ;
     text-align: justify;
-    width: 39%; /* Adjust width based on your preference */
+    width: 39%; 
     padding: 15px;
     line-height: 25px;
     z-index: 5;
-    box-sizing: border-box; /* Include padding within the element's width */
-    word-wrap: break-word; /* Break long words if necessary */
+    box-sizing: border-box; 
+    word-wrap: break-word; 
   }
 
   .answerLeft {
     position: absolute;
-    left: 50%; /* Center horizontally */
+    left: 50%; 
     transform: translate( -101%, -50%);
     color: white;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-    width: 40%; /* Adjust width based on your preference */
+    width: 40%; 
     padding: 15px;
     line-height: 25px;
     z-index: 5;
-    box-sizing: border-box; /* Include padding within the element's width */
-    word-wrap: break-word; /* Break long words if necessary */
+    box-sizing: border-box; 
+    word-wrap: break-word; 
   }
 
+ 
 
   @media (max-width: 768px) {
     .image-container {
-      flex-direction: column; /* Stack images vertically on smaller screens */
+      flex-direction: column; 
       gap: 0px;
     }
     .questionLeft, .questionRight {
@@ -85,13 +79,18 @@
     .answerLeft, .answerRight{
       width: 80%; 
       padding: 10px; 
-      position: absolute; 
+      position: static; 
+      transform: translate( 10%, -200%);;
     }
   }
 
-  /* Large screens */
+  
   @media (min-width: 769px) {
     .questionLeft, .questionRight {
       width: 48%; 
     }
-  }
+  } 
+
+
+
+
