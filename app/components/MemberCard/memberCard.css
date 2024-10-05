@@ -161,3 +161,13 @@
     font-family: 'Orbitron';
 
   }
+
+  .hidden {
+    visibility: hidden;
+  }
+  .card-container:hover .text-overlay,
+  .card-container:hover .name_heading,
+  .card-container:hover .pronouns,
+  .card-container:hover .year {
+    visibility: hidden;  /* Hide the front text when the back is shown */
+  }
