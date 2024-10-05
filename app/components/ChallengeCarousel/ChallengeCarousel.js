@@ -125,20 +125,24 @@ const ChallengeCarousel = (props) => {
       <div className="challenge-embla__controls">
         <div className="challenge-embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+          
         </div>
-
-        {/* <div className="embla__dots">
+        <div className="challenge-embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
+              className={'challenge-embla__dot'.concat(
+                index === selectedIndex ? ' challenge-embla__dot--selected' : ''
               )}
             />
           ))}
-        </div> */}
+        </div>
+        <div className="challenge-embla__buttons">
+          
+          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        </div>
+
       </div>
     </div>
   )

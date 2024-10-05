@@ -1,20 +1,64 @@
-.sideMenu{
+/* Side Menu Styling */
+.sideMenu {
     position: fixed;
-    top: 22%; 
-    left: 5px;
-    width: 50px;
-    padding-top: 20px;
+    top: 22%;
+    left: 1%;
+    width: 50%; /* Default width for larger screens */
+    padding-top: 1%;
     /*border-right: 2px solid aliceblue;*/
-}
-.item{
-    /*padding: 3%;*/
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for resizing */
+  }
+  
+  /* Menu item styling */
+  .item {
     color: aliceblue;
-    text-decoration: none; 
+    text-decoration: none;
     font-family: 'Orbitron';
-}
-
-.choice, .choice-active {
+  }
+  
+  /* Styling for each choice item */
+  .choice, .choice-active {
     height: 2.3rem;
     width: auto;
     display: block;
-}
+    padding: 0.5rem 1rem; /* Add some padding to each item */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .sideMenu {
+      width: 60%; /* Increase width on medium-sized screens */
+      left: 5%; /* Adjust left margin for better centering */
+    }
+  
+    .choice, .choice-active {
+      height: 2rem; /* Make choice items a bit smaller */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .sideMenu {
+      width: 80%; /* Make side menu take up more space on smaller screens */
+      left: 10%; /* Adjust left position to center */
+    }
+  
+    .choice, .choice-active {
+      height: 1.8rem; /* Reduce height further for smaller screens */
+      font-size: 0.9rem; /* Make text a bit smaller */
+      padding: 0.4rem 1rem; /* Adjust padding */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .sideMenu {
+      width: 100%; /* Full width on very small screens */
+      left: 0; /* No left margin */
+      padding-top: 2%; /* Increase padding for better spacing */
+    }
+  
+    .choice, .choice-active {
+      height: 1.5rem; /* Make items even smaller */
+      font-size: 0.8rem; /* Reduce text size further */
+      padding: 0.3rem 0.8rem; /* Tighter padding */
+    }
+  }

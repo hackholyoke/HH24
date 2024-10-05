@@ -22,12 +22,13 @@
 }
 
 body {
+
     /*background-image: linear-gradient(to left bottom, #9a72a3, #a990b7, #baadc9, #cfcad9, #e7e7e7);
     /* You can also use an image background */
     /* background-image: url('/background.jpg');
     background-size: cover;
     background-position: center; */
-    /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black) ;
 
   }

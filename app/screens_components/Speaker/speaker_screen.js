@@ -5,13 +5,15 @@ import SpeakerCarousel from "../../components/SpeakerCarousel/SpeakerCarousel";
 import { SpeakerCard } from "../../components/SpeakerCard/speakerCard";
 import speakerCardPic from '../../assets/speakerCardPic.png'
 import './speakerScreen.css'
+import graceHopper from "../../assets/speakers/graceHopper.png"
+import zoey from "../../assets/team_pics/zoey.png"
 
 const speakerCards=[
 
   <SpeakerCard 
-  //speakerPic={}
-  speakerName={"Speaker 1"}
-  speakerDesc={"hello"}
+  speakerPic={graceHopper}
+  speakerName={"Grace Hopper"}
+  speakerDesc={"Dr. Emily Chen is a renowned expert in artificial intelligence and robotics, whose groundbreaking research has revolutionized the field of human-robot interaction. With over two decades of experience, Dr. Chen has worked with leading tech companies and research institutions to develop AI systems that enhance human capabilities in industries ranging from healthcare to autonomous vehicles. "}
   />,
 
   <SpeakerCard 

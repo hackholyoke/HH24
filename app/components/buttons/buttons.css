@@ -1,47 +1,77 @@
 .homeButtons {
-    -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    touch-action: manipulation;
-    display: inline-flex;
-    text-decoration: none;
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-    width: 12rem;
-    height: auto;
-    z-index: 1;
-    border-radius: 50%;
-    color: var(--text-body);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: flex; /* Use flexbox for alignment */
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 100%; /* Make button full width */
+  max-width: 12rem; /* Set a max width for larger screens */
+  height: auto;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px; /* Add margin to space out buttons */
+  transition: transform 0.2s; /* Smooth scaling effect */
 }
 
 .button-normal {
-    width: 100%;
-    height: 100%;
+  width: 100%; /* Keep normal button image full width */
+  height: 100%; /* Keep normal button image full height */
 }
-.button-hover{
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.homeButtons:hover .button-normal {
-    display: none;
-  }
-  
-.homeButtons:hover .button-hover {
-    display: block;
-  }
 
-/* .homeButtons:active { */
-    /* transform: translateY(10px); Moves the button down to give a pressed effect */
-    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0); Adjust shadow for pressed effect */
-  /* } */
+.button-hover {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.homeButtons:hover .button-normal {
+  display: none; /* Hide normal image on hover */
+  width: 150%; /* Keep hover button image full width */
+  height: 150%; /* Keep hover button image full height */
+}
+
+.homeButtons:hover .button-hover {
+  width: 130%; /* Keep hover button image full width */
+  height: 130%; /* Keep hover button image full height */
+  display: block; /* Show hover image on hover */
+}
+
+/* Optional pressed effect for active buttons */
+.homeButtons:active {
+  transform: translateY(2px); /* Slightly move down */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for pressed effect */
+}
+/* Media queries for responsive button layout */
+@media (max-width: 2000px) {
+  .homeButtons {
+      max-width: 45%; /* Change to 2 buttons per row */
+  }
+}
+
+
+/* Media queries for responsive button layout */
+@media (max-width: 1200px) {
+  .homeButtons {
+      max-width: 45%; /* Change to 2 buttons per row */
+  }
+}
+
+@media (max-width: 900px) {
+  .homeButtons {
+      max-width: 100%; /* Change to 1 button per row */
+      border-radius: 25%; /* Adjust roundness if needed */
+  }
+}

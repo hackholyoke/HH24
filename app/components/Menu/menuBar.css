@@ -4,31 +4,133 @@
   font-weight: normal;
   font-style: normal;
 }
-  
+
+.menuBarMobile,.smallMenuBar {
+  display: none;
+}
+
 
 .menuBar {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  z-index: 10;
+  border: 2px solid white; /* Create a white border */
+  padding: 15px 0; /* Adjust padding for more height */
+  border-radius: 40px; /* Rounded corners */
+  backdrop-filter: blur(50px);
+}
+
+.item {
+  padding-right: 2%;
+  padding-left: 1%;
+  text-decoration: none; /* Removes the auto-underline from the hyperlink */
+  color: rgb(232, 237, 237);
+  font-family: 'Menu Bar Font' !important;
+  font-size: 20px; /* Added px to font size */
+  letter-spacing: 2.3px;
+  line-height: 20px;
+  
+}
+@media only screen and (max-width: 1110px) {
+  .smallMenuBar {
+    display: block;
     position: fixed;
     top: 5%;
-    left: 5%;
+    right: 5%;
     width: 90%;
-    background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
     text-align: center;
     z-index: 10;
-    border: 3px solid white; /* Create a white border */
     padding: 15px 0; /* Adjust padding for more height */
     border-radius: 40px; /* Rounded corners */
     backdrop-filter: blur(50px);
+    border: 2px solid white; /* Create a white border */
+
+    
+  }
+  .menuBar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .menuBar, .smallMenuBar {
+    display: none;
+  }
+  
+  .menuBarMobile {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 0; /* Fixed right position */
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+    padding: 15px 0; /* Adjust padding for more height */
+    border-radius: 40px; /* Rounded corners */
+
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 3vw; /* Make the hamburger icon responsive */
+    height: 2vw; /* Adjust height responsively */
+    position: absolute; /* Position it absolutely */
+    right: 10px; /* Move it to the right */
+    top: 10px; /* Adjust the top position as needed */
+    backdrop-filter: blur(10px); /* Add blur background to hamburger */
+    border-radius: 10px; /* Rounded corners for the hamburger */
+    padding: 5px; /* Add some padding for a better clickable area */
   }
 
-.item{
-    padding-right: 2%;
-    padding-left: 1%;
-    text-decoration: none;  /* Removes the auto-underline fron the hyperlink */
-    color:rgb(232, 237, 237);
-    font-family: 'Menu Bar Font' !important;
-    font-size: 20;
-    letter-spacing: 2.3px;
-    line-height: 20px;
-}
- 
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border-radius: 4px;
+    border: 1px solid white;
+  }
 
+  .bar.open {
+    transform: rotate(45deg); /* Rotate the first bar */
+  }
+
+  .mobile-menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Set a semi-transparent black background for better visibility */
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    right: 10px;
+    width: 80%; /* Make it responsive */
+    max-width: 200px; /* Maximum width */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for the menu */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  }
+
+  .mobile-menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .mobile-menu .item {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: white; /* Text color for items */
+    background-color: transparent; /* Keep items transparent */
+    font-size: 16px; /* Make text responsive */
+  }
+
+  .mobile-menu .item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: Add a hover effect */
+  }
+}

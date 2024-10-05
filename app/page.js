@@ -23,7 +23,7 @@ const HomePage = () => {
          </div>
 
          <div className='container' id='stats'>
-                  <StatsScreen/> 
+               <StatsScreen/> 
          </div>
 
          <div className='container' id='about'>
@@ -36,7 +36,6 @@ const HomePage = () => {
          </div>
 
          <div id = "speakers" className='container'>
-            {/* <h1 className='heading'>Speakers</h1> */}
             <SpeakerScreen/>
          </div>
 

@@ -7,9 +7,7 @@ import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton, JoinSlackButton}
 const HomeScreen = () =>{
     return(
        <div>
-        <Image src={HH24_logo} width={250} height={250} className='image'/>
-        <Image src={HH24_logo} width={100} height={100} className='imageTop'/>
-        <Image src={HH24_logo} width={100} height={100} className='imageBottom'/>
+        <Image src={HH24_logo} width={250} height={250} layout='responsive' className='image'/>
         <p className='welcome'>Welcome To</p>
         <h1 className='heading_shadow'>Hack Holyoke 2024</h1>
         <h1 className='heading'>Hack Holyoke 2024!</h1>
