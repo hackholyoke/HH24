@@ -25,8 +25,8 @@ export default function ScheduleScreen() {
           src={scheduleImage} 
           alt={scheduleType === 'SatSchedule' ? 'Saturday Schedule' : 'Sunday Schedule'}
           layout="responsive"
-          width={800} 
-          height={600} 
+          width={1200} 
+          height={800} 
           className="schedule-image"
         />
       </div>

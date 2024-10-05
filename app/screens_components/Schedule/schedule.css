@@ -1,16 +1,19 @@
+/* schedule.css */
 .schedule-container {
-    display: flex; /* Use flexbox to align button and schedule */
-    align-items: flex-start; /* Align items to the top */
-    gap: 2rem; /* Space between button container and schedule */
-    margin-right: 20px; /* Space from the right edge of the window */
-}
-
-.schedule-image-wrapper {
-    margin-left: 1.5rem; /* Push the image to the right */
-    max-width: 60%; /* Optional: limit the max width */
-}
-
-.schedule-image {
-    max-width: 100%; /* Ensure the image is responsive */
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Space between buttons and image */
+    align-items: center; /* Center vertically */
+    width: 90%; /* Full width */
+  }
+  
+  .schedule-image-wrapper {
+    flex: 1; /* Allow this to take available space */
+    max-width: 60%; /* Adjust this percentage as needed */
+    margin-left: 3rem; /* Space between buttons and image */
+  }
+  
+  .schedule-image {
+    max-width: 100%; /* Ensure image scales with its container */
     height: auto; /* Maintain aspect ratio */
-}
+  }
