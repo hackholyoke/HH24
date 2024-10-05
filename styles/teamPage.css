@@ -3,9 +3,14 @@
   color:aliceblue;
   margin-bottom: 20px; /* Adds space between the heading and the cards */
 }
-
+body {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  margin: 0; /* Remove default margin */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
 .container {
-  height: 88vh; /* Adjust the height as needed */
+  height: 700px; /* Adjust the height as needed */
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 70px; /* Optional: Add some padding */
   display: flex;
@@ -15,10 +20,16 @@
   /*background-image: linear-gradient(to bottom, #2c3c94, #000000 );*/
 }
 @media screen and (max-width: 910px) {
-  .container {
-    height: 176vh; /* Double the height */
+  #co-chairs, #sponsorship, #webmaster{
+    height: 1400px; /* Double the height */
     flex-direction: column; /* Stacks the cards vertically */
     align-items: center; /* Optional: Center them */
+    gap: 20px
+  }
+  #logistics{
+    height: 2100px;
+    overflow-y: visible;
+    gap: 20px
   }
 }
 .section {
@@ -27,7 +38,7 @@
 }
 
 .memberCards{
-height: 100%;
+height: 500px;
 width: auto;
 }
 .stacked-cards {
