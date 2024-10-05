@@ -21,6 +21,17 @@ section {
     padding: 10px; /* Optional: Add some padding inside each section */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
   }
+/* .bg-assets{
+  background-image: 
+  url('../app/assets/background/Bg_diamond_d.png')
+  ;
+  background-size: 
+  20%
+  ;
+  background-repeat: 
+  no-repeat
+  ;
+} */
 
 .bg-assets{
   background-image: 
@@ -29,22 +40,22 @@ section {
   url('../app/assets/background/Bg_circle.png'),
   url('../app/assets/background/Bg_lines.png'),
   url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_circle_copy.png'),
-  url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_circle_copy.png')
+  /* url('../app/assets/background/Bg_circle.png'),
   url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_lines.png')
+  url('../app/assets/background/Bg_lines.png') */
   ;
 
   background-size: 
   30%, 
   60%,
-  100%,
+  115%,
   50%,
   100%,
-  100%,
-  90%,
+  100%
+  /* 90%,
   30%,
-  40%
+  40% */
   ;
 
   background-repeat: 
@@ -53,39 +64,28 @@ section {
   no-repeat,
   no-repeat,
   no-repeat,
+  /* no-repeat,
   no-repeat,
-  no-repeat,
-  no-repeat,
+  no-repeat, */
   no-repeat;
 
   background-position: 
   left top 3%,
   900px 200px,
-  left -300px top 10%,
+  left -300px top 8%,
   left -200px top 26%,
   left -700px top 27%,
-  right -600px top 40%,
-  center top 57%,
+  right -600px top 40%
+  /* center top 57%,
   right top 60%,
-  left top 54%
+  left top 54% */
   ;
 
 
 
 }
 
-/* Pseudo-element for rotating the fifth background image */
-.bg-assets::before {
-  content: ''; /* Required to create the pseudo-element */
-  top: 30%; /* Adjust the vertical position */
-  width: 140%; /* Set width to cover the area */
-  height: 140%; /* Set height to cover the area */
-  background-image: url('../app/assets/background/Bg_circle.png'); /* The image to rotate */
-  background-size: 140%; /* Adjust size */
-  background-repeat: no-repeat; /* No repeat */
-  background-position: center; 
-  transform: rotate(-144.61deg); /* Rotate the image */
-}
+
 
 /* #home {
     display: flex;
