@@ -10,6 +10,8 @@
     --slide-size-sm: 50%;
     --slide-spacing-lg: 2rem;
     --slide-size-lg: calc(100% / 3);
+    border :0;
+    outline: 0;
 }
 .log-embla-viewport{
     /* margin-left: 10rem; */
