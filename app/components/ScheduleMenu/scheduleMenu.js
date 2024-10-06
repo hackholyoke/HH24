@@ -1,22 +1,29 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import './ScheduleMenu.css'; // Import your button styles
 
+
+
+
 const ScheduleMenu = ({ onScheduleChange }) => {
+  const [activeButton, setActiveButton] = useState('SatSchedule'); // Default active button
+
+  // Handle button click
+  const handleClick = (scheduleType) => {
+    setActiveButton(scheduleType); // Update the active button
+    onScheduleChange(scheduleType); // Call the parent function to change the schedule
+  };
+
   return (
     <div className="button-container">
       <button 
-        onClick={() => onScheduleChange('SatSchedule')} 
-        className="button sat-button"
-      >
-        {/* You can keep this empty since you don't want text */}
-      </button>
+        onClick={() => handleClick('SatSchedule')} 
+        className={`button sat-button ${activeButton === 'SatSchedule' ? 'active' : ''}`}
+      />
       <button 
-        onClick={() => onScheduleChange('SunSchedule')} 
-        className="button sun-button"
-      >
-        {/* You can keep this empty since you don't want text */}
-      </button>
+        onClick={() => handleClick('SunSchedule')} 
+        className={`button sun-button ${activeButton === 'SunSchedule' ? 'active' : ''}`}
+      />
     </div>
   );
 };

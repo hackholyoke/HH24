@@ -3,16 +3,18 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import sat_schedule from '../../assets/schedule/Nov9.png';
 import sun_schedule from '../../assets/schedule/Nov10.png';
-import './schedule.css';  // Make sure to import your CSS file
+import './schedule.css';  // Import your CSS file
 import ScheduleMenu from '../../components/ScheduleMenu/ScheduleMenu';
 
 export default function ScheduleScreen() {
   const [scheduleType, setScheduleType] = useState('SatSchedule'); // Default to Saturday
 
+  // Function to handle schedule change
   const handleScheduleChange = (type) => {
     setScheduleType(type); // Update the schedule type
   };
 
+  // Determine which schedule image to show
   const scheduleImage = scheduleType === 'SatSchedule' ? sat_schedule : sun_schedule;
 
   return (
@@ -20,6 +22,7 @@ export default function ScheduleScreen() {
       <div className="button-container">
         <ScheduleMenu onScheduleChange={handleScheduleChange} />
       </div>
+      <div className="divider"></div> {/* Changed class to className */}
       <div className="schedule-image-wrapper">
         <Image 
           src={scheduleImage} 

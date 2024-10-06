@@ -1,10 +1,9 @@
 /* schedule.css */
 .schedule-container {
     display: flex;
-    flex-direction: row; /* Arrange items in a row */
     justify-content: space-between; /* Space between buttons and image */
     align-items: center; /* Center vertically */
-    width: 90%; /* Full width */
+    width: 90%; 
   }
   
   .schedule-image-wrapper {
@@ -17,3 +16,11 @@
     max-width: 100%; /* Ensure image scales with its container */
     height: auto; /* Maintain aspect ratio */
   }
+
+
+  .divider {
+    height: 100%; /* Matches the container height */
+    width: 1px;
+    background-color: white; /* White vertical line */
+    margin: 0 15px; /* Adds space between the button and the schedule */
+}
