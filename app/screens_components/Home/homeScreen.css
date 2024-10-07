@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: row;
     gap: 0.2%; /* Add space between buttons */
-    top: 60%;
+    top: 65%;
     left : 31%;
     position: absolute;
     transform: translate(-5%);
@@ -81,11 +81,11 @@
   #home .desc{
     /* November 14-15 | Chapin Auditorium, South Hadley, MA */
     position: absolute;
-    left: 30%;
-    top: 52%;
-    font-family: 'Pixelify';
-    font-size: 2vw;
-    color: #9CFFFC;
+    left: 30.5%;
+    top: 56%;
+    font-family: 'Orbitron';
+    font-size: 1.5vw;
+    color: #c8faf8;
   
   }
   
