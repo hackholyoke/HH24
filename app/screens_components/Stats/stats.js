@@ -25,7 +25,7 @@ const StatsScreen =() =>{
         {/* YEAR */}
         <Image src = {years_num} className='years_num stats_num' />
         <p className='th stats_words'>th</p>
-        <p className='year stats_words'>year running</p>
+        <p className='year_stat stats_words'>year running</p>
 
          {/* HEADING */}
         
