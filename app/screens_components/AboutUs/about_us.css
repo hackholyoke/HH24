@@ -16,14 +16,14 @@
     flex: 1;
     padding: 3vw;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Montserrat'
 
   }
   
   .headerContainer {
     flex: 1;
-    padding: 1rem;
+    padding: 2rem;
     color: transparent;
     font-size: 3vw;
     font-family: 'Audiowide';

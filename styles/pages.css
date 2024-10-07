@@ -5,33 +5,20 @@
 
 .container {
     height: 130vh; /* Adjust the height as needed */
-    overflow: hidden; /* Enable vertical scrolling */
-    /* padding: 2%; */
-    /* padding: 70px;  */
-    /* Optional: Add some padding */
+    overflow-y: hidden; 
+    overflow-x: visible;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
     overflow-x: hidden;
+    width: 100vw;
   }
   
 section {
     margin-bottom: 20px; /* Adjust the spacing between sections as needed */
-    padding: 10px; /* Optional: Add some padding inside each section */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-  }
-/* .bg-assets{
-  background-image: 
-  url('../app/assets/background/Bg_diamond_d.png')
-  ;
-  background-size: 
-  20%
-  ;
-  background-repeat: 
-  no-repeat
-  ;
-} */
+}
+
 
 .bg-assets{
   background-image: 
@@ -39,23 +26,16 @@ section {
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_circle.png'),
   url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_circle.png'),
   url('../app/assets/background/Bg_circle_copy.png')
-  /* url('../app/assets/background/Bg_circle.png'),
-  url('../app/assets/background/Bg_lines.png'),
-  url('../app/assets/background/Bg_lines.png') */
+
   ;
 
   background-size: 
   30%, 
   60%,
-  115%,
-  50%,
-  100%,
-  100%
-  /* 90%,
-  30%,
-  40% */
+  110%,
+  40%,
+  90%
   ;
 
   background-repeat: 
@@ -63,22 +43,15 @@ section {
   no-repeat, 
   no-repeat,
   no-repeat,
-  no-repeat,
-  /* no-repeat,
-  no-repeat,
-  no-repeat, */
   no-repeat;
 
   background-position: 
   left top 3%,
-  900px 200px,
-  left -300px top 8%,
-  left -200px top 26%,
-  left -700px top 27%,
-  right -600px top 40%
-  /* center top 57%,
-  right top 60%,
-  left top 54% */
+  150% 4%,
+  left 270% top 13%,
+  left 25% top 49%,
+  left 550% top 40%
+
   ;
 
 

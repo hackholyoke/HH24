@@ -9,7 +9,7 @@ body {
   margin: 0; /* Remove default margin */
   overflow-y: auto; /* Enable vertical scrolling */
 }
-.container {
+.team-container {
   height: 700px; /* Adjust the height as needed */
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 70px; /* Optional: Add some padding */
