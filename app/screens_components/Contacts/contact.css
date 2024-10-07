@@ -1,13 +1,15 @@
 .contact-container {
-    color: white; /* White text color */
+    color: grey; /* White text color */
     padding: 20px; /* Padding for spacing */
     position: relative; /* Positioning context */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the left */
     font-size: 0.9rem; /* Smaller font size */
     bottom: 0; /* Align to the bottom */
     width: 100%; /* Full width */
-    font: 1rem 'Montserrat'; /* Font style */
-    align-self: flex-end;
+    font: 1rem 'Montserrat', sans-serif; /* Font style */
+    align-item: center;
+    justify-content: flex-end;
+    display: center; /* Use flexbox for alignment */
 }
 
 .contact-container h1 {
@@ -20,4 +22,10 @@
 .content {
     flex: 1; /* Allow content to grow and take available space */
     overflow-y: auto; /* Allow vertical scrolling only in this area */
+}
+
+.icon-small{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
 }

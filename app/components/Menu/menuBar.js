@@ -39,7 +39,7 @@ const MenuBar = () => {
       {/* Desktop Menu */}
       <div className={`menuBar ${isMobileView ? 'hidden' : ''}`}>
         <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
-        <a onClick={() => handleClick('/#about')} href='#about' className='item'>About</a>
+        <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
         <a onClick={() => handleClick('/#challenges')}  href='#challenges' className='item'>Challenges</a>
         <a onClick={() => handleClick('/#sponsors')} href='#sponsors' className='item'>Sponsors</a>
         <a onClick={() => handleClick('/#faq')} href='#faq' className='item'>FAQ</a>
