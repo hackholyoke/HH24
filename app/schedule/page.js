@@ -6,7 +6,7 @@ import Image from 'next/image';
 import sat_schedule from '../assets/schedule/Nov9.png';
 import sun_schedule from '../assets/schedule/Nov10.png';
 import './schedule.css';  // Import your CSS file
-import ScheduleMenu from '/components/ScheduleMenu/ScheduleMenu.js';
+import ScheduleMenu from '../components/ScheduleMenu/scheduleMenu';
 
 
 export default function ScheduleScreen() {
