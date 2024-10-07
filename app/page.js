@@ -8,7 +8,6 @@ import StatsScreen from './screens_components/Stats/stats.js';
 import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import FAQ from './components/FAQ/faq.js';
-import ScheduleScreen from './screens_components/Schedule/schedule.js';
 
 const HomePage = () => {
   return (
@@ -38,10 +37,6 @@ const HomePage = () => {
 
          <div id = "speakers" className='container'>
             <SpeakerScreen/>
-         </div>
-
-         <div id = "schedule" className='container'>
-            <ScheduleScreen/>
          </div>
 
          <div id = "faq">

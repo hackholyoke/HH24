@@ -26,7 +26,7 @@ const MenuBar = () => {
 
   const handleRegisterClick = () => {
     setTimeout(() => {
-      window.open('https://forms.gle/LiPSTWoEuJGuLpMz9', '_blank');
+      window.open('https://linktr.ee/hackholyoke?utm_source=linktree_admin_share', '_blank');
     }, 300);
   };
 
@@ -40,9 +40,7 @@ const MenuBar = () => {
       <div className={`menuBar ${isMobileView ? 'hidden' : ''}`}>
         <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
         <a onClick={() => handleClick('/#about')} href='#about' className='item'>About</a>
-        {/* <a onClick={() => handleClick('/#schedule')} href='#schedule' className='item'>Schedule</a> */}
         <a onClick={() => handleClick('/#challenges')}  href='#challenges' className='item'>Challenges</a>
-        {/* <a onClick={() => handleClick('/#speakers')} href='#speakers' className='item'>Speakers</a> */}
         <a onClick={() => handleClick('/#sponsors')} href='#sponsors' className='item'>Sponsors</a>
         <a onClick={() => handleClick('/#faq')} href='#faq' className='item'>FAQ</a>
         <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
@@ -52,7 +50,7 @@ const MenuBar = () => {
         {/* Desktop Menu */}
       <div className={`smallMenuBar ${isMobileView ? 'hidden' : ''}`}>
         <a onClick={() => handleClick('/#about')} href='#about' className='item'>About</a>
-        <a onClick={() => handleClick('/#schedule')} href='#schedule' className='item'>Schedule</a>
+        <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
         <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
 
         <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
@@ -71,7 +69,7 @@ const MenuBar = () => {
           {/* Mobile Menu Items */}
           <div className={isMobileMenuOpen ? 'mobile-menu open' : 'mobile-menu'}>
             <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
-            <a onClick={() => handleClick('/#schedule')} href='#schedule' className='item'>Schedule</a>
+            <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
             <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
             <a onClick={() => handleRegisterClick()} className='item'>Register</a>
           </div>

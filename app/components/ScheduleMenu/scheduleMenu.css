@@ -48,8 +48,8 @@
 
 /* Media queries for responsive button layout */
 @media (max-width: 1200px) {
-  .homeButtons {
-      max-width: 45%; /* Change to 2 buttons per row */
+  .button {
+    scale: 0.9; /* Scale down the buttons */
   }
 }
 
