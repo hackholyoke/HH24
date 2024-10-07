@@ -1,14 +1,16 @@
 .container{
   height: 130vh; /* Adjust the height as needed */
   overflow: hidden; /* Enable vertical scrolling */
+  padding-top:10vw;
   /* padding: 2%; */
   /* padding: 70px;  */
-  /* Optional: Add some padding */
+
   display: flex;
   justify-content: center;
   align-items: center;
   width:100vw;
   overflow-x: hidden;
+  background-image: black;
 }
 .schedule-container {
   display: flex;
@@ -44,48 +46,3 @@
   height: 100%; /* Let the divider take the full height of its parent */
 }
 
-.bg-assets{
-  background-image: 
-  url('../assets/background/Bg_circle.png'),
-  url('../assets/background/Bg_circle_copy.png'),
-  url('../assets/background/Bg_circle.png'),
-  url('../assets/background/Bg_circle_copy.png'),
-  url('../assets/background/Bg_circle.png'),
-  url('../assets/background/Bg_circle_copy.png'),
-  url('../assets/background/Bg_circle.png'),
-  url('../assets/background/Bg_circle_copy.png')
-  ;
-
-  background-size: 
-  70%,
-  115%,
-  100%,
-  100%,
-  80%,
-  80%,
-  80%,
-  70%
-  /* 90% */
-  ;
-
-  background-repeat: 
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat,
-  no-repeat;
-
-  background-position: 
-  left -550px top 0%,
-  left 500px top 4%,
-  left -700px top 35%,
-  right -600px top 50%,
-  left -650px top 65%,
-  left 700px top 80%,
-  left -650px top 95%,
-  left 950px top 105%
-
-}
