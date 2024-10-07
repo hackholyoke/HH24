@@ -10,6 +10,7 @@ import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import FAQ from './components/FAQ/faq.js';
 import Contact from './screens_components/Contacts/contact.js';
 
+
 const HomePage = () => {
   return (
     <div>
@@ -41,7 +42,8 @@ const HomePage = () => {
          </div>
 
          <div id = "faq">
-            <FAQ/>
+            {/* <FAQ/> */}
+            <FAQScreen/>
          </div>
 
          <div id= "sponsors" className='container'>

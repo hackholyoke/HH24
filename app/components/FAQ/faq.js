@@ -1,30 +1,30 @@
 "use client"
-
+//NOT USING THIS FILE
 import React, { useState } from 'react';
 import './faq.css';
 import Image from 'next/image';
-import What_is_HH_fold from '../../assets/What_is_HH_fold.png';
-import What_is_HH_unfold from '../../assets/What_is_HH_unfold.png';
-import Where_fold from '../../assets/Where_fold.png';
-import Where_unfold from '../../assets/Where_unfold.png';
-import Who_fold from '../../assets/Who_fold.png';
-import Who_unfold from '../../assets/Who_unfold.png';
-import Team_unfold from '../../assets/Team_unfold.png';
-import Team_fold from '../../assets/Team_fold.png';
-import Participate_unfold from '../../assets/Participate_unfold.png';
-import Participate_fold from '../../assets/Participate_fold.png';
-import Free_unfold from '../../assets/Free_unfold.png';
-import Free_fold from '../../assets/Free_fold.png';
-import Other_way_unfold from '../../assets/Other_way_unfold.png';
-import Other_way_fold from '../../assets/Other_way_fold.png';
-import Member_unfold from '../../assets/Member_unfold.png';
-import Member_fold from '../../assets/Member_fold.png';
-import Hackathon_unfold from '../../assets/Hackathon_unfold.png';
-import Hackathon_fold from '../../assets/Hackathon_fold.png';
-import FH_unfold from '../../assets/FH_unfold.png';
-import FH_fold from '../../assets/FH_fold.png';
-import Experience_unfold from '../../assets/Experience_unfold.png';
-import Experience_fold from '../../assets/Experience_fold.png';
+import What_is_HH_fold from '../../assets/faqImg/What_is_HH_fold.png';
+import What_is_HH_unfold from '../../assets/faqImg/What_is_HH_unfold.png';
+import Where_fold from '../../assets/faqImg/Where_fold.png';
+import Where_unfold from '../../assets/faqImg/Where_unfold.png';
+import Who_fold from '../../assets/faqImg/Who_fold.png';
+import Who_unfold from '../../assets/faqImg/Who_unfold.png';
+import Team_unfold from '../../assets/faqImg/Team_unfold.png';
+import Team_fold from '../../assets/faqImg/Team_fold.png';
+import Participate_unfold from '../../assets/faqImg/Participate_unfold.png';
+import Participate_fold from '../../assets/faqImg/Participate_fold.png';
+import Free_unfold from '../../assets/faqImg/Free_unfold.png';
+import Free_fold from '../../assets/faqImg/Free_fold.png';
+import Other_way_unfold from '../../assets/faqImg/Other_way_unfold.png';
+import Other_way_fold from '../../assets/faqImg/Other_way_fold.png';
+import Member_unfold from '../../assets/faqImg/Member_unfold.png';
+import Member_fold from '../../assets/faqImg/Member_fold.png';
+import Hackathon_unfold from '../../assets/faqImg/Hackathon_unfold.png';
+import Hackathon_fold from '../../assets/faqImg/Hackathon_fold.png';
+import FH_unfold from '../../assets/faqImg/FH_unfold.png';
+import FH_fold from '../../assets/faqImg/FH_fold.png';
+import Experience_unfold from '../../assets/faqImg/Experience_unfold.png';
+import Experience_fold from '../../assets/faqImg/Experience_fold.png';
 
 
 const FAQ = () => {
