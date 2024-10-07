@@ -8,6 +8,7 @@ import sun_schedule from '../assets/schedule/Nov10.png';
 import './schedule.css';  // Import your CSS file
 import ScheduleMenu from '../components/ScheduleMenu/ScheduleMenu';
 
+
 export default function ScheduleScreen() {
   const [scheduleType, setScheduleType] = useState('SatSchedule'); // Default to Saturday
 
