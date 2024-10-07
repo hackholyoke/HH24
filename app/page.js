@@ -8,6 +8,7 @@ import StatsScreen from './screens_components/Stats/stats.js';
 import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import FAQ from './components/FAQ/faq.js';
+import Contact from './screens_components/Contacts/contact.js';
 
 const HomePage = () => {
   return (
@@ -44,10 +45,14 @@ const HomePage = () => {
          </div>
 
          <div id= "sponsors" className='container'>
-            <h1 className='heading'>Contact Us</h1>
+
+         </div>
+         <div id="contacts" className='container'>
+            <Contact/>
          </div>
       </div>
-    </div>
+      </div>
+
   );
 };
 

@@ -1,0 +1,23 @@
+.contact-container {
+    color: white; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    position: relative; /* Positioning context */
+    text-align: left; /* Align text to the left */
+    font-size: 0.9rem; /* Smaller font size */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    font: 1rem 'Montserrat'; /* Font style */
+    align-self: flex-end;
+}
+
+.contact-container h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-container p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+.content {
+    flex: 1; /* Allow content to grow and take available space */
+    overflow-y: auto; /* Allow vertical scrolling only in this area */
+}
