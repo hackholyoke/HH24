@@ -7,10 +7,9 @@ import AboutUS from './screens_components/AboutUs/about_us.js';
 import StatsScreen from './screens_components/Stats/stats.js';
 import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
-import FAQ from './components/FAQ/faq.js';
 import Contact from './screens_components/Contacts/contact.js';
-
-
+import FAQScreen from './screens_components/FAQScreen/FAQScreen.js';
+import SponsorScreen from './screens_components/Sponsors/sponsorScreen.js';
 const HomePage = () => {
   return (
     <div>
@@ -47,9 +46,10 @@ const HomePage = () => {
          </div>
 
          <div id= "sponsors" className='container'>
-
+         <SponsorScreen/>
+         
          </div>
-         <div id="contacts" className='container'>
+         <div id="contacts" >
             <Contact/>
          </div>
       </div>

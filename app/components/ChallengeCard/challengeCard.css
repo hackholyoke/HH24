@@ -27,16 +27,9 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
-    /* align-items: center; Center content vertically */
     text-align: center;
     line-height: 1.5; /* Adjust line-height for readability */
-    /* padding: 0 6rem; Add padding to prevent text from touching edges */
     box-sizing: border-box; /* Include padding in the element’s total width and height */
-
-    /* background-color: rgba(255, 255, 255, 0.131);
-    border-radius: 40px;
-    padding: 1rem;
-    overflow: hidden; */
 }
 
 .challenge-description {

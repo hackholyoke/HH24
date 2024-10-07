@@ -1,20 +1,21 @@
 
 .challenge-embla {
-  max-width: 90rem;
+  max-width: 100rem;
   margin: auto;
     --slide-height: 35rem;
-    --slide-spacing: -15rem;
+    --slide-spacing: -20rem;
     --slide-size: 55%;
   }
 
   .challenge-embla__viewport {
-    overflow: hidden;
+    width: 1450px;
+    overflow: visible;
   }
 
   .challenge-embla__container {
     display: flex;
     touch-action: pan-y pinch-zoom;
-    margin-left: calc(var(--slide-spacing) * -0.35);
+    margin-left: calc(var(--slide-spacing) * -0.2);
     
   }
 
@@ -22,8 +23,6 @@
     transform: translate3d(0, 0, 0);
     flex: 0 0 var(--slide-size);
     min-width: 0;
-    padding-left: var(--slide-spacing);
-    /* margin-left: var(--slide-spacing); */
     margin-right: var(--slide-spacing);
     position: relative; /* Ensure z-index works */
     transition: z-index 0.3s, transform 0.3s; /* Smooth transition */
@@ -106,8 +105,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
-    /* margin-right: calc((4rem - 1.4rem) / 2 * -1); */
     
   }
   .challenge-embla__dot {
@@ -152,6 +149,14 @@
     .challenge-embla__container,
     .challenge-embla__slide {
       transform: scale(0.8); /* Scale down everything by 80% */
+    }
+    
+  }
+
+  @media(max-width: 560px) {
+    .challenge-embla__container,
+    .challenge-embla__slide {
+      transform: scale(0.96); /* Scale down everything by 80% */
     }
     
   }
