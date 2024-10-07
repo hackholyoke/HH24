@@ -1,50 +1,63 @@
 /* components/ScheduleMenu.css */
 .button-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem; /* Space between buttons */
-    flex-direction: column;
-    width: 10rem;
-    height: 10rem;
-}
-
-.button {
-    flex-direction: column;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start ; /* Align buttons to the right */
+    gap: 4rem; /* Space between buttons */
+ 
+  }
+  
+  .button {
+    position: relative; 
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
-    border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth transition */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15vw; /* Responsive width based on viewport */
-    height: 10vw; /* Responsive height based on viewport */
-    max-width: 125px; /* Maximum width */
-    max-height: 70px; /* Maximum height */
-}
-
-/* Default states for each button */
-.sat-button {
+    background-size: contain; /* Ensures the image maintains its aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20vw; /* Let the width be determined by the image size */
+    height: 15vh; /* Let the height be determined by the image size */
+    max-width: 100%; /* Ensures responsiveness to the window width */
+    max-height: 100%; 
+  }
+  
+  /* Default states for each button */
+  .sat-button {
     background-image: url('../../assets/schedule/sat-button-b.png'); /* Normal image */
-    background-size: cover;
-    width: 200px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-}
+ 
 
-.sun-button {
+    /* Responsive width and height */
+    max-width: 100%; /* Ensures button adapts to smaller screens */
+    max-height: 100%; 
+  }
+  
+  .sun-button {
     background-image: url('../../assets/schedule/sun-button-b.png'); /* Normal image */
-    background-size: cover;
-    width: 200px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+  }
+  
+  /* Active states for each button */
+  .active.sat-button {
+    background-image: url('../../assets/schedule/sat-button-a.png'); /* Active image */
+  }
+  
+  .active.sun-button {
+    background-image: url('../../assets/schedule/sun-button-a.png'); /* Active image */
+  }
+
+
+
+/* Media queries for responsive button layout */
+@media (max-width: 1200px) {
+  .button {
+    scale: 0.9; /* Scale down the buttons */
+  }
 }
 
-/* Hover states for each button */
-.button:hover.sat-button {
-    background-image: url('../../assets/schedule/sat-button-a.png'); /* Hover image */
-}
-
-.button:hover.sun-button {
-    background-image: url('../../assets/schedule/sun-button-a.png'); /* Hover image */
+@media (max-width: 900px) {
+  .homeButtons {
+      max-width: 100%; /* Change to 1 button per row */ 
+  }
+  .button-container {
+    gap: 2rem; /* Space between buttons */
+  }
 }

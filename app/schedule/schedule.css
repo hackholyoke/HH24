@@ -1,0 +1,48 @@
+.container{
+  height: 130vh; /* Adjust the height as needed */
+  overflow: hidden; /* Enable vertical scrolling */
+  padding-top:10vw;
+  /* padding: 2%; */
+  /* padding: 70px;  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  overflow-x: hidden;
+  background-image: black;
+}
+.schedule-container {
+  display: flex;
+  justify-content: space-between; /* Space between button and image */
+  align-items: flex-start; /* Align items vertically */
+  width: 90%;
+  min-width: 500px; /* Fix typo: min-width instead of mix-width */
+  height: auto; /* Let the container grow based on content */
+  min-height: 70vh; /* Set a minimum height for larger screens */
+}
+
+.button-container {
+  display: flex;
+  align-items: center; /* Align the buttons vertically in the container */
+}
+
+.schedule-image-wrapper {
+  flex: 1; /* Allow the image container to grow based on available space */
+  max-width: 90%; /* Adjust as needed */
+  margin-left: 3rem; /* Space between button and image */
+}
+
+.schedule-image {
+  position: relative;
+  max-width: 100%; /* Ensure the image scales with its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.divider {
+  width: 1px; /* Thin vertical line */
+  background-color: white; /* White vertical line */
+  margin: 0 15px; /* Adds space between button and image */
+  height: 100%; /* Let the divider take the full height of its parent */
+}
+

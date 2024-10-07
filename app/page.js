@@ -8,8 +8,8 @@ import StatsScreen from './screens_components/Stats/stats.js';
 import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
 import FAQ from './components/FAQ/faq.js';
-import FAQScreen from './screens_components/FAQScreen/FAQScreen.js';
-import ScheduleScreen from './screens_components/Schedule/schedule.js';
+import Contact from './screens_components/Contacts/contact.js';
+
 
 const HomePage = () => {
   return (
@@ -41,20 +41,20 @@ const HomePage = () => {
             <SpeakerScreen/>
          </div>
 
-         <div id = "schedule" className='container'>
-            <ScheduleScreen/>
-         </div>
-
          <div id = "faq">
             {/* <FAQ/> */}
             <FAQScreen/>
          </div>
 
          <div id= "sponsors" className='container'>
-            <h1 className='heading'>Contact Us</h1>
+
+         </div>
+         <div id="contacts" className='container'>
+            <Contact/>
          </div>
       </div>
-    </div>
+      </div>
+
   );
 };
 
