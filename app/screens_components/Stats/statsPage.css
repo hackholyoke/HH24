@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 20px; /* Add some padding */
+    /*padding: 20px; 
+    /* Add some padding */
 }
 
 .stat-item {
     text-align: center; /* Center text under images */
-    margin: 10px 0; /* Space between items */
+   /* margin: 10px 0; 
+    /* Space between items */
 }
 
 
@@ -28,7 +30,6 @@
 
 #stats{
     position: relative;
-    height: 100vh;
     padding: 10px;
 }
 
@@ -78,8 +79,8 @@
     height: 2px;
     background-color: #00FFF7;
     top:50%;
-    width: 20%;
-    right: 2%;
+    width: 18%;
+    right: 4%;
 
 }
 #stats .stats_heading{
@@ -94,7 +95,7 @@
 #stats .stats_heading_2{
     position: absolute;
     font-family: "Orbitron";
-    font-size: 3vw;
+    font-size: 2vw;
     top: 55%;
     left: 45%;
     color: #00FFF7;
@@ -151,7 +152,7 @@
     left: 15%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size: 70%;
+    font-size: 50%;
     width: 13%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
 }
@@ -159,10 +160,10 @@
 #stats .colleges{
     position: absolute;
     top: 20%;             /* Align to the top */
-    right: 5%;            /* Align to the left */
+    right: 10%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size: 70%;
+    font-size: 50%;
     width: 22%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
     writing-mode: vertical-rl;
@@ -171,10 +172,10 @@
 #stats .participating{
     position: absolute;
     top: 30%;             /* Align to the top */
-    right: 15%;            /* Align to the left */
+    right: 7%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size: 70%;
+    font-size: 50%;
     width: 22%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
 }
@@ -185,7 +186,7 @@
     left: 35%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size: 70%;
+    font-size: 50%;
     width: 22%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
     writing-mode: vertical-rl;
@@ -198,7 +199,7 @@
     right: 7%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size: 70%;
+    font-size: 50%;
     width: 13%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
 }
@@ -209,7 +210,7 @@
     right: 2%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
-    font-size:70%;
+    font-size:50%;
     width: 30%;        /* Adjust as necessary for image size */
     height: auto;       /* Adjust as necessary for image size */
 }
@@ -220,6 +221,6 @@
     }
 
     .container{
-        max-width: 1420px
+        max-width: 100vw
     }
 }
