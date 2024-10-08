@@ -29,12 +29,23 @@
 }
 .speakerName {
     position: absolute;
-    font-size: 25px;  
-    font-family: 'Orbitron';  
-    bottom: 55%; 
+    font-size: 18px;  
+    font-family: 'Orbitron'; 
+    top: 86%; 
+    left: 13%;
     transform: translateX(-40%);
     
 }
+
+.speakerPosition{
+    position: absolute;
+    font-size: 15px;  
+    font-family: 'Orbitron'; 
+    top: 90%; 
+    left: 0%;
+    transform: translateX(-15%);
+}
+
 .speakerDesc{
     display: flex;
     align-items: center;
@@ -62,6 +73,23 @@
     height: 100%;     /* Maintain aspect ratio */
     width:100%;
     object-fit: cover;
+}
+
+
+.speakerTitle{
+    position: absolute;  /* Positioning relative to its container */
+    top: 25%;
+    left: 30%;           /* Center horizontally */
+    width: 60%;
+    max-width: 100%;
+    font-size: 18px;     /* Font size */
+    transform: translateX(-50%); /* Offset back to center the text */
+    font-weight: bold;
+    word-wrap: break-word;  /* Ensures long words will break and wrap */
+    width: auto;         /* Allow the width to adjust based on content */
+    text-align: center;  /* Center-align the text */
+    overflow: hidden;
+   
 }
 
 
