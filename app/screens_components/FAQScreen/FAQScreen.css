@@ -36,5 +36,27 @@
     .rightSideFAQ {
         width: 85vw;
     } 
+
+    .faqScreen {
+        margin-left: 5%; /* Reduce margin for smaller screens */
+        margin-right: 5%;
+    }
     
+}
+
+
+@media screen and (max-width: 500px) {
+    .FAQ-heading {
+        font-size: 35px; 
+    }
+
+    .leftSideFAQ,
+    .rightSideFAQ {
+        width: 95vw; 
+    }
+
+    .faqScreen {
+        margin-left: 3%; 
+        margin-right: 3%;
+    }
 }
