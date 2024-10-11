@@ -32,6 +32,7 @@ section {
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_lines.png'),
   url('../app/assets/background/Bg_circle_copy.png')
 
@@ -41,6 +42,7 @@ section {
   30%, 
   60%,
   110%,
+  50%,
   40%,
   90%
   ;
@@ -50,12 +52,14 @@ section {
   no-repeat, 
   no-repeat,
   no-repeat,
+  no-repeat,
   no-repeat;
 
   background-position: 
   left top 3%,
   150% 4%,
   left 270% top 13%,
+  left -30% top 34%,
   left 25% top 49%,
   left 550% top 40%
 
