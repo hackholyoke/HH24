@@ -46,3 +46,28 @@
   height: 100%; /* Let the divider take the full height of its parent */
 }
 
+@media (max-width : 500px){
+  .schedule-container {
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Align items horizontally */
+    min-width: 90%; /* Let the container fill the screen width */
+  }
+
+  .schedule-image-wrapper {
+    margin-left: 0; /* Remove left margin */
+    max-width: 100%; /* Ensure the image container fills the width */
+  }
+
+  .button-container {
+    flex-direction: row !important; /* Stack the buttons vertically */
+    max-width: 100%; /* Adjust as needed */
+  }
+  .schedule-image {
+    margin-right: 20px; /* Add space above the image */
+    width: 60%;
+  }
+  .divider {
+    display: none; /* Hide the divider on small screens */
+  }
+}

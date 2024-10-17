@@ -28,7 +28,7 @@ export const RegisterButton = () => {
     function handleRegisterPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://linktr.ee/hackholyoke?utm_source=linktree_admin_share', '_blank');
+            window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
         }, 300);
     }
 
