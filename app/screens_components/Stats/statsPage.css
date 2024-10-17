@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding: 20px; /* Add some padding */
 }
 
 .stat-item {
@@ -181,8 +180,8 @@
 
 #stats .majors{
     position: absolute;
-    bottom: 15%;             /* Align to the top */
-    left: 35%;            /* Align to the left */
+    top: 75%;
+    left: 40%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
     font-size: 70%;
@@ -194,7 +193,7 @@
 
 #stats .th{
     position: absolute;
-    bottom: 13%;             /* Align to the top */
+    top: 75%;             /* Align to the top */
     right: 7%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
@@ -205,7 +204,7 @@
 
 #stats .year{
     position: absolute;
-    bottom: 7%;             /* Align to the top */
+    top: 82%;             /* Align to the top */
     right: 2%;            /* Align to the left */
     margin: 10;          /* Ensure no extra margin */
     padding: 20;         /* Ensure no extra padding */
@@ -223,3 +222,45 @@
         max-width: 1420px
     }
 }
+
+@media (max-width: 400px){
+    .major, .participants, .colleges, .participating, .th, .year,.line-left, .line-right, .stats_heading_2,.majors_num,.years_num,.participants_num,.colleges_num,.stats_words,.stats_heading,.stats_num,.stats-container,.stat-item, .colleges{
+        font-size: 6vw;
+    }
+
+    .container{
+        max-width: 1420px
+    }
+    #stats .line-right, #stats .line-left{
+        display:none;
+    }
+    .stats_heading_2{
+        font-size: 5vw !important;
+        self-align: center;
+    }
+    .stats_heading{
+        font-size: 10vw !important;
+        text-align: center;
+    }
+    #stats .participants_num{
+        top: 25vh;
+    }
+    #stats .colleges_num{
+        top: 25vh;
+        left: 65vw;
+    }
+    #stats .majors_num, #stats .years_num, #stats .majors{
+        top: 70vh;
+    }
+    #stats .majors, #stats .years_num {
+        top: 70vh;
+    }
+    #stats .th{
+        top: 70vh;
+        left: 88vw;
+    }
+    #stats .year{
+        top: 75vh;
+        left: 67vw;
+    }
+}   
