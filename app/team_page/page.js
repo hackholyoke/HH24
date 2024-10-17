@@ -6,8 +6,6 @@ import MenuBar from '../components/Menu/menuBar';
 import SideMenu from '../components/SideMenu/sideMenu';
 import LogisticsCarousel from '../components/LogisticCarousel/LogisticsCarousel';
 import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
-import Image from 'next/image';
-import Member_Card_Back from '../assets/team/Member_Card_Back.png'
 
 import coChair from '../assets/team/coChair.png'
 import zoey from '../assets/team_pics/zoey.png'
@@ -84,7 +82,7 @@ const TeamPage = () => {
       }, []);
     return(
         <div>
-            <div className='bg-assets'>
+            <div className='teambg-assets'>
             <div> 
                 <MenuBar/>
             </div>
@@ -93,7 +91,7 @@ const TeamPage = () => {
                 <SideMenu/>
             </div>
 
-            <div id='co-chairs' className='container'>
+            <div id='co-chairs' className='team-container'>
                 
                 {/* <h1 className='heading'>Co-chairs</h1> */}
                 
@@ -112,7 +110,7 @@ const TeamPage = () => {
                
             </div>
 
-            <div id='logistics' className='container'>
+            <div id='logistics' className='team-container'>
                 {/* <h1 className='heading'>Logistics</h1> */}
                 {/* <LogisticsCarousel slides={logisticCards} options={{ loop: false }} /> */}
                 {isMobileView ? (
@@ -128,7 +126,7 @@ const TeamPage = () => {
                     )}
             </div>
 
-            <div id='sponsorship' className='container'>
+            <div id='sponsorship' className='team-container'>
                 {/* <h1 className='heading'>Sponsorship</h1> */}
                 <MemberCards frontCard={sponsor} mbrPic={nha}
                 name={"Nha-Van Ngyuen"}
@@ -145,7 +143,7 @@ const TeamPage = () => {
                 />
             </div>
 
-            <div id='webmaster' className='container'>
+            <div id='webmaster' className='team-container'>
                 {/* <h1 className='heading'>Webmaster</h1> */}
                 <MemberCards frontCard={web} mbrPic={dora}
                 name={"Yu Wati Nyi"}
@@ -162,7 +160,7 @@ const TeamPage = () => {
                 />
             </div>
 
-            <div id='finance' className='container'>
+            <div id='finance' className='team-container'>
                 {/* <h1 className='heading'>Finance</h1> */}
                 <MemberCards frontCard={finance} mbrPic={eonbi}
                 name={"Eonbi Choi"}
@@ -172,7 +170,7 @@ const TeamPage = () => {
                 />
             </div>
 
-            <div id='marketing' className='container'>
+            <div id='marketing' className='team-container'>
                 {/* <h1 className='heading'>Marketing</h1> */}
                 <MemberCards frontCard={mkt} mbrPic={graceL}
                 name={"Grace Lee"}
@@ -182,7 +180,7 @@ const TeamPage = () => {
                 />
             </div>
 
-            <div id='design' className='container'>
+            <div id='design' className='team-container'>
                 {/* <h1 className='heading'>Design</h1> */}
                 <MemberCards frontCard={design} mbrPic={linxi}
                 name={"Linxi Jiang"}

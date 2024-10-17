@@ -9,7 +9,7 @@ body {
   margin: 0; /* Remove default margin */
   overflow-y: auto; /* Enable vertical scrolling */
 }
-.container {
+.team-container {
   height: 700px; /* Adjust the height as needed */
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 70px; /* Optional: Add some padding */
@@ -21,7 +21,7 @@ body {
 }
 
 
-.bg-assets{
+.teambg-assets{
   background-image: 
   url('../app/assets/background/Bg_circle.png'),
   url('../app/assets/background/Bg_circle_copy.png'),
