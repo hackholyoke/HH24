@@ -32,7 +32,7 @@
 .button-hover {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 100%;
   object-fit: cover; /* Maintain aspect ratio */
 }
@@ -51,7 +51,7 @@
 
 /* Optional pressed effect for active buttons */
 .homeButtons:active {
-  transform: translateY(2px); /* Slightly move down */
+  transform: translateY(1px); /* Slightly move down */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for pressed effect */
 }
 /* Media queries for responsive button layout */
@@ -69,9 +69,16 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   .homeButtons {
-      max-width: 100%; /* Change to 1 button per row */
+      max-width: 90%; /* Change to 1 button per row */
       border-radius: 25%; /* Adjust roundness if needed */
+  
+    }
+  button:hover {
+      transform: translateX(10%);
+  }
+  .button-hover {
+    position: relative;
   }
 }

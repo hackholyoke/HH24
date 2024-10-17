@@ -2,7 +2,7 @@ import React from "react";
 import './homeScreen.css'
 import Image from 'next/image';
 import HH24_logo from '../../assets/HH24_logo.png';
-import {HomeButtons,RegisterButton, TeamButton,LearnMoreButton, JoinDiscordButton} from '../../components/buttons/HomeButtons';
+import {RegisterButton, TeamButton,LearnMoreButton, JoinDiscordButton} from '../../components/buttons/HomeButtons';
 
 const HomeScreen = () =>{
     return(
