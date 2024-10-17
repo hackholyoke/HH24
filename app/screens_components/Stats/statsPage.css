@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-
+}
 .stat-item {
     text-align: center; /* Center text under images */
    /* margin: 10px 0; 
