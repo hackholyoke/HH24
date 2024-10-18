@@ -34,7 +34,7 @@
   line-height: 20px;
   
 }
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1185px) {
   .smallMenuBar {
     display: block;
     position: fixed;

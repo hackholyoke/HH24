@@ -38,8 +38,8 @@ export default function ScheduleScreen() {
             src={scheduleImage} 
             alt={scheduleType === 'SatSchedule' ? 'Saturday Schedule' : 'Sunday Schedule'}
             layout="responsive"
-            width={1200} 
-            height={800} 
+            width={1700} 
+            height={1000} 
             className="schedule-image"
             priority={true}  // Force image loading to avoid lazy load issues
           />

@@ -70,7 +70,7 @@ const MenuBar = () => {
           {/* Mobile Menu Items */}
           <div className={isMobileMenuOpen ? 'mobile-menu open' : 'mobile-menu'}>
             <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
-            {/* <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a> */}
+            <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
             <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
             <a onClick={() => handleRegisterClick()} className='item'>Register</a>
           </div>
