@@ -1,13 +1,13 @@
 .container{
-  height: 130vh; /* Adjust the height as needed */
+  height: 170vh; /* Adjust the height as needed */
   overflow: hidden; /* Enable vertical scrolling */
-  padding-top:10vw;
+  padding-top:15vh;
   /* padding: 2%; */
   /* padding: 70px;  */
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width:100vw;
   overflow-x: hidden;
   background-image: black;

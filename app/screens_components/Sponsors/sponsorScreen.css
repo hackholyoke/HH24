@@ -26,14 +26,19 @@
     font-family: 'Montserrat';
     color: aliceblue;
     font-size: 18px; /* Default font size */
+    text-align: center;
 }
 
-.spnsr-images {
-    display: flex;
-    justify-content: center; /* Center the images */
-    margin: 20px 0; /* Add vertical margin for spacing */
+.spnsr-images img {
+    max-width: 50%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    overflow: visible ;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    content-align: center;
+    justify-content: center;
+    flex-direction: row;
 }
-
 
 /* Responsive styles for tablets */
 @media (min-width: 769px) {
@@ -42,6 +47,7 @@
         left: 20vh; /* Adjust left position */
         align-items: center;
         position: relative;
+        text-content: center;
     }
 
     .spn-desc {
@@ -58,7 +64,6 @@
 @media (max-width: 768px) {
     .sponsor-heading {
         font-size: 40px; /* Smaller font size on phones */
-        left: 20vh; /* Further adjust left position */
         align-items: center;
         position: relative;
     }
@@ -73,12 +78,10 @@
     }
 
     .spnsr-images {
-        flex-direction: column; /* Stack images vertically on smaller screens */
-        margin-top: 10%; /* Adjust margin for smaller screens */
-    }
-
-    .spnsr-images img {
-        max-width: 90%; /* Make images responsive */
+        max-width: 70%; /* Make images responsive */
         height: auto; /* Maintain aspect ratio */
+        margin-left: 10vh;
+        margin-top: 10vh;
+        flex-direction: row;
     }
 }

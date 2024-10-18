@@ -228,7 +228,8 @@
     }
 
     .container{
-        max-width: 1420px
+        max-width: 1420px; 
+        top: 10vh;
     }
     #stats .line-right, #stats .line-left{
         display:none;
