@@ -6,8 +6,6 @@ import MenuBar from '../components/Menu/menuBar';
 import SideMenu from '../components/SideMenu/sideMenu';
 import LogisticsCarousel from '../components/LogisticCarousel/LogisticsCarousel';
 import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
-import Image from 'next/image';
-import Member_Card_Back from '../assets/team/Member_Card_Back.png'
 
 import coChair from '../assets/team/coChair.png'
 import zoey from '../assets/team_pics/zoey.png'
@@ -84,7 +82,7 @@ const TeamPage = () => {
       }, []);
     return(
         <div>
-            <div className='bg-assets'>
+            <div className='teambg-assets'>
             <div> 
                 <MenuBar/>
             </div>

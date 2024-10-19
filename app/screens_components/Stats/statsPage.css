@@ -204,7 +204,7 @@
     height: auto;       /* Adjust as necessary for image size */
 }
 
-#stats .year{
+#stats .year_stat{
     position: absolute;
     bottom: 7%;             /* Align to the top */
     right: 2%;            /* Align to the left */

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import './ScheduleMenu.css'; // Import your button styles
+import './scheduleMenu.css'; // Import your button styles
 
 
 

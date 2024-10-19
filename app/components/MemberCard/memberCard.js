@@ -15,7 +15,7 @@
 'use client'
 import React, { useState } from "react";
 import Image from "next/image";
-import Member_Card_Back from '../../assets/team/Member_Card_Back.png'
+import Member_Card_Back from '../../assets/team/memCarBack.png'
 import './memberCard.css'
 
 export const MemberCards = ({frontCard, mbrPic, name, pronouns, year, major, answer}) => {

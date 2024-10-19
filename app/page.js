@@ -37,7 +37,9 @@ const HomePage = () => {
          </div>
 
          <div id = "speakers" className='container'>
-            <SpeakerScreen/>
+            {/* <SpeakerScreen/> */}
+            
+            <p className='coming-soon'>Coming Soon</p>
          </div>
 
          <div id = "faq">
