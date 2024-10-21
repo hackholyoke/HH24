@@ -123,11 +123,10 @@
     transform: translate(-15%, -50%);
     }
     #home .buttonLayout{
-      top: 55vh;
-      width: 100px;
+      width: 150px;
       flex-direction: column;
       position: auto;
-      transform: translate(-2.5%, -50%);
+      transform: translate(-5%, -50%);
 
     }
 }
