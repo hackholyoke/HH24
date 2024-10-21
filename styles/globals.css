@@ -23,8 +23,6 @@
 }
 
 body {
-
-    overflow-y: hidden;
     background-image: linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black) ;
-
+    overflow-x: hidden;
   }
