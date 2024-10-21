@@ -113,21 +113,23 @@
 
   }
   #home .heading, #home .heading_shadow{
-    font-size: 6vw;
+    font-size: 6.5vw;
+    justify-content: center;
     top: 30vh;
+    left: 25%;
     transform: translate(-15%, -50%);
   }
   #home .desc{
-    font-size: 3vw;
+    font-size: 2.5vw;
     top: 35vh;
+    left: 25%;
     transform: translate(-15%, -50%);
     }
     #home .buttonLayout{
-      top: 55vh;
-      width: 100px;
+      width: 50vw;
       flex-direction: column;
       position: auto;
-      transform: translate(-2.5%, -50%);
+      transform: translate(-5%, -50%);
 
     }
 }
