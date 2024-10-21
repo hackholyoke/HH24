@@ -24,7 +24,7 @@
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
-    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   
   #home .buttonLayout{
@@ -116,7 +116,7 @@
     transform: translate(-15%, -50%);
   }
   #home .heading_shadow{
-    left: 16.5vw;
+    left: 17.5vw;
     font-size: 6.5vw;
     justify-content: center;
     top: 30vh;
