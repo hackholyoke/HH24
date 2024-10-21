@@ -111,15 +111,15 @@
 
   }
   #home .heading{
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     justify-content: center;
     top: 30vh;
-    left: 16vw;
+    left: 30vw;
     transform: translate(-15%, -50%);
   }
   #home .heading_shadow{
-    left: 17.5vw;
-    font-size: 6.5vw;
+    left: 30.5vw;
+    font-size: 5.5vw;
     justify-content: center;
     top: 30vh;
     transform: translate(-15%, -50%);
