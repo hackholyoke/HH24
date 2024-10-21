@@ -21,10 +21,11 @@
 
 #home {
     display: grid;
+    overflow-y: hidden;
+
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   
   #home .buttonLayout{
