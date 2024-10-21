@@ -20,9 +20,9 @@
 }
 
 #home {
+    width: 100%;
     display: grid;
     overflow-y: hidden;
-
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
