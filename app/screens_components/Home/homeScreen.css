@@ -20,7 +20,9 @@
 }
 
 #home {
+    width: 100%;
     display: grid;
+    overflow-y: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
     min-height: 650px; /* Ensure the container takes up at least the full viewport height */
@@ -54,12 +56,8 @@
     position: absolute;
     left: 30.5%;
     top: 37%;
-  
     font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: 400;
     font-size: 5vw;
-  
     background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,22 +110,31 @@
     transform: translate(30%, -50%);
 
   }
-  #home .heading, #home .heading_shadow{
-    font-size: 6vw;
+  #home .heading{
+    font-size: 6.5vw;
+    justify-content: center;
+    top: 30vh;
+    left: 16vw;
+    transform: translate(-15%, -50%);
+  }
+  #home .heading_shadow{
+    left: 17.5vw;
+    font-size: 6.5vw;
+    justify-content: center;
     top: 30vh;
     transform: translate(-15%, -50%);
   }
   #home .desc{
-    font-size: 3vw;
+    font-size: 2.5vw;
     top: 35vh;
+    left: 25%;
     transform: translate(-15%, -50%);
     }
     #home .buttonLayout{
-      top: 55vh;
-      width: 100px;
+      width: 50vw;
       flex-direction: column;
       position: auto;
-      transform: translate(-2.5%, -50%);
+      transform: translate(-15%, -40%);
 
     }
 }

@@ -1,5 +1,5 @@
 .container{
-  height: 170vh; /* Adjust the height as needed */
+  height: 210vh; /* Adjust the height as needed */
   overflow: hidden; /* Enable vertical scrolling */
   padding-top:15vh;
   /* padding: 2%; */
@@ -10,6 +10,7 @@
   align-items: flex-start;
   width:100vw;
   overflow-x: hidden;
+
   background-image: black;
 }
 .schedule-container {
@@ -18,8 +19,8 @@
   align-items: flex-start; /* Align items vertically */
   width: 90%;
   min-width: 500px; /* Fix typo: min-width instead of mix-width */
-  height: auto; /* Let the container grow based on content */
-  min-height: 70vh; /* Set a minimum height for larger screens */
+  height: relative; /* Let the container grow based on content */
+  min-height: 900px; /* Set a minimum height for larger screens */
 }
 
 .button-container {
@@ -37,6 +38,8 @@
   position: relative;
   max-width: 100%; /* Ensure the image scales with its container */
   height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within its container without being cut off */
+
 }
 
 .divider {
@@ -45,6 +48,7 @@
   margin: 0 15px; /* Adds space between button and image */
   height: 100%; /* Let the divider take the full height of its parent */
 }
+
 
 @media (max-width : 500px){
   .schedule-container {
