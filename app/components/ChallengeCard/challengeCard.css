@@ -53,3 +53,37 @@
         font-size: 13px; /* Slightly smaller description text */
     }
 }
+/* Media query for smaller screens */
+@media (max-width: 516px) {
+    .c-card-container,
+    .cardPic {
+        transform: scale(0.8); /* Scale down the container and image */
+    }
+
+    .text-overlay-challenge {
+        width: 400px;
+        left: 20%;
+        font-size: 10px; /* Reduce font size */
+    }
+
+    .challenge-description {
+        font-size: 11px; /* Slightly smaller description text */
+    }
+}
+
+@media (max-width: 410px) {
+    .c-card-container,
+    .cardPic {
+        transform: scale(0.75); /* Scale down the container and image */
+    }
+
+    .text-overlay-challenge {
+        width: 300px;
+        left: 25%;
+        font-size: 10px; /* Reduce font size */
+    }
+
+    .challenge-description {
+        font-size: 11px; /* Slightly smaller description text */
+    }
+}

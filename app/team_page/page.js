@@ -6,8 +6,6 @@ import MenuBar from '../components/Menu/menuBar';
 import SideMenu from '../components/SideMenu/sideMenu';
 import LogisticsCarousel from '../components/LogisticCarousel/LogisticsCarousel';
 import { MemberCards,CoChairCards } from '../components/MemberCard/memberCard';
-import Image from 'next/image';
-import Member_Card_Back from '../assets/team/Member_Card_Back.png'
 
 import coChair from '../assets/team/coChair.png'
 import zoey from '../assets/team_pics/zoey.png'
@@ -73,18 +71,24 @@ const TeamPage = () => {
       const [isMobileView, setIsMobileView] = useState(false);
 
       useEffect(() => {
-          const handleResize = () => {
-              setIsMobileView(window.innerWidth < 910);
-          };
-  
-          window.addEventListener('resize', handleResize);
-          handleResize(); // Initial check
-  
-          return () => window.removeEventListener('resize', handleResize);
+        const mediaQuery = window.matchMedia('(max-width: 910px)');
+        const handleMediaQueryChange = (event) => {
+          setIsMobileView(event.matches);
+        };
+    
+        // Set initial value
+        setIsMobileView(mediaQuery.matches);
+    
+        // Listen for media query changes
+        mediaQuery.addEventListener('change', handleMediaQueryChange);
+    
+        return () => {
+          mediaQuery.removeEventListener('change', handleMediaQueryChange);
+        };
       }, []);
     return(
         <div>
-            <div className='bg-assets'>
+            <div className='teambg-assets'>
             <div> 
                 <MenuBar/>
             </div>
@@ -92,10 +96,14 @@ const TeamPage = () => {
             <div>
                 <SideMenu/>
             </div>
-
+    
+            
+            
+            <h1 className='team_header'>Meet the Team</h1>
             <div id='co-chairs' className='team-container'>
                 
                 {/* <h1 className='heading'>Co-chairs</h1> */}
+                
                 
                 <MemberCards frontCard={coChair} mbrPic={zoey} 
                 name={"Zoey Hong"}

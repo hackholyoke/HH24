@@ -5,6 +5,7 @@ import './about_us.css';
 const AboutUS = () => {
   return (
     <>
+    <div className="aboutText">
      <div className="headerContainer">
       <h1>What is Hack Holyoke?</h1>
       </div>
@@ -22,6 +23,7 @@ const AboutUS = () => {
             and workshops.)
         </p>
 
+      </div>
       </div>
      
     </>

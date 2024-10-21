@@ -34,7 +34,7 @@
   line-height: 20px;
   
 }
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1185px) {
   .smallMenuBar {
     display: block;
     position: fixed;
@@ -62,8 +62,8 @@
   .menuBarMobile {
     display: block;
     position: fixed;
-    top: 5%;
-    right: 0; /* Fixed right position */
+    top: 8%;
+    /*right: 0; /* Fixed right position */
     width: 90%;
     text-align: center;
     z-index: 10;

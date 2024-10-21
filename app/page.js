@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/pages.css'; 
-import '../styles/horizontalScroll.css';
 import MenuBar from './components/Menu/menuBar.js';
 import HomeScreen from './screens_components/Home/home.js'
 import AboutUS from './screens_components/AboutUs/about_us.js';
@@ -37,7 +36,9 @@ const HomePage = () => {
          </div>
 
          <div id = "speakers" className='container'>
-            <SpeakerScreen/>
+            {/* <SpeakerScreen/> */}
+            
+            <p className='coming-soon'>Coming Soon</p>
          </div>
 
          <div id = "faq">

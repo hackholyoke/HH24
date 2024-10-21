@@ -1,26 +1,35 @@
-.heading {
-  font-family: 'Audiowide'; /*Will be changing the font depending on design*/
-  color:aliceblue; 
-}
 
 .container {
-    height: 130vh; /* Adjust the height as needed */
+    height: 120vh; /* Adjust the height as needed */
     overflow-y: hidden; 
-    overflow-x: visible;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     width: 100vw;
+    max-width: 100%;
   }
   
-section {
-    margin-bottom: 20px; /* Adjust the spacing between sections as needed */
-    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+/* section {
+    margin-bottom: 20px; 
+    /* Adjust the spacing between sections as needed 
+} */
+
+.coming-soon{
+  position: relative;
+  font-family: 'Orbitron';
+  color:rgb(189, 218, 244);
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  text-align: center;
+  font-size: 60px;
+  text-decoration: none;
 }
 
 
 .bg-assets{
+  display: flex;
+  flex-direction: column;
   background-image: 
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_lines.png'), 
@@ -61,6 +70,7 @@ section {
 
 
 }
+
 
 
 

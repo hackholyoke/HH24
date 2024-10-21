@@ -6,7 +6,8 @@ import Image from 'next/image';
 import sat_schedule from '../assets/schedule/Nov9.png';
 import sun_schedule from '../assets/schedule/Nov10.png';
 import './schedule.css';  // Import your CSS file
-import ScheduleMenu from '../components/ScheduleMenu/ScheduleMenu';
+import ScheduleMenu from '../components/ScheduleMenu/scheduleMenu';
+
 
 export default function ScheduleScreen() {
   const [scheduleType, setScheduleType] = useState('SatSchedule'); // Default to Saturday
@@ -37,8 +38,6 @@ export default function ScheduleScreen() {
             src={scheduleImage} 
             alt={scheduleType === 'SatSchedule' ? 'Saturday Schedule' : 'Sunday Schedule'}
             layout="responsive"
-            width={1200} 
-            height={800} 
             className="schedule-image"
             priority={true}  // Force image loading to avoid lazy load issues
           />
