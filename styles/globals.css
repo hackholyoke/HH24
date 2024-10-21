@@ -23,8 +23,9 @@
 }
 
 body {
-
-    overflow-x: show;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
     background-image: linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black) ;
-
+    box-sizing: border-box;
   }

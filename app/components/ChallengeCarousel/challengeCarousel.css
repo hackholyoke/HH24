@@ -1,6 +1,6 @@
 
 .challenge-embla {
-  max-width: 100rem;
+  max-width: 90rem;
   margin: auto;
     --slide-height: 35rem;
     --slide-spacing: -20rem;
@@ -8,7 +8,7 @@
   }
 
   .challenge-embla__viewport {
-    width: 1450px;
+    width: 90rem;
     overflow: visible;
   }
 
@@ -145,18 +145,3 @@
     backface-visibility: hidden;
   }
   
-  @media(max-width: 638px) {
-    .challenge-embla__container,
-    .challenge-embla__slide {
-      transform: scale(0.8); /* Scale down everything by 80% */
-    }
-    
-  }
-
-  @media(max-width: 560px) {
-    .challenge-embla__container,
-    .challenge-embla__slide {
-      transform: scale(0.96); /* Scale down everything by 80% */
-    }
-    
-  }

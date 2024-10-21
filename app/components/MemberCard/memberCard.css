@@ -171,3 +171,11 @@
   .card-container:hover .year {
     visibility: hidden;  /* Hide the front text when the back is shown */
   }
+
+  @media (max-width: 410px) {
+    .card-container,
+    .card {
+        transform: scale(0.9); /* Scale down the container and image */
+    }
+
+}

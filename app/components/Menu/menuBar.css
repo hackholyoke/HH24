@@ -62,8 +62,8 @@
   .menuBarMobile {
     display: block;
     position: fixed;
-    top: 5%;
-    right: 0; /* Fixed right position */
+    top: 8%;
+    /*right: 0; /* Fixed right position */
     width: 90%;
     text-align: center;
     z-index: 10;
