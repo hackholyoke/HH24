@@ -1,6 +1,6 @@
 .Horizontalcontainer {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
   }
   
