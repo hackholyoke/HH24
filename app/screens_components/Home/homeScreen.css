@@ -20,11 +20,12 @@
 }
 
 #home {
+    width: 100%;
     display: grid;
+    overflow-y: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
-    
   }
   
   #home .buttonLayout{
@@ -112,11 +113,11 @@
     font-size: 6.5vw;
     justify-content: center;
     top: 30vh;
-    left: 23%;
+    left: 16vw;
     transform: translate(-15%, -50%);
   }
   #home .heading_shadow{
-    left: 23.5%;
+    left: 17.5vw;
     font-size: 6.5vw;
     justify-content: center;
     top: 30vh;
