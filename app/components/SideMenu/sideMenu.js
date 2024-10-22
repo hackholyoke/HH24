@@ -58,7 +58,7 @@ const SideMenu = () => {
         
 
         // Observe each section
-        const sections = document.querySelectorAll('.container');
+        const sections = document.querySelectorAll('.team-container');
         sections.forEach(section => {
             observer.observe(section);
         });

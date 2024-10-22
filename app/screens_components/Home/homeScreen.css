@@ -25,13 +25,14 @@
     overflow-x: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
-    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    min-height: 650px; /* Ensure the container takes up at least the full viewport height */
+    
   }
   
   #home .buttonLayout{
     display: flex;
     flex-direction: row;
-    gap: 0.2%; /* Add space between buttons */
+    gap: 0; /* Add space between buttons */
     top: 65%;
     left : 31%;
     position: absolute;
@@ -95,7 +96,7 @@
 
 
 
-@media (max-width: 420px){
+@media (max-width: 450px){
   #home .image{
     position: absolute;
     max-width: 35%;
@@ -110,15 +111,15 @@
 
   }
   #home .heading{
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     justify-content: center;
     top: 30vh;
-    left: 16vw;
+    left: 30vw;
     transform: translate(-15%, -50%);
   }
   #home .heading_shadow{
-    left: 17.5vw;
-    font-size: 6.5vw;
+    left: 30.5vw;
+    font-size: 5.5vw;
     justify-content: center;
     top: 30vh;
     transform: translate(-15%, -50%);
@@ -138,3 +139,8 @@
     }
 }
 
+@media screen and (max-width: 450px){
+  #home{
+    height: 700px;
+  }
+}

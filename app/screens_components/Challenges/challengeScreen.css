@@ -7,3 +7,11 @@
     font-size: 60px;
     
 }
+@media screen and (max-width: 500px) {
+    .challenge-heading {
+        font-size: 35px; 
+    }
+    #challenges{
+        height: 700px; 
+    }
+}
