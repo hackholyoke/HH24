@@ -1,6 +1,6 @@
 .sche-page-container{
   height: 2000px; /* Adjust the height as needed */
-  overflow: hidden; /* Enable vertical scrolling */
+  overflow-y:visible;
   padding-top:15vh;
 
   display: flex;
