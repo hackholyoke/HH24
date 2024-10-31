@@ -25,7 +25,6 @@
     overflow-x: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
-    min-height: 700px; /* Ensure the container takes up at least the full viewport height */
     
   }
   
@@ -94,9 +93,35 @@
     top: 31%;
   }
 
-
+  @media screen and (max-width: 850px){
+    #home{
+      margin-top: 10%;
+      height: 700px;
+    }
+    #home .desc{
+      top: 45%;
+    }
+    #home .buttonLayout{
+      top: 50%;
+    }
+  }
+  @media screen and (max-width: 500px){
+    #home{
+      margin-top: 10%;
+      height: 500px;
+    }
+    #home .desc{
+      top: 45%;
+    }
+    #home .buttonLayout{
+      top: 50%;
+    }
+  }
 
 @media (max-width: 450px){
+  #home{
+    height: 400px;
+  }
   #home .image{
     position: absolute;
     max-width: 35%;

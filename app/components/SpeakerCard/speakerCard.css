@@ -78,8 +78,8 @@
 
 .speakerTitle{
     position: absolute;  /* Positioning relative to its container */
-    top: 25%;
-    left: 30%;           /* Center horizontally */
+    top: 27%;
+    left: 31%;           /* Center horizontally */
     width: 60%;
     max-width: 100%;
     font-size: 18px;     /* Font size */
@@ -89,6 +89,9 @@
     width: auto;         /* Allow the width to adjust based on content */
     text-align: center;  /* Center-align the text */
     overflow: hidden;
+    font-family: 'Orbitron';
+    text-shadow: 4px 4px 7px rgba(110, 206, 213, 0.8);
+    margin-bottom: 10%;
    
 }
 

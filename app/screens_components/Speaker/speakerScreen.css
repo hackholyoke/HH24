@@ -7,4 +7,11 @@
     font-size: 60px;
     
 }
-  
+@media screen and (max-width: 500px) {
+    .speaker-heading {
+        font-size: 35px; 
+    }
+    #speakers{
+        height: 600px; 
+    }
+}

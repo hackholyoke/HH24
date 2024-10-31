@@ -197,6 +197,33 @@
   .text-overlay-speaker{
     
   }
+  .speaker-embla{
+    margin-top:-10%;
+  }
+  .speaker-embla__controls {
+    margin-top: -5rem;
+  }
+  .speakerName{
+    font-size: 10px;
+    top:50%;
+    
+  }
+
+}
+
+@media (max-width: 450px) {
+  .speaker-embla__viewport,
+  .speaker-embla__slide,
+  .speaker-card,
+  .speaker-embla__controls {
+    transform: scale(0.65);
+  }
+  .text-overlay-speaker{
+    bottom:30%;
+  }
+  .speaker-embla__controls {
+    margin-top: -12rem;
+  }
   .speakerName{
     font-size: 10px;
     top:50%;

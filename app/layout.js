@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <meta name="google-site-verification" content="Hx0XNhaS4BBCzzF5fp6ywmIxuuypBjHqsyDli3N2wqM" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
         <link rel="icon" href={metadata.icons.icon[0].url} sizes={metadata.icons.icon[0].sizes} type={metadata.icons.icon[0].type} />
         <title>HackHolyoke 2024</title>
