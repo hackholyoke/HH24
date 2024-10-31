@@ -25,7 +25,7 @@
     overflow-x: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
-    min-height: 650px; /* Ensure the container takes up at least the full viewport height */
+    min-height: 700px; /* Ensure the container takes up at least the full viewport height */
     
   }
   
@@ -130,17 +130,18 @@
     left: 25%;
     transform: translate(-15%, -50%);
     }
-    #home .buttonLayout{
+  #home .buttonLayout{
+      top: 60%;
       width: 50vw;
       flex-direction: column;
       position: auto;
       transform: translate(-15%, -40%);
 
-    }
+  }
 }
 
 @media screen and (max-width: 450px){
   #home{
-    height: 700px;
+    height: 800px;
   }
 }

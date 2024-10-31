@@ -22,7 +22,7 @@ export default function ScheduleScreen() {
   const scheduleImage = scheduleType === 'SatSchedule' ? sat_schedule : sun_schedule;
 
   return (
-    <div className = 'container' id='schedule'>
+    <div className = 'sche-page-container' id='schedule'>
       <div className='bg-assets'>
         <div>
           <MenuBar />
