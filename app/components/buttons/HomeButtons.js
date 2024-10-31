@@ -28,7 +28,7 @@ export const RegisterButton = () => {
     function handleRegisterPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://linktr.ee/hackholyoke?utm_source=linktree_admin_share', '_blank');
+            window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
         }, 300);
     }
 
@@ -76,7 +76,7 @@ export const JoinDiscordButton = () => {
     function handleJoinPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://discord.com/invite/7STg7McVWU', '_blank');
+            window.open('https://discord.gg/SMFkDS4xTh', '_blank');
         }, 300);
     }
     return (

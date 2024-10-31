@@ -1,19 +1,19 @@
 
 .container {
-    height: 130vh; /* Adjust the height as needed */
+    height: 120vh; /* Adjust the height as needed */
     overflow-y: hidden; 
-    overflow-x: visible;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     width: 100vw;
+    max-width: 100%;
   }
   
-section {
-    margin-bottom: 20px; /* Adjust the spacing between sections as needed */
-    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-}
+/* section {
+    margin-bottom: 20px; 
+    /* Adjust the spacing between sections as needed 
+} */
 
 .coming-soon{
   position: relative;
@@ -21,17 +21,20 @@ section {
   color:rgb(189, 218, 244);
   display: flex;
   justify-content: center;  /* Horizontally center */
-  align-items: center;
+  text-align: center;
   font-size: 60px;
   text-decoration: none;
 }
 
 
 .bg-assets{
+  display: flex;
+  flex-direction: column;
   background-image: 
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_circle.png'),
+  url('../app/assets/background/Bg_lines.png'), 
   url('../app/assets/background/Bg_lines.png'),
   url('../app/assets/background/Bg_circle_copy.png')
 
@@ -41,6 +44,7 @@ section {
   30%, 
   60%,
   110%,
+  50%,
   40%,
   90%
   ;
@@ -50,12 +54,14 @@ section {
   no-repeat, 
   no-repeat,
   no-repeat,
+  no-repeat,
   no-repeat;
 
   background-position: 
   left top 3%,
   150% 4%,
   left 270% top 13%,
+  left -30% top 34%,
   left 25% top 49%,
   left 550% top 40%
 
@@ -64,6 +70,7 @@ section {
 
 
 }
+
 
 
 

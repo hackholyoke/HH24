@@ -20,17 +20,19 @@
 }
 
 #home {
+    width: 100%;
     display: grid;
+    overflow-x: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
-    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    min-height: 700px; /* Ensure the container takes up at least the full viewport height */
     
   }
   
   #home .buttonLayout{
     display: flex;
     flex-direction: row;
-    gap: 0.2%; /* Add space between buttons */
+    gap: 0; /* Add space between buttons */
     top: 65%;
     left : 31%;
     position: absolute;
@@ -54,12 +56,8 @@
     position: absolute;
     left: 30.5%;
     top: 37%;
-  
     font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: 400;
     font-size: 5vw;
-  
     background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -96,19 +94,54 @@
     top: 31%;
   }
 
-  @media screen and (max-width: 1000px) {
-    .desc{
-      top: 30%;
-    }
-  }
-  @media screen and (max-width: 700px) {
-    .desc{
-      top: 20%;
-    }
-  }
 
-  @media screen and (max-width: 600px) {
-    .desc{
-      top: 10%;
-    }
+
+@media (max-width: 450px){
+  #home .image{
+    position: absolute;
+    max-width: 35%;
+    top: 15vh;
+    transform: translate(60%, -50%);
+
   }
+  #home .welcome{
+    font-size: 4vw;
+    top: 25vh;
+    transform: translate(30%, -50%);
+
+  }
+  #home .heading{
+    font-size: 5.5vw;
+    justify-content: center;
+    top: 30vh;
+    left: 30vw;
+    transform: translate(-15%, -50%);
+  }
+  #home .heading_shadow{
+    left: 30.5vw;
+    font-size: 5.5vw;
+    justify-content: center;
+    top: 30vh;
+    transform: translate(-15%, -50%);
+  }
+  #home .desc{
+    font-size: 2.5vw;
+    top: 35vh;
+    left: 25%;
+    transform: translate(-15%, -50%);
+    }
+  #home .buttonLayout{
+      top: 60%;
+      width: 50vw;
+      flex-direction: column;
+      position: auto;
+      transform: translate(-15%, -40%);
+
+  }
+}
+
+@media screen and (max-width: 450px){
+  #home{
+    height: 800px;
+  }
+}

@@ -22,7 +22,7 @@ export default function ScheduleScreen() {
   const scheduleImage = scheduleType === 'SatSchedule' ? sat_schedule : sun_schedule;
 
   return (
-    <div className = 'container' id='schedule'>
+    <div className = 'sche-page-container' id='schedule'>
       <div className='bg-assets'>
         <div>
           <MenuBar />
@@ -38,8 +38,6 @@ export default function ScheduleScreen() {
             src={scheduleImage} 
             alt={scheduleType === 'SatSchedule' ? 'Saturday Schedule' : 'Sunday Schedule'}
             layout="responsive"
-            width={1200} 
-            height={800} 
             className="schedule-image"
             priority={true}  // Force image loading to avoid lazy load issues
           />
