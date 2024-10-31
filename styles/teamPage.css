@@ -71,7 +71,7 @@ body {
   no-repeat;
 
   background-position: 
-  left -550px top 0%,
+  left -125% top 0%,
   left 500px top 4%,
   left -700px top 35%,
   right -600px top 50%,
@@ -96,12 +96,55 @@ body {
     gap: 20px
   }
 
+  .teambg-assets {
+    background-size:
+      100%,
+      140%,
+      120%,
+      120%,
+      100%,
+      100%,
+      100%,
+      90%;
+    background-position:
+      left -50% top 0%,
+      left 250px top 4%,
+      left -350px top 35%,
+      right -300px top 50%,
+      left -325px top 65%,
+      left 350px top 80%,
+      left -100px top 95%,
+      left 475px top 105%;
+  }
+
 }
 @media (max-width: 574px) {
   .team_header{
     margin-top: 30%;
     font-size: 35px;
     margin-bottom: -50%;
+  }
+
+  .teambg-assets {
+    background-size:
+      200%,
+      200%,
+      200%,
+      180%,
+      150%,
+      150%,
+      130%,
+      120%;
+
+    background-position:
+      left 50% top 2%,
+      left 20% top 18%,
+      left  50%  top 35%,
+      right -190px top 53%,
+      left -190px top 70%,
+      left 60px top 80%,
+      left -200px top 90%,
+      left 190px top 99%;
   }
 
 }
