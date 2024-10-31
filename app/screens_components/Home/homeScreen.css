@@ -165,6 +165,23 @@
   }
 }
 
+@media (max-width: 320px){
+  #home .heading{
+    font-size: 5vw;
+    justify-content: center;
+    top: 30vh;
+    left: 30vw;
+    transform: translate(-15%, -50%);
+  }
+  #home .heading_shadow{
+    left: 30.5vw;
+    font-size: 5vw;
+    justify-content: center;
+    top: 30vh;
+    transform: translate(-15%, -50%);
+  }
+}
+
 @media screen and (max-width: 450px){
   #home{
     height: 800px;

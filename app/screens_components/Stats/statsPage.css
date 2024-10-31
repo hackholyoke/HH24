@@ -190,3 +190,25 @@
 
 
 }
+@media (max-width: 320px) {
+
+    /* Adjust headings */
+    .stats_heading_2 {
+        font-size: 5vw !important;
+        text-align: center; /* Align to center */
+        top: 70%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-33%,-500%)  
+    }
+
+    .stats_heading {
+        font-size: 10vw !important;
+        text-align: center; /* Center align */
+        top: 30%; /* Adjust position for the heading */
+        left: 50%; /* Center horizontally */
+        transform: translate(0%,-150%)   
+    }
+
+
+
+}

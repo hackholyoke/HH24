@@ -50,7 +50,7 @@
     padding: 0;
     margin: 0;
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-    width: auto;
+    width: 9.5rem;
     height: 4rem;
     z-index: 1;
     border-radius: 50%;
