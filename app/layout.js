@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import Head from 'next/head';
+import { Analytics } from "@vercel/analytics/react"
 
 export const viewport = {
   width: 'device-width',
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
         <title>HackHolyoke 2024</title>
       </Head>
       <body style={{backgroundImage: 'linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black)'
-}}>{children}</body>
+}}>{children}
+<Analytics />
+</body>
       
     </html>
   );
