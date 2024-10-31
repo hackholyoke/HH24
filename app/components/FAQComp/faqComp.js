@@ -28,7 +28,7 @@ export const FAQComp = ({closeQ, openQ, answerText}) => {
                 )}
                 {isOpen && (
                 <div className='open-faq'>
-                    <Image src={openQ} className='openQPic'/>
+                    <Image src={openQ} priority={true} className='openQPic'/>
                     <div className='answer-faq'>{answerText}</div>
                 </div>
                 )}
