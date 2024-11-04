@@ -12,6 +12,7 @@
   font-style: normal;
 }
 #about{
+
   max-width: 100%;
   overflow-x: hidden;
 
@@ -60,6 +61,7 @@
 
   @media (max-width: 450px) {
     #about{
+      margin-top: 200px;
       height: 400px;
       margin-bottom: 20%;
     }

@@ -46,7 +46,7 @@ const speakerCards=[
 
   <SpeakerCard 
   speakerPic={noprofile}
-  speakerName={"Adam Essemaal"}
+  speakerName={"Adam Essemaali"}
   speakerPosition={"Wolfram Language expert"}
   speakerDesc={"An interactive workshop where you'll learn how to leverage resource functions in the Wolfram Language to quickly prototype and deploy a project. We'll guide you through building a simple demo, demonstrating how the Wolfram Language can streamline the process from concept to production. Whether you're new to Wolfram or looking to enhance your skills, this session will equip you with the tools to bring your ideas to life efficiently "}
   speakerTitle={"The Power of Resource Functions: How They Work, Why They're Useful, and How to Use Them to Build a Simple Application."}

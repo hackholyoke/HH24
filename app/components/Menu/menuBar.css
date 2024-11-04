@@ -86,7 +86,7 @@
     display: block;
     position: fixed;
     top: 8%;
-    /*right: 0; /* Fixed right position */
+    right: 0; /* Fixed right position */
     width: 90%;
     text-align: center;
     z-index: 10;

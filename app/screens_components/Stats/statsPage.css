@@ -134,6 +134,7 @@
     .stats_heading_2 {
         font-size: 1rem !important;
         top: 293vw !important; 
+        transform: translate(-33%,-200%);
       
     }
 
