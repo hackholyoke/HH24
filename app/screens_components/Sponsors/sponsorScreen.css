@@ -1,3 +1,6 @@
+#sponsors{
+    height: 750px;
+}
 .sponsorScreen{
     display: flex;
     flex-direction: column;
@@ -26,31 +29,28 @@
     padding-left: 2%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .wolfram_logo{
-    height: 30vh;
-    width: auto;
+    height: 22%;
+    width: 22%;
 }
 .mhc_cs_logo{
-    height: 40vh;
-    width: auto;
+    height: 20%;
+    width: 20%;
 }
 
 
 .spn-desc {
     color: grey; /* White text color */
-    padding-left: 20px;
-    position: relative; /* Positioning context */
-    text-align: center; /* Align text to the left */
-    font-size: 0.9rem; /* Smaller font size */
+    text-align: center; 
     bottom: 0; /* Align to the bottom */
-    width: 90%; /* Full width */
+    width: 100%; /* Full width */
     font: 1rem 'Montserrat', sans-serif; /* Font style */
     align-items: center;
-    justify-content: flex-end;
-    display: center; /* Use flexbox for alignment */
+    justify-content: center;
+    display: flex; /* Use flexbox for alignment */
 
 }
 @media (max-width: 574px) {

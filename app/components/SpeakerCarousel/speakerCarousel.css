@@ -132,6 +132,9 @@
   .speaker-embla__controls{
     transform: scale(0.9);
   }
+  .speaker-embla__controls {
+    margin-top: -6rem;
+  }
   .text-overlay-speaker{
     
   }
@@ -146,6 +149,9 @@
   .speaker-card,
   .speaker-embla__controls {
     transform: scale(0.9);
+  }
+  .speaker-embla__controls {
+    margin-top: -6rem;
   }
   .text-overlay-speaker{
     
@@ -162,6 +168,9 @@
   .speaker-embla__controls {
     transform: scale(0.85);
   }
+  .speaker-embla__controls {
+    margin-top: -6rem;
+  }
   .text-overlay-speaker{
     
   }
@@ -176,6 +185,9 @@
   .speaker-card,
   .speaker-embla__controls {
     transform: scale(0.83);
+  }
+  .speaker-embla__controls {
+    margin-top: -8rem;
   }
   .text-overlay-speaker{
     
@@ -201,7 +213,7 @@
     margin-top:-10%;
   }
   .speaker-embla__controls {
-    margin-top: -5rem;
+    margin-top: -10rem;
   }
   .speakerName{
     font-size: 10px;

@@ -32,10 +32,10 @@ export default function RootLayout({ children }) {
         <title>HackHolyoke 2024</title>
         <meta name="google-site-verification" content="Hx0XNhaS4BBCzzF5fp6ywmIxuuypBjHqsyDli3N2wqM" />
       </Head>
-      <body style={{backgroundImage: 'linear-gradient(to bottom, black , #2c3c94 , black, #2c3c94 , black)'
-}}>{children}
-<Analytics />
-</body>
+      <body >
+        {children}
+        <Analytics />
+      </body>
       
     </html>
   );

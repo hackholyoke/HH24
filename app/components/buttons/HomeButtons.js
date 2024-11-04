@@ -17,8 +17,8 @@ import join_b from '../../assets/buttons/join_b.png'
 const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
     return (
         <button onClick={onClick} className='homeButtons'>
-            <Image src={normalImage} className='button-normal' />
-            <Image src={hoverImage} className='button-hover' />
+            <Image src={normalImage} priority={true} className='button-normal' />
+            <Image src={hoverImage} priority={true} className='button-hover' />
         </button>
     );
 };

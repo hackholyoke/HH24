@@ -1,6 +1,6 @@
 
 .container {
-    height: 120vh; /* Adjust the height as needed */
+    height: 65vw; /* Adjust the height as needed */
     overflow-y: hidden; 
     overflow-x: hidden;
     display: flex;
