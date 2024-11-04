@@ -131,4 +131,60 @@
   
   
   }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .bg-assets{
+    display: flex;
+    flex-direction: column;
+    background-image: 
+    url('../app/assets/background/Bg_lines.png'), /*1*/ 
+    url('../app/assets/background/Bg_lines.png'), /*2*/ 
+    url('../app/assets/background/Bg_circle.png'), /*3*/ 
+    url('../app/assets/background/Bg_circle_copy.png'), /*4*/ 
+    url('../app/assets/background/Bg_lines.png'), /*6*/ 
+    url('../app/assets/background/Bg_lines_flip.png'), /*7*/ 
+    url('../app/assets/background/Bg_circle.png'), /*8*/ 
+    url('../app/assets/background/Bg_circle_copy.png') /*9*/ 
+    ;
+  
+    background-size: 
+    30%, 
+    60%,
+    110%,
+    90%,
+    55%,
+    55%,
+    80%, 
+    80%
+    ;
+  
+    background-repeat: 
+    no-repeat,
+    no-repeat, 
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat
+    ;
+  
+    background-position: 
+    left top 3%,
+    150% 4%,
+    left 300% top 17%,
+    left 550% top 42%,
+    180% 52%,
+    right 180% top 52%,
+    right 300% top 85%,
+    300% 95%
+    ;
+  
+  
+  
+  }
+
 }

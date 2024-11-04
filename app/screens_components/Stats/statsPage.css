@@ -6,9 +6,6 @@
     height: fit-content;
 }
 
-.stat-item {
-    text-align: center; /* Center text under images */
-}
 
 /* Font Face Declarations */
 @font-face {
@@ -23,12 +20,6 @@
     src: url(../../../public/fonts/Audiowide-Regular.ttf) format('woff2');
     font-weight: normal;
     font-style: normal;
-}
-
-/* Stats Section Styles */
-#stats {
-    /* position: relative; */
-    
 }
 
 
@@ -126,21 +117,12 @@
 
 
 /* Media Queries */
-@media (max-width: 100%) {
-    .line-left, .line-right, .stats_heading_2, .majors_num, .years_num, .participants_num, .colleges_num, .stats_words, .stats_heading, .stats_num, .stats-container, .stat-item, .colleges {
-        font-size: 4vw;
-    }
 
-}
 @media (max-width: 450px) {
     /* Common font size adjustment */
    
     #stats{
         height: 600px;
-    }
-    
-   .line-left, .line-right, .stats_heading_2, .majors_num, .years_num, .participants_num, .colleges_num, .stats_words, .stats_heading, .stats_num, .stats-container, .stat-item, .colleges {
-        font-size: 6vw;
     }
 
     /* Hide lines for smaller screens */
@@ -150,42 +132,40 @@
 
     /* Adjust headings */
     .stats_heading_2 {
-        font-size: 5vw !important;
-        text-align: center; /* Align to center */
-        top: 70%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-33%,-300%)  
+        font-size: 1rem !important;
+        top: 293vw !important; 
+      
     }
 
     .stats_heading {
+        position: absolute;
         font-size: 10vw !important;
         text-align: center; /* Center align */
-        top: 70%; /* Adjust position for the heading */
-        left: 50%; /* Center horizontally */
-        transform: translate(0%,-80%)   
+        top: 250vw !important; /* Adjust position for the heading */
+
     }
 
     /* Number Positions */
     #stats .participants_num {
-        top: 5vh; /* Keep alignment consistent */
+        top: 220vw; /* Keep alignment consistent */
         left: 10vw;
         width: 30%;
     }
 
     #stats .colleges_num {
-        top: 5vh;
+        top: 220vw;
         left: 68vw; /* Adjust for small screen */
         width: 30%;
     }
 
     #stats .majors_num {
-        top: 100vw; /* Adjust to lower section */
+        top: 320vw; /* Adjust to lower section */
         left: 10vw; /* Adjust for small screen */
         width: 30%;
     }
 
     #stats .years_num {
-        top: 100vw; /* Align with majors */
+        top: 320vw; /* Align with majors */
         left: 68vw; /* Adjust for small screen */
         width: 25%;
     }
