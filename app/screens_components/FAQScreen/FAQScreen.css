@@ -20,14 +20,20 @@
 .rightSideFAQ {
     width: 600px; /* Adjust width to ensure both fit side by side */
     padding: 2px; /* Optional: Add padding */
-    box-sizing: border-box; /* Ensure padding is included in width */
-    position: relative; /* Positioning context */
+    /*box-sizing: border-box; /* Ensure padding is included in width */
+    /*position: relative; /* Positioning context */
 }
 
 @media screen and (max-width: 1130px) {
     .faqScreen{
         flex-direction: column; 
         gap: 0px;
+
+    }
+    .leftSideFAQ,
+    .rightSideFAQ{
+
+      
     }
 }
 

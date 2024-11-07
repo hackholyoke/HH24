@@ -20,12 +20,11 @@
 }
 
 #home {
-    width: 100%;
+    width: 100vw;
     display: grid;
     overflow-x: hidden;
     flex-direction: column; /* Arrange children vertically */
     align-items: center; 
-    min-height: 700px; /* Ensure the container takes up at least the full viewport height */
     
   }
   
@@ -33,7 +32,7 @@
     display: flex;
     flex-direction: row;
     gap: 0; /* Add space between buttons */
-    top: 65%;
+    top: 35vw;
     left : 31%;
     position: absolute;
     transform: translate(-5%);
@@ -44,7 +43,7 @@
     display: flex;
     position: absolute;
     left: 30%;
-    top: 37%;
+    top: 20vw;
     font-family: 'Audiowide';
     font-size: 5vw;
     color: #00FFF7;
@@ -55,7 +54,7 @@
     display: flex;
     position: absolute;
     left: 30.5%;
-    top: 37%;
+    top: 20vw;
     font-family: 'Audiowide';
     font-size: 5vw;
     background: linear-gradient(180deg, #00FFF7, #2C3C94, #737373);
@@ -68,7 +67,7 @@
   
     position: absolute;
     left: 30%;
-    top: 30%;
+    top: 15vw;
   
     font-family: 'Orbitron';
     font-size: 3vw;
@@ -80,7 +79,7 @@
     /* November 14-15 | Chapin Auditorium, South Hadley, MA */
     position: absolute;
     left: 30.5%;
-    top: 56%;
+    top: 30vw;
     font-family: 'Orbitron';
     font-size: 1.5vw;
     color: #c8faf8;
@@ -91,29 +90,49 @@
     position: absolute;
     max-width: 17%;
     left: 10%;
-    top: 31%;
+    top: 18vw;
   }
 
+  @media screen and (max-width: 850px){
+    #home{
+      margin-top: 10%;
 
+    }
+
+  }
+  @media screen and (max-width: 500px){
+    #home{
+      margin-top: 10%;
+      height: 500px;
+    }
+
+
+  }
 
 @media (max-width: 450px){
+  #home{
+    height: 400px;
+  }
   #home .image{
     position: absolute;
     max-width: 35%;
-    top: 15vh;
+    top: 30vw;
     transform: translate(60%, -50%);
 
   }
   #home .welcome{
     font-size: 4vw;
-    top: 25vh;
+    top: 48vw;
+    justify-content: center;
+    text-align: center;
     transform: translate(30%, -50%);
 
   }
   #home .heading{
     font-size: 5.5vw;
     justify-content: center;
-    top: 30vh;
+    text-align: center;
+    top: 58vw;
     left: 30vw;
     transform: translate(-15%, -50%);
   }
@@ -121,22 +140,42 @@
     left: 30.5vw;
     font-size: 5.5vw;
     justify-content: center;
-    top: 30vh;
+    text-align: center;
+    top: 58vw;
     transform: translate(-15%, -50%);
   }
   #home .desc{
     font-size: 2.5vw;
-    top: 35vh;
+    top: 70vw;
     left: 25%;
-    transform: translate(-15%, -50%);
+    justify-content: center;
+    text-align: center;
+    transform: translate(-10%, -50%);
     }
   #home .buttonLayout{
-      top: 60%;
+      top: 115vw;
       width: 50vw;
       flex-direction: column;
       position: auto;
-      transform: translate(-15%, -40%);
+      transform: translate(-10%, -40%);
 
+  }
+}
+
+@media (max-width: 320px){
+  #home .heading{
+    font-size: 5vw;
+    justify-content: center;
+    top: 30vh;
+    left: 30vw;
+    transform: translate(-15%, -50%);
+  }
+  #home .heading_shadow{
+    left: 30.5vw;
+    font-size: 5vw;
+    justify-content: center;
+    top: 30vh;
+    transform: translate(-15%, -50%);
   }
 }
 

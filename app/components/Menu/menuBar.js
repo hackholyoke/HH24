@@ -41,8 +41,8 @@ const MenuBar = () => {
       <div className={`menuBar ${isMobileView ? 'hidden' : ''}`}>
         <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
         <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
-        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
-
+        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item' style={{ cursor: 'pointer' }}>Challenges</a>
+        <a onClick={() => handleClick('/#speakers')} href='#speakers' className='item' style={{ cursor: 'pointer' }}>Workshops</a>
         <a onClick={() => handleClick('/#sponsors')} href='#sponsors' className='item'>Sponsors</a>
         <a onClick={() => handleClick('/#faq')} href='#faq' className='item'>FAQ</a>
         <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
@@ -52,12 +52,20 @@ const MenuBar = () => {
 
       {/* Desktop Menu */}
       <div className={`smallMenuBar ${isMobileView ? 'hidden' : ''}`}>
-        <a onClick={() => handleClick('/#about')} href='#about' className='item'>About</a>
-        {/* <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a> */}
-        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
-
+        <a onClick={() => handleClick('/#about')} href='#about' className='item' style={{ cursor: 'pointer' }}>About</a>
+        <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
+        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item' style={{ cursor: 'pointer' }}>Challenges</a>
+        <a onClick={() => handleClick('/#speakers')} href='#speakers' className='item' style={{ cursor: 'pointer' }}>Workshops</a>
         <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
-        <a onClick={() => handleRegisterClick()} className='item'>Register</a>
+        <a onClick={() => handleRegisterClick()} className='item' style={{ cursor: 'pointer' }}>Register</a>
+      </div>
+
+      <div className={`smallerMenuBar ${isMobileView ? 'hidden' : ''}`}>
+        <a onClick={() => handleClick('/#about')} href='#about' className='item' style={{ cursor: 'pointer' }}>About</a>
+        <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
+        <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item' style={{ cursor: 'pointer' }}>Challenges</a>
+        <a onClick={() => handleClick('/#speakers')} href='#speakers' className='item' style={{ cursor: 'pointer' }}>Workshops</a>
+        <a onClick={() => handleRegisterClick()} className='item' style={{ cursor: 'pointer' }}>Register</a>
       </div>
 
       {/* Mobile Menu */}
@@ -73,8 +81,9 @@ const MenuBar = () => {
           <div className={isMobileMenuOpen ? 'mobile-menu open' : 'mobile-menu'}>
             <a onClick={() => handleClick('/')} className='item' style={{ cursor: 'pointer' }}>Home</a>
             <a onClick={() => handleClick('/schedule')} className='item' style={{ cursor: 'pointer' }}> Schedule</a>
-            <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item'>Challenges</a>
-            <a onClick={() => handleRegisterClick()} className='item'>Register</a>
+            <a onClick={() => handleClick('/#challenges')} href='#challenges' className='item' style={{ cursor: 'pointer' }}>Challenges</a>
+            <a onClick={() => handleClick('/#faq')} href='#faq' className='item' style={{ cursor: 'pointer' }}>FAQ</a>
+            <a onClick={() => handleRegisterClick()} className='item' style={{ cursor: 'pointer' }}>Register</a>
           </div>
         </div>
       )}

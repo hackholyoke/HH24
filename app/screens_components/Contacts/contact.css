@@ -3,12 +3,11 @@
     padding: 20px; /* Padding for spacing */
     position: relative; /* Positioning context */
     text-align: center; /* Align text to the left */
-    font-size: 0.9rem; /* Smaller font size */
     bottom: 0; /* Align to the bottom */
     width: 100%; /* Full width */
     font: 1rem 'Montserrat', sans-serif; /* Font style */
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     display: center; /* Use flexbox for alignment */
     height: 20vh;
     left : -10vh;

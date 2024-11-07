@@ -14,7 +14,7 @@ import yerim from '../assets/team_pics/yerim.png'
 import logistic from '../assets/team/logistic.png'
 import tia from '../assets/team_pics/tia_log.png'
 import jennifer from '../assets/team_pics/jennifer_log.png'
-import ruby from '../assets/team_pics/ruby_log.png'
+import ruby from '../assets/team_pics/ruby_log.jpeg'
 import eli from '../assets/team_pics/Eli_log.png'
 import graceS from '../assets/team_pics/graceS_log.png'
 
