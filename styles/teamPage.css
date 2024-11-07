@@ -28,7 +28,7 @@ body {
   /*padding: 70px; /* Optional: Add some padding */
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
+  overflow-x: visible;
   align-items: center;
   font-size: 50px;
   max-width: 100%;
@@ -91,8 +91,8 @@ body {
     gap: 20px
   }
   #logistics{
-    height: 2600px;
-    overflow-y: visible;
+    height: 2700px;
+    overflow: visible;
     gap: 20px
   }
 

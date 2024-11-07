@@ -76,7 +76,7 @@ export const JoinDiscordButton = () => {
     function handleJoinPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://discord.gg/SMFkDS4xTh', '_blank');
+            window.open('https://discord.gg/QG4jccjS', '_blank');
         }, 300);
     }
     return (

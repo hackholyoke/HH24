@@ -3,7 +3,7 @@
 import MenuBar from '../components/Menu/menuBar';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import sat_schedule from '../assets/schedule/Nov9.png';
+import sat_schedule from '../assets/schedule/Nov09.png';
 import sun_schedule from '../assets/schedule/Nov10.png';
 import './schedule.css';  // Import your CSS file
 import ScheduleMenu from '../components/ScheduleMenu/scheduleMenu';

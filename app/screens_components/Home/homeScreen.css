@@ -116,20 +116,23 @@
   #home .image{
     position: absolute;
     max-width: 35%;
-    top: 15vh;
+    top: 30vw;
     transform: translate(60%, -50%);
 
   }
   #home .welcome{
     font-size: 4vw;
-    top: 25vh;
+    top: 48vw;
+    justify-content: center;
+    text-align: center;
     transform: translate(30%, -50%);
 
   }
   #home .heading{
     font-size: 5.5vw;
     justify-content: center;
-    top: 30vh;
+    text-align: center;
+    top: 58vw;
     left: 30vw;
     transform: translate(-15%, -50%);
   }
@@ -137,21 +140,24 @@
     left: 30.5vw;
     font-size: 5.5vw;
     justify-content: center;
-    top: 30vh;
+    text-align: center;
+    top: 58vw;
     transform: translate(-15%, -50%);
   }
   #home .desc{
     font-size: 2.5vw;
-    top: 35vh;
+    top: 70vw;
     left: 25%;
-    transform: translate(-15%, -50%);
+    justify-content: center;
+    text-align: center;
+    transform: translate(-10%, -50%);
     }
   #home .buttonLayout{
-      top: 60%;
+      top: 115vw;
       width: 50vw;
       flex-direction: column;
       position: auto;
-      transform: translate(-15%, -40%);
+      transform: translate(-10%, -40%);
 
   }
 }
