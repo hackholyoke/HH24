@@ -27,6 +27,7 @@ const MenuBar = () => {
   const handleRegisterClick = () => {
     setTimeout(() => {
       window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
+
     }, 300);
   };
 
@@ -47,6 +48,7 @@ const MenuBar = () => {
         <a onClick={() => handleClick('/team_page')} className='item' style={{ cursor: 'pointer' }}>Meet the team</a>
         <a onClick={() => handleRegisterClick()} className='item'>Register</a>
       </div>
+
 
       {/* Desktop Menu */}
       <div className={`smallMenuBar ${isMobileView ? 'hidden' : ''}`}>
