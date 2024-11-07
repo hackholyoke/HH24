@@ -1,3 +1,7 @@
+#challenges{
+    height: 750px;
+}
+
 .challenge-heading{
     font-family: 'Audiowide' ;
     color:aliceblue;
@@ -8,6 +12,9 @@
     
 }
 @media screen and (max-width: 500px) {
+    .challenge-embla{
+        margin-top:-8%;
+    }
     .challenge-heading {
         font-size: 35px; 
     }

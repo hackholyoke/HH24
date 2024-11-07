@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.menuBarMobile,.smallMenuBar {
+.menuBarMobile,.smallMenuBar, .smallerMenuBar {
   display: none;
 }
 
@@ -34,7 +34,7 @@
   line-height: 20px;
   
 }
-@media only screen and (max-width: 1185px) {
+@media only screen and (max-width: 1440px) {
   .smallMenuBar {
     display: block;
     position: fixed;
@@ -54,8 +54,31 @@
     display: none;
   }
 }
+@media only screen and (max-width: 1093px) {
+  .smallerMenuBar {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+    padding: 15px 0; /* Adjust padding for more height */
+    border-radius: 40px; /* Rounded corners */
+    backdrop-filter: blur(50px);
+    border: 2px solid white; /* Create a white border */
+
+    
+  }
+  .smallMenuBar{
+    display: none;
+  }
+  .menuBar {
+    display: none;
+  }
+}
 @media only screen and (max-width: 850px) {
-  .menuBar, .smallMenuBar {
+  .menuBar, .smallMenuBar,.smallerMenuBar {
     display: none;
   }
   
@@ -63,7 +86,7 @@
     display: block;
     position: fixed;
     top: 8%;
-    /*right: 0; /* Fixed right position */
+    right: 0; /* Fixed right position */
     width: 90%;
     text-align: center;
     z-index: 10;

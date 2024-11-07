@@ -23,12 +23,12 @@ export const FAQComp = ({closeQ, openQ, answerText}) => {
             <div className={`faq${isOpen ? 'faqOpenned' : ''}`}>
                 {!isOpen &&(
                 <div className='closed-faq'>
-                    <Image src={closeQ} className='closeQPic' />
+                    <Image src={closeQ} iority={true} className='closeQPic' />
                 </div>
                 )}
                 {isOpen && (
                 <div className='open-faq'>
-                    <Image src={openQ} className='openQPic'/>
+                    <Image src={openQ} priority={true} className='openQPic'/>
                     <div className='answer-faq'>{answerText}</div>
                 </div>
                 )}

@@ -1,17 +1,12 @@
-.container{
-  height: 210vh; /* Adjust the height as needed */
-  overflow: hidden; /* Enable vertical scrolling */
+.sche-page-container{
+  height: 2000px; /* Adjust the height as needed */
+  overflow-y:visible;
   padding-top:15vh;
-  /* padding: 2%; */
-  /* padding: 70px;  */
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width:100vw;
   overflow-x: hidden;
-
-  background-image: black;
 }
 .schedule-container {
   display: flex;
@@ -21,9 +16,11 @@
   min-width: 500px; /* Fix typo: min-width instead of mix-width */
   height: relative; /* Let the container grow based on content */
   min-height: 900px; /* Set a minimum height for larger screens */
+
 }
 
 .button-container {
+  padding-top:8vh;
   display: flex;
   align-items: center; /* Align the buttons vertically in the container */
 }
@@ -49,8 +46,19 @@
   height: 100%; /* Let the divider take the full height of its parent */
 }
 
+.sche-bg-assets{
+  background-image: linear-gradient(to bottom, black,#2c3c94) ;
+  display: flex;
+  flex-direction: column;
+
+}
 
 @media (max-width : 500px){
+
+  .sche-page-container{
+    padding-top: 0vh;
+    height: 1000px;
+  }
   .schedule-container {
     flex-direction: column; /* Stack the items vertically */
     justify-content: center; /* Center the items vertically */
@@ -64,6 +72,7 @@
   }
 
   .button-container {
+    padding-top: 2vh;
     flex-direction: row !important; /* Stack the buttons vertically */
     max-width: 100%; /* Adjust as needed */
   }
