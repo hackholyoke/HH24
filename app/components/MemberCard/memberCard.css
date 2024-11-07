@@ -159,15 +159,23 @@
     z-index: 1;          /* Ensure text is above the image */
     /* text-align: center;  Center text */
     font-family: 'Orbitron';
+
   }
 
   .hidden {
     visibility: hidden;
   }
-
   .card-container:hover .text-overlay,
   .card-container:hover .name_heading,
   .card-container:hover .pronouns,
   .card-container:hover .year {
     visibility: hidden;  /* Hide the front text when the back is shown */
   }
+
+  @media (max-width: 410px) {
+    .card-container,
+    .card {
+        transform: scale(0.9); /* Scale down the container and image */
+    }
+
+}

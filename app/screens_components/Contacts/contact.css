@@ -1,0 +1,79 @@
+.contact-container {
+    color: grey; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    position: relative; /* Positioning context */
+    text-align: center; /* Align text to the left */
+    font-size: 0.9rem; /* Smaller font size */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    font: 1rem 'Montserrat', sans-serif; /* Font style */
+    align-items: center;
+    justify-content: flex-end;
+    display: center; /* Use flexbox for alignment */
+    height: 20vh;
+    left : -10vh;
+}
+
+.contact-container h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-container p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+.content {
+    flex: 1; /* Allow content to grow and take available space */
+    overflow-y: auto; /* Allow vertical scrolling only in this area */
+}
+
+.icon-small{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .contact-container {
+      padding: 40px;
+      font-size: 1rem;
+      position: relative;
+      left: -5vh;
+    }
+  
+    .contact-container h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-container p {
+      font-size: 1.2rem;
+    }
+  
+    .icon-small {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 769px) {
+    .contact-container {
+      padding: 50px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .contact-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .contact-container p {
+      font-size: 1.5rem;
+    }
+  
+    .icon-small {
+      width: 30px;
+      height: 30px;
+    }
+  }

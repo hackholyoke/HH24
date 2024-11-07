@@ -1,14 +1,16 @@
 import React from 'react';
 import '../styles/pages.css'; 
-import '../styles/horizontalScroll.css';
+import Image from 'next/image';
+import comingsoon from './assets/comingSoon.png'
 import MenuBar from './components/Menu/menuBar.js';
 import HomeScreen from './screens_components/Home/home.js'
 import AboutUS from './screens_components/AboutUs/about_us.js';
 import StatsScreen from './screens_components/Stats/stats.js';
 import SpeakerScreen from './screens_components/Speaker/speaker_screen.js';
 import ChallengeScreen from './screens_components/Challenges/challenges.js';
-import FAQ from './components/FAQ/faq.js';
-
+import Contact from './screens_components/Contacts/contact.js';
+import FAQScreen from './screens_components/FAQScreen/FAQScreen.js';
+import SponsorScreen from './screens_components/Sponsors/sponsorScreen.js';
 const HomePage = () => {
   return (
     <div>
@@ -23,7 +25,7 @@ const HomePage = () => {
          </div>
 
          <div className='container' id='stats'>
-                  <StatsScreen/> 
+               <StatsScreen/> 
          </div>
 
          <div className='container' id='about'>
@@ -36,23 +38,26 @@ const HomePage = () => {
          </div>
 
          <div id = "speakers" className='container'>
-            {/* <h1 className='heading'>Speakers</h1> */}
-            <SpeakerScreen/>
-         </div>
-
-         <div id = "schedule" className='container'>
-            <h1 className='heading'>Schedule </h1>
+            {/* <SpeakerScreen/> */}
+            
+            <p className='coming-soon'>Coming Soon</p>
          </div>
 
          <div id = "faq">
-            <FAQ/>
+            {/* <FAQ/> */}
+            <FAQScreen/>
          </div>
 
          <div id= "sponsors" className='container'>
-            <h1 className='heading'>Contact Us</h1>
+         <SponsorScreen/>
+         
+         </div>
+         <div id="contacts" >
+            <Contact/>
          </div>
       </div>
-    </div>
+      </div>
+
   );
 };
 

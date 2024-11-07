@@ -1,0 +1,83 @@
+.sche-page-container{
+  height: 2000px; /* Adjust the height as needed */
+  overflow-y:visible;
+  padding-top:15vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width:100vw;
+  overflow-x: hidden;
+
+  background-image: black;
+}
+.schedule-container {
+  display: flex;
+  justify-content: space-between; /* Space between button and image */
+  align-items: flex-start; /* Align items vertically */
+  width: 90%;
+  min-width: 500px; /* Fix typo: min-width instead of mix-width */
+  height: relative; /* Let the container grow based on content */
+  min-height: 900px; /* Set a minimum height for larger screens */
+
+}
+
+.button-container {
+  padding-top:15vh;
+  display: flex;
+  align-items: center; /* Align the buttons vertically in the container */
+}
+
+.schedule-image-wrapper {
+  flex: 1; /* Allow the image container to grow based on available space */
+  max-width: 90%; /* Adjust as needed */
+  margin-left: 3rem; /* Space between button and image */
+}
+
+.schedule-image {
+  position: relative;
+  max-width: 100%; /* Ensure the image scales with its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within its container without being cut off */
+
+}
+
+.divider {
+  width: 1px; /* Thin vertical line */
+  background-color: white; /* White vertical line */
+  margin: 0 15px; /* Adds space between button and image */
+  height: 100%; /* Let the divider take the full height of its parent */
+}
+
+
+@media (max-width : 500px){
+
+  .sche-page-container{
+    padding-top: 0vh;
+    height: 1000px;
+  }
+  .schedule-container {
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center; /* Center the items vertically */
+    align-items: center; /* Align items horizontally */
+    min-width: 90%; /* Let the container fill the screen width */
+  }
+
+  .schedule-image-wrapper {
+    margin-left: 0; /* Remove left margin */
+    max-width: 100%; /* Ensure the image container fills the width */
+  }
+
+  .button-container {
+    padding-top: 2vh;
+    flex-direction: row !important; /* Stack the buttons vertically */
+    max-width: 100%; /* Adjust as needed */
+  }
+  .schedule-image {
+    margin-right: 20px; /* Add space above the image */
+    width: 60%;
+  }
+  .divider {
+    display: none; /* Hide the divider on small screens */
+  }
+}

@@ -1,7 +1,6 @@
 'use client'
 
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import './buttons.css'
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -15,7 +14,9 @@ import learn_b from '../../assets/buttons/learn_b.png'
 import join_a from '../../assets/buttons/join_a.png'
 import join_b from '../../assets/buttons/join_b.png'
 
-export const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
+
+const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
+
     return (
         <button onClick={onClick} className='homeButtons'>
             <Image src={normalImage} className='button-normal' />
@@ -30,7 +31,9 @@ export const RegisterButton = () => {
         setClicked(true);
         setTimeout(() => {
             window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
-        }, 300)
+
+        }, 300);
+
     }
 
     return (
@@ -49,6 +52,7 @@ export const TeamButton = () => {
     }
     return (
         <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a} />
+
 
     )
 }
@@ -73,10 +77,17 @@ export const LearnMoreButton = () => {
     )
 }
 
-export const JoinSlackButton = () => {
+
+export const JoinDiscordButton = () => {
+    const [clicked, setClicked] = useState(false);
+    function handleJoinPress() {
+        setClicked(true);
+        setTimeout(() => {
+            window.open('https://discord.gg/SMFkDS4xTh', '_blank');
+        }, 300);
+    }
     return (
-        <HomeButtons normalImage={join_b} hoverImage={join_a} />
+        <HomeButtons onClick={handleJoinPress} normalImage={join_b} hoverImage={join_a} />
+
     )
 }
-
-/*export default {HomeButtons, RegisterButton};*/

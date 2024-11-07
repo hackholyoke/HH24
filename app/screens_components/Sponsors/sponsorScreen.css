@@ -1,0 +1,65 @@
+.sponsorScreen{
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    position: relative;
+    font-family: 'Orbitron';
+    color: rgb(189, 218, 244);
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sponsor-heading {
+    font-family: 'Audiowide' ;
+    color:aliceblue;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    font-size: 60px;
+    
+}
+.spnsr-images{
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.wolfram_logo{
+    height: 30vh;
+    width: auto;
+}
+.mhc_cs_logo{
+    height: 40vh;
+    width: auto;
+}
+
+
+.spn-desc {
+    color: grey; /* White text color */
+    padding-left: 20px;
+    position: relative; /* Positioning context */
+    text-align: center; /* Align text to the left */
+    font-size: 0.9rem; /* Smaller font size */
+    bottom: 0; /* Align to the bottom */
+    width: 90%; /* Full width */
+    font: 1rem 'Montserrat', sans-serif; /* Font style */
+    align-items: center;
+    justify-content: flex-end;
+    display: center; /* Use flexbox for alignment */
+
+}
+@media (max-width: 574px) {
+    .sponsor-heading{
+        font-size: 35px;
+    }
+    .spnsr-images{
+        flex-direction: column;
+    }
+}
+
+

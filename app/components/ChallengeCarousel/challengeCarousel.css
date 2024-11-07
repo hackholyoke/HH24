@@ -1,19 +1,21 @@
+
 .challenge-embla {
   max-width: 90rem;
   margin: auto;
     --slide-height: 35rem;
-    --slide-spacing: -15rem;
+    --slide-spacing: -20rem;
     --slide-size: 55%;
   }
 
   .challenge-embla__viewport {
-    overflow: hidden;
+    width: 90rem;
+    overflow: visible;
   }
 
   .challenge-embla__container {
     display: flex;
     touch-action: pan-y pinch-zoom;
-    margin-left: calc(var(--slide-spacing) * -0.35);
+    margin-left: calc(var(--slide-spacing) * -0.2);
     
   }
 
@@ -21,8 +23,6 @@
     transform: translate3d(0, 0, 0);
     flex: 0 0 var(--slide-size);
     min-width: 0;
-    padding-left: var(--slide-spacing);
-    /* margin-left: var(--slide-spacing); */
     margin-right: var(--slide-spacing);
     position: relative; /* Ensure z-index works */
     transition: z-index 0.3s, transform 0.3s; /* Smooth transition */
@@ -40,20 +40,22 @@
   }
 
   .challenge-embla__controls {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: row;
     justify-items: center;
-    gap: 1.2rem;
-    margin-top: -6rem;
+    justify-content: center;
+    margin-top: -5rem;
   }
+
   .challenge-embla__buttons {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
     align-items: center;
     justify-content: center;
   }
+
   .challenge-embla__button {
     -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
     -webkit-appearance: none;
@@ -98,16 +100,15 @@
     display: block;
   }
 
-  .embla__dots {
+  .challenge-embla__dots {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
-    /* margin-right: calc((4rem - 1.4rem) / 2 * -1); */
     
   }
-  .embla__dot {
+  .challenge-embla__dot {
+    border: 1px solid #ccc;
     -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
     -webkit-appearance: none;
     appearance: none;
@@ -116,32 +117,31 @@
     display: inline-flex;
     text-decoration: none;
     cursor: pointer;
-    border-color: aqua;
-    border: 1;
-    padding: 1px;
-    margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 5px;
     width: 1rem;
-    height: 1rem;
+    height: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
   }
-  .embla__dot:after {
+  .challenge-embla__dot:after {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-    color: aqua;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     content: '';
+    border: 1px solid #ccc;
   }
-  .embla__dot--selected:after {
+  .challenge-embla__dot--selected:after {
     box-shadow: inset 0 0 0 0.2rem var(--text-body);
-    color: aqua;
+    background: linear-gradient(white, #2c3c94);
   }
-  .embla__slide__number {
+  .challenge-embla__slide__number {
     backface-visibility: hidden;
   }
   

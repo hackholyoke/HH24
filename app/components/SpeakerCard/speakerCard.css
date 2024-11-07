@@ -1,34 +1,95 @@
 .speaker-card {
-    position: relative;  /* Makes the overlay relative to this container */
-    left: 15%;
-    display: inline-block;  /* Shrinks the container to fit the content (image size) */
+    display: flex;
+    justify-content: center; /* Centers the .speaker-card horizontally */
+    align-items: center;     /* Centers the content vertically */
+    width: 100%;              /* Adjust the width as needed */
+    position: relative;
+    object-fit: cover;
 }
-
 .card-pic {
-    display: block;  /* Ensure the image takes up the full width of its container */
-    height: 700px;
-    width: auto;
-    /* max-width: 100%;  Ensure it doesn't exceed the parent container's width */
-}
+    position: relative;
+    height: 40rem;
+    width: 58rem;
 
+}
 .text-overlay-speaker{
-    position: absolute;  /* Position text on top of the image */
-    top: 0;  /* Aligns the overlay to the top of the card */
-    left: 150px;
-    width: 100%;
-    height: 100%;
-    color: white;        /* Text color */
-    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); /* Optional: Text shadow for better readability */
-    z-index: 1;          /* Ensure text is above the image */
-    font-family: 'Orbitron';
-    display: flex;       /* Center the content with Flexbox */
+    position: absolute;  
+    bottom: 15%;
+    transform: translateX(50%);
+    width: 450px;
+    height: 600px;
+    color: white;       
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 1); 
+    z-index: 1;          
+    display: flex;       
     justify-content: center;
     align-items: center;
+    max-width: 100%;      /* Ensure it doesn't exceed the parent's width */
+    max-height: 100%;
 }
-
 .speakerName {
-    font-size: 25px;     /* Font size */
-    white-space: nowrap; /* Prevent text from wrapping */
-    margin-bottom: 30%;
-
+    position: absolute;
+    font-size: 18px;  
+    font-family: 'Orbitron'; 
+    top: 86%; 
+    left: 13%;
+    transform: translateX(-40%);
+    
 }
+
+.speakerPosition{
+    position: absolute;
+    font-size: 15px;  
+    font-family: 'Orbitron'; 
+    top: 90%; 
+    left: 0%;
+    transform: translateX(-15%);
+}
+
+.speakerDesc{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 12px;
+    top: 40%;
+    height: 230px;
+    width: 60%;
+    transform: translateX(-35%);
+    font-family: 'Montserrat';
+}
+.speaker-pic-container {
+    position: absolute;
+    width: 360px;
+    height: 385px;
+    overflow: hidden;
+    transform: translateX(-48%);
+    display: flex;  /* Make the container a flexbox */
+    justify-content: center;  /* Horizontally center the child */
+    align-items: center;  /* Vertically center the child */
+    object-fit: cover;
+}
+
+.speaker-pic {
+    height: 100%;     /* Maintain aspect ratio */
+    width:100%;
+    object-fit: cover;
+}
+
+
+.speakerTitle{
+    position: absolute;  /* Positioning relative to its container */
+    top: 25%;
+    left: 30%;           /* Center horizontally */
+    width: 60%;
+    max-width: 100%;
+    font-size: 18px;     /* Font size */
+    transform: translateX(-50%); /* Offset back to center the text */
+    font-weight: bold;
+    word-wrap: break-word;  /* Ensures long words will break and wrap */
+    width: auto;         /* Allow the width to adjust based on content */
+    text-align: center;  /* Center-align the text */
+    overflow: hidden;
+   
+}
+
+
