@@ -1,3 +1,6 @@
+#speakers{
+    min-height: 850px;
+}
 .speaker-heading{
     font-family: 'Audiowide' ;
     color:aliceblue;
@@ -7,4 +10,11 @@
     font-size: 60px;
     
 }
-  
+@media screen and (max-width: 500px) {
+    .speaker-heading {
+        font-size: 35px; 
+    }
+    #speakers{
+        height: 600px; 
+    }
+}

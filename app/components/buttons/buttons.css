@@ -39,13 +39,13 @@
 
 .homeButtons:hover .button-normal {
   display: none; /* Hide normal image on hover */
-  width: 150%; /* Keep hover button image full width */
-  height: 150%; /* Keep hover button image full height */
+  width: 100%; /* Keep hover button image full width */
+  height: 100%; /* Keep hover button image full height */
 }
 
 .homeButtons:hover .button-hover {
-  width: 130%; /* Keep hover button image full width */
-  height: 130%; /* Keep hover button image full height */
+  width: 100%; /* Keep hover button image full width */
+  height: 100%; /* Keep hover button image full height */
   display: block; /* Show hover image on hover */
 }
 

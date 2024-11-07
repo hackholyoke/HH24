@@ -12,8 +12,10 @@
   font-style: normal;
 }
 #about{
+
   max-width: 100%;
   overflow-x: hidden;
+
 }
 .aboutText{
   display: flex;
@@ -31,7 +33,7 @@
   
   .headerContainer {
     padding-left: 10%;
-    color: transparent;
+    color: aliceblue;
     font-size: 3vw;
     font-family: 'Audiowide';
     -webkit-text-stroke-width: 0.5px;
@@ -41,7 +43,10 @@
 
 
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
+    #about{
+      height: 400px;
+    }
     .aboutText{
       display: flex;
       flex-direction: column;
@@ -56,6 +61,8 @@
 
   @media (max-width: 450px) {
     #about{
-      height: 600px;
+      margin-top: 200px;
+      height: 400px;
+      margin-bottom: 20%;
     }
   }

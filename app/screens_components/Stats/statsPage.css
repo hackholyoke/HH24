@@ -6,9 +6,6 @@
     height: fit-content;
 }
 
-.stat-item {
-    text-align: center; /* Center text under images */
-}
 
 /* Font Face Declarations */
 @font-face {
@@ -23,12 +20,6 @@
     src: url(../../../public/fonts/Audiowide-Regular.ttf) format('woff2');
     font-weight: normal;
     font-style: normal;
-}
-
-/* Stats Section Styles */
-#stats {
-    position: relative;
-    
 }
 
 
@@ -50,7 +41,7 @@
     height: 2px;
     background-color: #00FFF7;
     width: 20%;
-    top: 50%;
+    top: 94vw;
     left: 2%;
 }
 
@@ -58,15 +49,17 @@
     position: absolute;
     height: 2px;
     background-color: #00FFF7;
-    top: 50%;
+    top: 94vw;
     width: 18%;
     right: 4%;
 }
 
 /* Heading Styles */
 #stats .stats_heading {
+    position: absolute;
     font-family: "Audiowide", sans-serif;
     font-size: 5vw;
+    top: 86vw;
     color: transparent;
     -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
     -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
@@ -76,7 +69,7 @@
     position: absolute;
     font-family: "Orbitron";
     font-size: 2vw;
-    top: 55%;
+    top: 96vw;
     left: 45%;
     color: #00FFF7;
 }
@@ -84,7 +77,7 @@
 /* Number CSS Styles (Locations) */
 #stats .participants_num {
     position: absolute;
-    top: 20%; /* Align to the top */
+    top: 76vw; /* Align to the top */
     left: 15%; /* Align to the left */
     margin: 10; /* Ensure no extra margin */
     padding: 20; /* Ensure no extra padding */
@@ -94,7 +87,7 @@
 
 #stats .colleges_num {
     position: absolute;
-    top: 20%; /* Align to the top */
+    top: 76vw; /* Align to the top */
     right: 15%; /* Align to the left */
     margin: 10; /* Ensure no extra margin */
     padding: 20; /* Ensure no extra padding */
@@ -104,7 +97,7 @@
 
 #stats .majors_num {
     position: absolute;
-    bottom: 18%; /* Align to the top */
+    top: 104.5vw;
     left: 15%; /* Align to the left */
     margin: 10; /* Ensure no extra margin */
     padding: 20; /* Ensure no extra padding */
@@ -114,7 +107,7 @@
 
 #stats .years_num {
     position: absolute;
-    bottom: 18%; /* Align to the top */
+    top: 104.5vw; /* Align to the top */
     right: 20%; /* Align to the left */
     margin: 10; /* Ensure no extra margin */
     padding: 20; /* Ensure no extra padding */
@@ -124,21 +117,12 @@
 
 
 /* Media Queries */
-@media (max-width: 100%) {
-    .major, .participants, .colleges, .participating, .th, .year, .line-left, .line-right, .stats_heading_2, .majors_num, .years_num, .participants_num, .colleges_num, .stats_words, .stats_heading, .stats_num, .stats-container, .stat-item, .colleges {
-        font-size: 4vw;
-    }
 
-}
 @media (max-width: 450px) {
     /* Common font size adjustment */
    
     #stats{
         height: 600px;
-    }
-    
-    .major, .participants, .colleges, .participating, .th, .line-left, .line-right, .stats_heading_2, .majors_num, .years_num, .participants_num, .colleges_num, .stats_words, .stats_heading, .stats_num, .stats-container, .stat-item, .colleges {
-        font-size: 6vw;
     }
 
     /* Hide lines for smaller screens */
@@ -148,45 +132,66 @@
 
     /* Adjust headings */
     .stats_heading_2 {
-        font-size: 5vw !important;
-        text-align: center; /* Align to center */
-        top: 70%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-33%,-300%)  
+        font-size: 1rem !important;
+        top: 293vw !important; 
+        transform: translate(-33%,-200%);
+      
     }
 
     .stats_heading {
+        position: absolute;
         font-size: 10vw !important;
         text-align: center; /* Center align */
-        top: 70%; /* Adjust position for the heading */
-        left: 50%; /* Center horizontally */
-        transform: translate(0%,-80%)   
+        top: 250vw !important; /* Adjust position for the heading */
+
     }
 
     /* Number Positions */
     #stats .participants_num {
-        top: 5vh; /* Keep alignment consistent */
+        top: 220vw; /* Keep alignment consistent */
         left: 10vw;
         width: 30%;
     }
 
     #stats .colleges_num {
-        top: 5vh;
+        top: 220vw;
         left: 68vw; /* Adjust for small screen */
         width: 30%;
     }
 
     #stats .majors_num {
-        top: 100vw; /* Adjust to lower section */
+        top: 320vw; /* Adjust to lower section */
         left: 10vw; /* Adjust for small screen */
         width: 30%;
     }
 
     #stats .years_num {
-        top: 100vw; /* Align with majors */
+        top: 320vw; /* Align with majors */
         left: 68vw; /* Adjust for small screen */
         width: 25%;
     }
+
+
+}
+@media (max-width: 320px) {
+
+    /* Adjust headings */
+    .stats_heading_2 {
+        font-size: 5vw !important;
+        text-align: center; /* Align to center */
+        top: 70%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-33%,-500%)  
+    }
+
+    .stats_heading {
+        font-size: 10vw !important;
+        text-align: center; /* Center align */
+        top: 30%; /* Adjust position for the heading */
+        left: 50%; /* Center horizontally */
+        transform: translate(0%,-150%)   
+    }
+
 
 
 }
