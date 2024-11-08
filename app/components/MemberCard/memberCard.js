@@ -30,7 +30,7 @@ export const MemberCards = ({frontCard, mbrPic, name, pronouns, year, major, ans
       <div className={`card ${isFlipped ? 'flipped' : ''}`}>
         <div className='card-front'>
           <div className='img_container'>
-            <Image src={mbrPic} className='mbr_pics' alt={name} />
+            <Image src={mbrPic} priority={true} className='mbr_pics' alt={name} />
           </div>
           <Image src={frontCard} className='mbr_container' alt="Front card" />
           <div className="text-overlay">
@@ -40,7 +40,7 @@ export const MemberCards = ({frontCard, mbrPic, name, pronouns, year, major, ans
             </div>
         </div>
         <div className='card-back'>
-          <Image src={Member_Card_Back} className='mbr_container_back' alt="Back card" />
+          <Image src={Member_Card_Back} priority={true} className='mbr_container_back' alt="Back card" />
           <div className="text-overlay_2">
             <p className="major">Major: </p>
             <p className="major_choice">{major}</p>

@@ -10,7 +10,7 @@ export const SpeakerCard = ({speakerPic, speakerName, speakerDesc , speakerTitle
             <div className="speaker-pic-container">
                 <Image src ={speakerPic} className="speaker-pic"/>
             </div>
-            <Image src ={speakerCardPic} className="card-pic"/>
+            <Image src ={speakerCardPic} priority={true} className="card-pic"/>
             <div className = "text-overlay-speaker">
                 <h1 className="speakerName" style = {speakerNameStyle}>{speakerName}</h1>
                 <p className="speakerDesc" style ={speakerDescStyle}>{speakerDesc}</p>
