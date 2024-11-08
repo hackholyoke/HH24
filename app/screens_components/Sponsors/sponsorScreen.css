@@ -1,5 +1,5 @@
 #sponsors{
-    height: 750px;
+    height: 800px;
 }
 .sponsorScreen{
     display: flex;
@@ -23,6 +23,7 @@
     justify-content: center;  /* Horizontally center */
     align-items: center;
     font-size: 60px;
+    padding-bottom: 200px;
     
 }
 .spnsr-images{
@@ -33,12 +34,16 @@
     align-items: center;
 }
 .wolfram_logo{
-    height: 25%;
-    width: 25%;
+    height: 21%;
+    width: 21%;
 }
 .mhc_cs_logo{
     height: 25%;
     width: 25%;
+}
+.mastercard_logo{
+    height: 18%;
+    width: 18%;
 }
 
 
