@@ -20,10 +20,16 @@ export const FAQComp = ({closeQ, openQ, answerText}) => {
 
     return(
         <div className = 'faq-container' onClick={handleOpen}>
+            {/* Preload images */}
+            <div style={{ display: 'none' }}>
+                <Image src={closeQ} priority={true} className="closedQpic" alt="closed question preload" />
+                <Image src={openQ} priority={true} className='openQPic' alt="open question preload" />
+            </div>
+
             <div className={`faq${isOpen ? 'faqOpenned' : ''}`}>
                 {!isOpen &&(
                 <div className='closed-faq'>
-                    <Image src={closeQ} iority={true} className='closeQPic' />
+                    <Image src={closeQ} piority={true} className='closeQPic' />
                 </div>
                 )}
                 {isOpen && (

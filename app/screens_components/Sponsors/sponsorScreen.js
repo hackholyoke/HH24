@@ -4,6 +4,7 @@ import Image from "next/image";
 import './sponsorScreen.css';
 import wolframalpha from "../../assets/sponsors/wolframalpha.png"
 import mhc_cs from "../../assets/sponsors/mhc_cs.png"
+import mastercard_logo from "../../assets/sponsors/Mastercard_logo.png"
 
 const SponsorScreen = () =>{
 
@@ -13,6 +14,7 @@ const SponsorScreen = () =>{
             <div className = "spnsr-images">
                 <Image src={mhc_cs} className="mhc_cs_logo"/>
                 <Image src={wolframalpha} className="wolfram_logo"/>
+                <Image src={mastercard_logo} className="mastercard_logo"/>
                 
             </div>
             <p className='spn-desc'>If you are interested in contributing as a sponsor or mentor please click below.</p>

@@ -7,7 +7,7 @@ export const ChallengeCard =({pic, description}) =>{
     return(
     <div className="c-card-container">
         <div className="card">
-        <Image src={pic} className="cardPic"/>
+        <Image src={pic} priority={true} className="cardPic"/>
         <div className="text-overlay-challenge">
             <p className ="challenge-description">
                 {description}

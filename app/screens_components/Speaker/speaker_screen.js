@@ -19,29 +19,30 @@ import breakpoint from "../../assets/speakers/breakpoint.JPG"
 const speakerCards=[
 
   <SpeakerCard 
+  speakerPic={Laura}
+  speakerName={"Laura Sizer"}
+  speakerPosition={"Senior Lecturer in Philosophy, MHC"}
+  speakerDesc={"Developing a project requires making lots of decisions, and many of those decisions have ethical implications alongside their design and technology implications. In this workshop we will discuss the need to think about ethics in goal setting, designing, coding, and implementing a data-driven project. We will think through some questions and principles that can help you assess your project from an ethical point of view."}
+  speakerTitle={"Ethics for Developers: Doing an Ethics Audit of Your Project"}
+  speakerTitleStyle={{fontSize : '20px'}}
+  />,
+
+  <SpeakerCard 
+  speakerPic={noprofile}
+  speakerName={"Stephanie Friedman"}
+  speakerPosition={"Instructional Technologist and Specialist, MHC"}
+  speakerDesc={"Step into VR creation with Unity in this beginner-friendly, no-code workshop. Learn the basics of Unity’s interface, build 3D scenes, and bring them to life with physics and lighting. By the end, you’ll have a foundation for crafting your own immersive VR projects. Perfect for anyone curious about VR and game development!"}
+  speakerTitle={"Intro to Unity(VR)"}
+  speakerTitleStyle={{fontSize : '20px'}}
+  />,
+
+  <SpeakerCard 
   speakerPic={Joni}
   speakerName={"Joni Park"}
   speakerPosition={"Software Engineer , Apple "}
   speakerDesc={"In this workshop, you'll get hands-on with the basics of Git and GitHub, essential tools for developers. We'll cover how to track changes in your projects, collaborate with others, and keep your code organized. Whether you're just starting out or need a refresher, this session will help you feel more confident using version control in your workflow. Great for anyone who’s looking to get more comfortable with version control and improve their workflow!"}
   speakerTitle={"Intro to Git & GitHub: Version Control"}
-
-  />,
-
-  <SpeakerCard
-  speakerPic={Mai}
-  speakerName={ "Mai Bui and Natalie Chalfant"}
-  speakerPosition={"Research Assistants,Intelligent Medical Robotics Lab"}
-  speakerDesc={"The workshop will provide an overview of common surgical robotics research platforms and introduce participants to the Robot Operating System (ROS). Participants will learn how to publish and subscribe to standard ROS messages using the python library rospy as well as some basic rotation and translation matrices. There will also be the opportunity to control the simulated robot using a gamepad controller which broadcasts commands to the robot using ROS messages. Whether you’re an aspiring roboticist or just curious about the field, this workshop is your chance to step into the shoes of a roboticist, researcher, or medical student for a day."}
-  speakerTitle={"Teleoperation for Simulated Surgical Robots"}
-  speakerNameStyle={{ left: "25%" }}
-  />,
-
-  <SpeakerCard 
-  speakerPic={Olivia}
-  speakerName={"Olivia Lee"}
-  speakerPosition={"Data Scientist @ Yahoo Finance"}
-  speakerDesc={"Data science is a broad field with a wide range of skills needed. In big tech, a data scientist could be working on anything from monitoring and validating data quality, presenting data-driven insights to nontechnical stakeholders, to testing different deep learning architectures for a deep learning model. In this workshop, Olivia will share her journey and day-to-day working as a data scientist in big tech with concrete examples and analytical insights."}
-  speakerTitle={"Why You Should / Shouldn't Be a Data Scientist"}
+  speakerTitleStyle={{fontSize : '20px'}}
   />,
 
   <SpeakerCard 
@@ -53,6 +54,17 @@ const speakerCards=[
   />,
 
   <SpeakerCard
+  speakerPic={Mai}
+  speakerName={ "Mai Bui & Natalie Chalfant"}
+  speakerPosition={"Research Assistants,Intelligent Medical Robotics Lab"}
+  speakerDesc={"The workshop will provide an overview of common surgical robotics research platforms and introduce participants to the Robot Operating System (ROS). Participants will learn how to publish and subscribe to standard ROS messages using the python library rospy as well as some basic rotation and translation matrices. There will also be the opportunity to control the simulated robot using a gamepad controller which broadcasts commands to the robot using ROS messages. Whether you’re an aspiring roboticist or just curious about the field, this workshop is your chance to step into the shoes of a roboticist, researcher, or medical student for a day."}
+  speakerTitle={"Teleoperation for Simulated Surgical Robots"}
+  speakerNameStyle={{ left: "25%" }}
+  speakerTitleStyle={{fontSize : '18px'}}
+  speakerPosStyle={{fontSize: '12px'}}
+  />,
+
+  <SpeakerCard
   speakerPic={breakpoint}
   speakerName={ "Nafisa Bashar Anmul, Kathryn Spencer, Sadichchha Maharjan  "}
   speakerPosition={"Breakpoint"}
@@ -60,8 +72,9 @@ const speakerCards=[
   speakerTitle={"Dive into Creative Coding with Medipipe and p5.js"}
   speakerNameStyle={{ left: "25%" , fontSize: "15px" }}
   speakerPosStyle={{ top: "92%", left: "53%" , fontSize: "15px" }}
+  speakerTitleStyle={{fontSize : '18px'}}
   />,
-  
+
   <SpeakerCard 
   speakerPic={Ziyin}
   speakerName={"Astrid Zhao"}
@@ -71,28 +84,32 @@ const speakerCards=[
   />,
 
   <SpeakerCard 
-  speakerPic={Ariel}
-  speakerName={"Ariel Russ"}
-  speakerPosition={"Senior Manager of Sustainability at Estée Lauder"}
-  speakerDesc={"Both informational interviews and traditional job-hunting ones are scary but I'm here to make it easier for you. You'll learn some skills to prep in advance and make you more confident."}
-  speakerTitle={"Interviews, Networking and Managing Your Online Presence: LinkedIn and Beyond"}
+  speakerPic={Olivia}
+  speakerName={"Olivia Lee"}
+  speakerPosition={"Data Scientist @ Yahoo Finance"}
+  speakerDesc={"Data science is a broad field with a wide range of skills needed. In big tech, a data scientist could be working on anything from monitoring and validating data quality, presenting data-driven insights to nontechnical stakeholders, to testing different deep learning architectures for a deep learning model. In this workshop, Olivia will share her journey and day-to-day working as a data scientist in big tech with concrete examples and analytical insights."}
+  speakerTitle={"Why You Should / Shouldn't Be a Data Scientist"}
+  speakerTitleStyle={{fontSize : '18px'}}
   />,
-
-  <SpeakerCard 
-  speakerPic={Laura}
-  speakerName={"Laura Sizer"}
-  speakerPosition={"Senior Lecturer in Philosophy, MHC"}
-  speakerDesc={"COMING SOON !"}
-  speakerTitle={"Ethics for Developers: Doing an Ethics Audit of Your Project"}
-  />,
-
+  
   <SpeakerCard 
   speakerPic={Avery}
   speakerName={"Avery Colyer"}
   speakerPosition={"Lead UI/UX Designer at Hospitality Innovations"}
   speakerDesc={"COMING SOON !"}
   speakerTitle={"Working as a UX/UI designer in Tech"}
+  speakerTitleStyle={{fontSize : '20px'}}
+  />,
+
+  <SpeakerCard 
+  speakerPic={Ariel}
+  speakerName={"Ariel Russ"}
+  speakerPosition={"Senior Manager of Sustainability at Estée Lauder"}
+  speakerDesc={"Both informational interviews and traditional job-hunting ones are scary but I'm here to make it easier for you. You'll learn some skills to prep in advance and make you more confident."}
+  speakerTitle={"Interviewing Skills"}
+  speakerTitleStyle={{fontSize : '20px'}}
   />
+
 
 ];
 
