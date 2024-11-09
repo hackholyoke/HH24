@@ -14,7 +14,9 @@ import learn_b from '../../assets/buttons/learn_b.png'
 import join_a from '../../assets/buttons/join_a.png'
 import join_b from '../../assets/buttons/join_b.png'
 
+
 const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
+
     return (
         <button onClick={onClick} className='homeButtons'>
             <Image src={normalImage} priority={true} className='button-normal' />
@@ -32,6 +34,7 @@ export const RegisterButton = () => {
             // window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
             router.push('/registration'); // Navigate to another page
         }, 300);
+
     }
 
     return (
@@ -50,6 +53,8 @@ export const TeamButton = () => {
     }
     return (
         <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a} />
+
+
     )
 }
 
@@ -73,6 +78,7 @@ export const LearnMoreButton = () => {
     )
 }
 
+
 export const JoinDiscordButton = () => {
     const [clicked, setClicked] = useState(false);
     function handleJoinPress() {
@@ -83,5 +89,6 @@ export const JoinDiscordButton = () => {
     }
     return (
         <HomeButtons onClick={handleJoinPress} normalImage={join_b} hoverImage={join_a} />
+
     )
 }

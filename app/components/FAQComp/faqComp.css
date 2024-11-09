@@ -9,19 +9,9 @@
     transition: height 0.3s ease; /* Smooth height transition */
 }
 
-.faqOpenned{
-
-}
-
-.closed-faq{
-
-}
 .closeQPic{
     width: 100%;
     height: 100%;
-}
-.open-faq{
-
 }
 .openQPic{
     width: 100%;
