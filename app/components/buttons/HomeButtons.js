@@ -27,11 +27,12 @@ const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
 
 export const RegisterButton = () => {
     const [clicked, setClicked] = useState(false);
+    const router = useRouter(); // Initialize router
     function handleRegisterPress() {
         setClicked(true);
         setTimeout(() => {
-            window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
-
+            // window.open('https://forms.gle/xXXddv89HPbujm7g7', '_blank');
+            router.push('/registration'); // Navigate to another page
         }, 300);
 
     }
