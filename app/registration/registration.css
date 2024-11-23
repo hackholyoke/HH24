@@ -1,7 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Ensure Tailwind CSS is installed and configured correctly */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-body{
-    background-image: linear-gradient(#2c3c94);
+body {
+    height: 100vh;
+    background-color: aliceblue !important;/* Replace with your desired color */
+    background-image: none !important;
+}
+
+.tailWind-form{
+
+    padding: 10% 25%;
+    font-family: 'Montserrat', sans-serif;
+ 
 }

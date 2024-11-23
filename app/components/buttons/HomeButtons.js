@@ -15,12 +15,12 @@ import join_a from '../../assets/buttons/join_a.png'
 import join_b from '../../assets/buttons/join_b.png'
 
 
-const HomeButtons = ({ onClick, normalImage, hoverImage }) => {
+const HomeButtons = ({ onClick, normalImage, hoverImage, label}) => {
 
     return (
-        <button onClick={onClick} className='homeButtons'>
-            <Image src={normalImage} priority={true} className='button-normal' />
-            <Image src={hoverImage} priority={true} className='button-hover' />
+        <button onClick={onClick} className='homeButtons' aria-label={label}>
+            <Image src={normalImage} className='button-normal' alt="" />
+            <Image src={hoverImage} className='button-hover' alt="" />
         </button>
     );
 };
@@ -38,7 +38,7 @@ export const RegisterButton = () => {
     }
 
     return (
-        <HomeButtons onClick={handleRegisterPress} normalImage={register_b} hoverImage={register_a} />
+        <HomeButtons onClick={handleRegisterPress} normalImage={register_b} hoverImage={register_a} label="Register"/>
     )
 }
 
@@ -52,7 +52,7 @@ export const TeamButton = () => {
         }, 300);
     }
     return (
-        <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a} />
+        <HomeButtons onClick={handleTeamPress} normalImage={meet_b} hoverImage={meet_a} label="Team" />
 
 
     )
@@ -74,7 +74,7 @@ export const LearnMoreButton = () => {
         }, 300);
     }
     return (
-        <HomeButtons onClick={handleLearnPress} normalImage={learn_b} hoverImage={learn_a} />
+        <HomeButtons onClick={handleLearnPress} normalImage={learn_b} hoverImage={learn_a} label="Learn More"/>
     )
 }
 
@@ -88,7 +88,7 @@ export const JoinDiscordButton = () => {
         }, 300);
     }
     return (
-        <HomeButtons onClick={handleJoinPress} normalImage={join_b} hoverImage={join_a} />
+        <HomeButtons onClick={handleJoinPress} normalImage={join_b} hoverImage={join_a} label="Join Discord"/>
 
     )
 }

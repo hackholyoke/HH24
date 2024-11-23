@@ -1,7 +1,12 @@
 // jsconfig.json
 {
     "compilerOptions": {
-      "baseUrl": "."
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "baseUrl": "./",
+      "paths": {
+        "@/components/*": ["components/*"]
+      }
     }
   }
   
