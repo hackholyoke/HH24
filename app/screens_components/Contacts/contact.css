@@ -10,7 +10,7 @@
     justify-content: center;
     display: center; /* Use flexbox for alignment */
     height: 20vh;
-    left : -10vh;
+
 }
 
 .contact-container h1 {
@@ -28,7 +28,7 @@
 .icon-small{
     width: 20px;
     height: 20px;
-    margin-right: 2px;
+    /* margin-right: 2px; */
 }
 
 
